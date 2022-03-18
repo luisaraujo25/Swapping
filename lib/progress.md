@@ -4,6 +4,6 @@
 
 To do:
 
-- [ ] not checked
-- [x] checked
+- not checked [ ]
+- checked [x]
 ## Week 2
