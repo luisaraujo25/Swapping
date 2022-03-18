@@ -11,7 +11,6 @@ These requests can involve other students or not. When a students specifies all 
 
 O objetivo deste projeto é criar uma plataforma web que permita estudantes autenticados criar pedidos para trocarem de turmas. O pedido pode ser direcionado a outro aluno ou não. Quando este especifica os estudantes envolvidos na troca, fica pendente a aprovação por ambas as partes. Quando um estudante faz um pedido individual (não envolve mais ninguém), a aplicação fica responsável por combinar este pedido com outro ou outros compatíveis.
 
-<br>
 
 ## Dúvidas (temporary)
 
