@@ -2,8 +2,10 @@
 
 ## Week 1
 
-To do:
+### To do:
 
-- not checked [ ]
-- checked [x]
+- [ ] setup (Django & React)
+- [x] something
+
+
 ## Week 2
