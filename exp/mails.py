@@ -4,7 +4,7 @@ port = 465  # For SSL
 smtp_server = "smtp.gmail.com"
 sender_email = "qfabray300@gmail.com"  # Enter your address
 receiver_email = "lmpa.pt@gmail.com"  # Enter receiver address
-password = "lamanini2"
+password = ""
 message = """\
 Subject: Class swap
 
