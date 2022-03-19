@@ -47,6 +47,9 @@ http://localhost:8000/
 
 Meetings - Friday 2pm
 
+E-mail - joao.pascoal.faria@gmail.com
+
+Django Tutorial - https://www.youtube.com/watch?v=rHux0gMZ3Eg
 
 ## Dúvidas (temporary)
 
