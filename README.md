@@ -12,9 +12,6 @@ These requests can involve other students or not. When a students specifies all 
 O objetivo deste projeto é criar uma plataforma web que permita estudantes autenticados criar pedidos para trocarem de turmas. O pedido pode ser direcionado a outro aluno ou não. Quando este especifica os estudantes envolvidos na troca, fica pendente a aprovação por ambas as partes. Quando um estudante faz um pedido individual (não envolve mais ninguém), a aplicação fica responsável por combinar este pedido com outro ou outros compatíveis.
 
 
-## Dúvidas (temporary)
-
-
 ## Technologies
 
 - React (Javascript)
@@ -28,7 +25,29 @@ O objetivo deste projeto é criar uma plataforma web que permita estudantes aute
 
 <br>
 
+## Django Installation
+
+Commands I used in WSL (Ubuntu):
+
+- echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf > /dev/null
+- sudo apt install pipenv
+- pipenv install django
+
+## Running Commands
+
+Swapping/src$
+
+- pipenv shell
+- python manage.py runserver
+
+http://localhost:8000/
+
+
 ## Notes
 
 Meetings - Friday 2pm
+
+
+## Dúvidas (temporary)
+
 
