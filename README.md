@@ -25,24 +25,6 @@ O objetivo deste projeto é criar uma plataforma web que permita estudantes aute
 
 <br>
 
-## Django Installation
-
-Commands I used in WSL (Ubuntu):
-
-- echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf > /dev/null
-- sudo apt install pipenv
-- pipenv install django
-
-## Running Commands
-
-Swapping/src$
-
-- pipenv shell
-- python manage.py runserver
-
-http://localhost:8000/
-
-
 ## Notes
 
 Meetings - Friday 2pm
