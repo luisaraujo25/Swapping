@@ -33,6 +33,17 @@ E-mail - joao.pascoal.faria@gmail.com
 
 Django Tutorial - https://www.youtube.com/watch?v=rHux0gMZ3Eg
 
+https://medium.com/codex/how-to-integrate-react-and-django-framework-in-a-simple-way-c8b90f3ce945
+
+MySQL - https://www.w3schools.com/python/python_mysql_insert.asp
+https://pypi.org/project/mysqlclient/
+
+
+React - https://www.youtube.com/watch?v=w7ejDZ8SWv8
+
+https://www.youtube.com/watch?v=VBqJ0-imSMU
+
+
 ## Dúvidas (temporary)
 
 
