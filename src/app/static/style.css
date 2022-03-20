@@ -1,0 +1,21 @@
+body{
+    background-color: purple;
+  }
+
+div {
+  background-color: palevioletred;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+.pt1{
+  min-height: 100%;
+  width: 75%;
+}
+
+.pt2{
+  height: 500px;
+}
