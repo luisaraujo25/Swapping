@@ -8,3 +8,6 @@ from django.http import HttpResponse
 def home(request):
     # return HttpResponse("Hello World")
     return render(request, 'home.html', {'var': 'passei uma variavel'})
+
+def request(request):
+    return render(request,'request.html')
