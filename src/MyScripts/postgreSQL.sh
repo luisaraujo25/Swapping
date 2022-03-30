@@ -17,3 +17,8 @@ psql
 
 #pgadmin error
 ALTER USER postgres PASSWORD '.';
+
+#AFTER CREATING A CLASS IN MODELS:
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
