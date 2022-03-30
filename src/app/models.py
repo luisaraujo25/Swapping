@@ -4,5 +4,17 @@ from django.db import models
 
 #USE TO TAKE DATA FROM THE DB
 
-class Request(models.Model):
+class Student(models.Model):
+    up = models.CharField(max_length=11)
+    name = models.CharField(max_length=60)
+    email = modes.EmailField(max_length=25)
+
+class UC(models.Model):
     name = models.CharField(max_length=40)
+
+class Class(models.Model):
+    number = models.models.IntegerField(
+    # schedule = truncate_date(self, models.DateField())
+
+    # def truncate_date(self, dt):
+    #     return dt - timedelta(days=dt.weekday())
