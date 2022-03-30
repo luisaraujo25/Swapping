@@ -43,6 +43,9 @@ React - https://www.youtube.com/watch?v=w7ejDZ8SWv8
 
 https://www.youtube.com/watch?v=VBqJ0-imSMU
 
+SQL - https://www.postgresqltutorial.com/connect-to-postgresql-database/
+https://dev.to/mungaigikure/how-to-set-up-postgres-in-your-django-project-575i
+
 
 ## Dúvidas (temporary)
 

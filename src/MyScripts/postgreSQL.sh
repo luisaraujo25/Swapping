@@ -14,3 +14,6 @@ psql
 \q
 
 #INSTALLED VERSION: PostgreSQL 12.9
+
+#pgadmin error
+ALTER USER postgres PASSWORD '.';
