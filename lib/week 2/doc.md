@@ -23,7 +23,10 @@ Password: luisaaraujo
 
 ## Relational
 
-student(<u>id</u>, e-mail, name, up)
+- student(<u>id</u>, e-mail, name, up)
+- uc(<u>id</u>, name, code)
+- class(<u>id->student</u>, <u>id->uc</u>, number, schedule)
+- request(<u>id1->student</u>, <u>id2->student</u>, date, conf1, conf2)
 
 
 ## Django Models

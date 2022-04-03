@@ -4,5 +4,7 @@ pipenv shell
 python manage.py runserver
 sudo mysql -u root -p
 
+#CHECK FOR ISSUES
+python manage.py check
 
 #http://localhost:8000/
