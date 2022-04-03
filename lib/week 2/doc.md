@@ -10,3 +10,7 @@ To create one admin (SuperUser) it was used:
 Username: admin
 E-mail address: lmpa.pt@gmail.com
 Password: luisaaraujo
+
+## UML
+
+![uml](uml.png)
