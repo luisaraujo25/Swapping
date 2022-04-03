@@ -26,7 +26,7 @@ Password: luisaaraujo
 - student(<u>id</u>, e-mail, name, up)
 - uc(<u>id</u>, name, code)
 - class(<u>id->student</u>, <u>id->uc</u>, number, schedule)
-- request(<u>id1->student</u>, <u>id2->student</u>, date, conf1, conf2)
+- request(<u>id->student</u>, <u>id->uc</u>, date, conf1, conf2, st2, st2class)
 
 
 ## Django Models
@@ -44,6 +44,9 @@ After creating a model we need to use the command :
 In the folder app/migrations you can notice a new file was added (for example: "0001_initial.py").
 Everytime we make migrations no file will be automatically deleted, even if we just changed one attribute of a table a new file will be created with all changes.
 "By running makemigrations, you’re telling Django that you’ve made some changes to your models (in this case, you’ve made new ones) and that you’d like the changes to be stored as a migration."
+
+- Run python manage.py makemigrations to create migrations for those changes
+- Run python manage.py migrate to apply those changes to the database.
 
 ### Fiels
 
