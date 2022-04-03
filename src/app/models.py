@@ -21,5 +21,6 @@ class Class(models.Model):
     #     return dt - timedelta(days=dt.weekday())
 
 class SwapRequest(models.Model):
-    date = models.DateField()
     date = models.DateField(auto_now_add = True)
+    confirmation1 = models.BooleanField()
+    confirmation2 = models.BooleanField()

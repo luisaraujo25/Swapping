@@ -8,17 +8,38 @@ Meeting - 18/03
 
 - [x] setup (Django & React)
 - [x] Project Presentation/Description
-- [ ] Actors and User Stories, check https://web.fe.up.pt/~ssn/wiki/teach/lbaw/202122/artefacts/a02
 - [ ] Sitemap
-- [ ] Wireframes, check https://docs.google.com/document/u/2/d/e/2PACX-1vSGjJUvGKDjAfjxnFitfeUi0CnE8zVtC4ED85dXdY3VlizdAzvZvk1B0tHsvwABz965iWVwFjOuFVKo/pub
+- [ ] Wireframes
 - [x] Send e-mails
-- [ ] Create confirmation links
-- [ ] UML
-- [ ] Database Setup
 - [ ] React Setup
 
 
 ## Week 2
 
-- [ ] Use RegEx to validate emails
+Meeting: 25/03
+
+### To do:
+
+- [x] Database Setup
+- [x] UML
+- [x] Use RegEx to validate emails
 - [ ] Generate request confirmation links
+- [x] Actors
+- [ ] User Stories
+- [ ] Improve database (null, default, foreign keys, etc) 
+
+## Week 3
+
+Meeting: 04/03
+
+### To do:
+
+
+<hr>
+
+## Check
+
+Wireframes: https://docs.google.com/document/u/2/d/e/2PACX-1vSGjJUvGKDjAfjxnFitfeUi0CnE8zVtC4ED85dXdY3VlizdAzvZvk1B0tHsvwABz965iWVwFjOuFVKo/pub
+
+Actors and User Stories:
+https://web.fe.up.pt/~ssn/wiki/teach/lbaw/202122/artefacts/a02

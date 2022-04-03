@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'Swapping.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'PostgreSQL',
+        'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': '.',
         'HOST': '127.0.0.1',
@@ -111,7 +111,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+# UTC OR WEST
+TIME_ZONE = 'Portugal'
 
 USE_I18N = True
 
