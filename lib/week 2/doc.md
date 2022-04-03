@@ -14,3 +14,7 @@ Password: luisaaraujo
 ## UML
 
 ![uml](uml.png)
+
+## State Diagram for Requests
+
+![Request State Diagram](statediagram.jpg)
