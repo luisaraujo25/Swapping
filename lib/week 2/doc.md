@@ -13,6 +13,22 @@ E-mail address: lmpa.pt@gmail.com
 
 Password: luisaaraujo
 
+Adding the admin interface to objects:
+
+app/admin.py
+
+`from .models import Question`
+`admin.site.register(Question)`
+
+Data can be inserted through Django free API.
+`python manage.py shell`, ex:
+
+`st = Student(name ="Eu", up = "2", email = "@)` 
+`st.save()`
+`Student.objects.all()`
+
+or directly throught the admin panel.
+
 ## UML
 
 ![uml](uml.png)
