@@ -3,6 +3,11 @@ body{
   color: rgb(0, 0, 0);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-bottom: 10%;
+  margin: 0;
+}
+
+body > :not(header):not(footer){
+  margin: 5px;
 }
 
 .button{
@@ -15,14 +20,29 @@ body{
   border-radius: 8%;
 }
 
-.button a:link a:visited{
-  color:aqua;
+header{
+  margin-top: 0px;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgb(30, 10, 102);
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  padding: 5px;
 }
 
-.button a:hover{
-  color: green;
+header > a{
+  margin-right: 3%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
-/*.button a:active*/
+
+a{
+  text-decoration: none;
+}
+
 
 footer{
   position: fixed;
@@ -32,5 +52,27 @@ footer{
   left: 0px;
   right: 0px;
   margin-bottom: 0px;
-  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer > a{
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+footer a:link, a:visited{
+  color:rgb(255, 255, 255);
+}
+
+a:hover{
+  color:rgb(216, 216, 216);
+}
+/*.button a:active*/
+
+form > div{
+  padding: 10px;
 }

@@ -4,38 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link rel="icon" type="image/x-icon" href="../static/img/favicon.ico">
+
     <title>Request</title>
 </head>
 <body>
 
     <form action="POST">
 
-        <label for="nameField">Name: </label>
-        <input type="text" id="nameField">
-        <br>
+        <div>
+            <label for="nameField">Name: </label>
+            <input type="text" id="nameField">
+        </div>
 
-        <label for="email1">Student e-mail 1:</label>
-        <input type="email" id="email1">
-        <br>
+        <div>
+            <label for="email1">Your e-mail:</label>
+            <input type="email" id="email1">
+        </div>
 
-        <label for="email2">Student e-mail 2:</label>
-        <input type="email" id="email2">
-        <br>
+        <div>
+            <label for="email2">Your collegue's e-mail:</label>
+            <input type="email" id="email2">
+        </div>
 
-        <label for="course">Course:</label>
-        <input type="text" id="course">
-        <br>
+        <div>
+            <label for="course">Course:</label>
+            <input type="text" id="course">
+        </div>
         
-        <label for="classNo">Class:</label>
-        <input type="text" id="classNo">
-        <br>
+        <div>
+            <label for="classNo">Your class:</label>
+            <input type="text" id="classNo">
+        </div>
 
-        <label for="classNo">Class:</label>
-        <input type="text" id="classNo">
-        <br>
-        
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+        <div>
+            <label for="classNo">Your colleague's class:</label>
+            <input type="text" id="classNo">
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
     </form>
     
 </body>
