@@ -1,4 +1,36 @@
 body{
-  background-color: rgb(39, 16, 16);
-  color: rgb(182, 88, 88);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 10%;
+}
+
+.button{
+  color: white;
+  width: 40px;
+  height: 10px;
+  background-color: rgb(15, 15, 102);
+  padding: 1%;
+  text-decoration: none;
+  border-radius: 8%;
+}
+
+.button a:link a:visited{
+  color:aqua;
+}
+
+.button a:hover{
+  color: green;
+}
+/*.button a:active*/
+
+footer{
+  position: fixed;
+  height: 10%;
+  background-color: rgb(30, 10, 102);
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  color: white;
 }

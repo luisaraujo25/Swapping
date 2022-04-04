@@ -28,3 +28,7 @@ def viewrequest(request, idReq):
         raise Http404("Request does not exist")
 
     return render(request, 'viewrequest.html', {'id': idReq, 'date': date})
+
+def importData(request):
+
+    return render(request, 'import.html')

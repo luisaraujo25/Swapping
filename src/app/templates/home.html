@@ -13,10 +13,21 @@
 
     </head>
     <body>
-        aufj
-        <div class="fb">
-            {{ data.date }}
+
+        
+        <div>
+            <h1>Welcome!</h1>
+            <p>Do you want to change classes with a friend?
+                File a request!
+            </p>
+            <a class="button" href="{% url 'make request' %}">Make a Request</a>
         </div>
+        
+        <footer>
+            <span>About</span>
+            <span>FAQs</span>
+            <span>Contacts</span>
+        </footer>
 
         <!--
             {% if var %}
