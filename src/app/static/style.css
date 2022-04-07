@@ -7,7 +7,7 @@ body{
 }
 
 body > :not(header):not(footer){
-  margin: 5px;
+  margin: 15px;
 }
 
 .button{

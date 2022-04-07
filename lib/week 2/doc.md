@@ -41,8 +41,11 @@ or directly throught the admin panel.
 
 - student(<u>id</u>, e-mail, name, up)
 - uc(<u>id</u>, name, code)
-- class(<u>id->student</u>, <u>id->uc</u>, number, schedule)
-- request(<u>id->student</u>, <u>id->uc</u>, date, conf1, conf2, st2, st2class)
+- class(<u>id</u>, number, schedule)
+- studentUC(<u>sID->student</u>, <u>ucID->uc</u>)
+- classUC(<u>cID->class</u>, <u>ucID->uc</u>)
+- studentClass(<u>sID->student</u>, <u>cID->class</u>)
+- request(<u>s1ID->student</u>,<u>s2ID->student</u>, date, confirmation_st1, confirmation_st2)
 
 
 ## Django Models

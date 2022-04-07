@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import *
+from .forms import *
+
 # Create your views here.
 
 #Unlike other frameworks, a view function in Django takes a request and returns a response (action) - request handlers
@@ -17,6 +19,12 @@ def home(request):
     return render(request, 'home.html')
 
 def request(request):
+
+    if request.method == 'POST':
+
+        if RequestForm(request.POST).is_valid():
+            return HttpResponseRedirect('/')
+
     return render(request,'request.html')
 
 def viewrequest(request, idReq):

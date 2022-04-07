@@ -29,6 +29,8 @@ O objetivo deste projeto é criar uma plataforma web que permita estudantes aute
 
 Meetings - Friday 2pm
 
+SEMANA 4 ABRIL MEETING SEXTA 16H
+
 E-mail - joao.pascoal.faria@gmail.com
 
 Django Tutorial - https://www.youtube.com/watch?v=rHux0gMZ3Eg
