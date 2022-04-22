@@ -3,6 +3,7 @@ from django.http import *
 from .models import *
 from .forms import *
 from .utils import *
+import datetime
 
 # Create your views here.
 
@@ -37,7 +38,23 @@ def request(request):
             if validateEmail(email1) == -1 or validateEmail(email2) == -1:
                 return HttpResponse("Invalid email(s)")
 
-            return HttpResponseRedirect('/')
+            else:
+                obj = Request()
+                up1 = getUp(email1) 
+                up2 = getUp(email2)
+                obj.st1ID = up1
+                obj.st2ID = up2
+                obj.confirmed1 = False
+                obj.confirmed2 = False
+                obj.date = datetime.datetime.now()
+                obj.uc = uc
+                obj.class1 = class1
+                obj.class2 = class2
+
+                #save obj in the db
+                obj.save()
+
+                return HttpResponseRedirect('/')
     # if a GET (or any other method) we'll create a blank form
     else:
         form = RequestForm()

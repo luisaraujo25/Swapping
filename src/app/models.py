@@ -44,13 +44,13 @@ from django.utils import timezone
 
 
 class Student(models.Model):
-    number = models.IntegerField()
+    up = models.IntegerField(primary_key = True)
     name = models.CharField(max_length=60)
     email = models.EmailField(max_length=25)
 
 class UC(models.Model):
     code = models.IntegerField()
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50, primary_key = True)
 
 class StudentUC(models.Model):
     student = models.ForeignKey("Student", on_delete=models.CASCADE)
