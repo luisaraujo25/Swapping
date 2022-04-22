@@ -15,40 +15,15 @@
 
     <form method="post">
 
-        <div>
-            <label for="nameField">Name: </label>
-            <input type="text" id="nameField">
+        <div class = "form">
+            {% csrf_token %}
+            {{ form }}
         </div>
-
-        <div>
-            <label for="email1">Your e-mail:</label>
-            <input type="email" id="email1">
-        </div>
-
-        <div>
-            <label for="email2">Your colleague's e-mail:</label>
-            <input type="email" id="email2">
-        </div>
-
-        <div>
-            <label for="course">Course:</label>
-            <input type="text" id="course">
-        </div>
-        
-        <div>
-            <label for="classNo">Your class:</label>
-            <input type="text" id="classNo">
-        </div>
-
-        <div>
-            <label for="classNo">Your colleague's class:</label>
-            <input type="text" id="classNo">
-        </div>
-
         <div>
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
         </div>
+
     </form>
     
 </body>

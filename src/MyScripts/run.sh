@@ -7,3 +7,6 @@ python manage.py runserver
 python manage.py check
 
 #http://localhost:8000/
+
+#Quit the server with CONTROL-C. Error: That port is already in use.
+sudo fuser -k 8000/tcp

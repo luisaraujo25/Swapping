@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import *
 from .models import *
 from .forms import *
+from .utils import *
 
 # Create your views here.
 
@@ -21,22 +22,37 @@ def home(request):
 def request(request):
 
     if request.method == 'POST':
+        # create a form instance and populate it with data from the request:
+        form = RequestForm(request.POST)
+        # check whether it's valid:
+        if form.is_valid():
 
-        if RequestForm(request.POST).is_valid():
+            name = form.cleaned_data['name']
+            email1 = form.cleaned_data['email1']
+            email2 = form.cleaned_data['email2']
+            uc = form.cleaned_data['uc']
+            class1 = form.cleaned_data['class1']
+            class2 = form.cleaned_data['class2']
+
+            if validateEmail(email1) == -1 or validateEmail(email2) == -1:
+                return HttpResponse("Invalid email(s)")
+
             return HttpResponseRedirect('/')
+    # if a GET (or any other method) we'll create a blank form
+    else:
+        form = RequestForm()
 
-    return render(request,'request.html')
+    return render(request, 'request.html', {'form': form})
 
 def viewrequest(request, idReq):
 
-    # try:
-    #     requests = SwapRequest.objects.get(id = idReq)
-    #     date = requests.date
-    # except SwapRequest.DoesNotExist:
-    #     raise Http404("Request does not exist")
+    try:
+        requests = SwapRequest.objects.get(id = idReq)
+        date = requests.date
+    except SwapRequest.DoesNotExist:
+        raise Http404("Request does not exist")
 
-    # return render(request, 'viewrequest.html', {'id': idReq, 'date': date})
-    return render('viewrequest.html')
+    return render(request, 'viewrequest.html', {'id': idReq, 'date': date})
 
 def importData(request):
 

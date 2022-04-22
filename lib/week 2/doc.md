@@ -7,7 +7,7 @@ To create one admin (SuperUser) it was used:
 
 `python manage.py createsuperuser`
 
-Username: admin
+Username: luisaaraujo
 
 E-mail address: lmpa.pt@gmail.com
 
