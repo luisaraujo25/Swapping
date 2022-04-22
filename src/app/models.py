@@ -46,6 +46,7 @@ from django.utils import timezone
 class Student(models.Model):
     number = models.IntegerField()
     name = models.CharField(max_length=60)
+    email = models.EmailField(max_length=25)
 
 class UC(models.Model):
     code = models.IntegerField()
@@ -54,20 +55,35 @@ class UC(models.Model):
 class StudentUC(models.Model):
     student = models.ForeignKey("Student", on_delete=models.CASCADE)
     uc = models.ForeignKey("UC", on_delete=models.CASCADE)
+    class Meta:
+        unique_together = (('student', 'uc'))
 
 class Class(models.Model):
     code = models.IntegerField()
+    number = models.IntegerField()
 
 class ClassUC(models.Model):
     uc = models.ForeignKey("UC", on_delete=models.CASCADE)
     cl = models.ForeignKey("Class", on_delete=models.CASCADE)
+    class Meta:
+        unique_together = (('uc','cl'))
+
 
 class ScheduleSlot(models.Model):
     weekDay = models.CharField(max_length=50)
     startTime = models.IntegerField()
     duration = models.IntegerField()
     typeClass = models.CharField(max_length=50) #Prática, Teórica, Lab
+    classUC = models.ForeignKey("classUC", on_delete=models.CASCADE)
 
 class Request(models.Model):
+    st1ID = models.ForeignKey("Student", on_delete=models.CASCADE, related_name = "request1", default = 0)
+    st2ID = models.ForeignKey("Student", on_delete=models.CASCADE, related_name = "request2", default = 0)
     confirmed1 = models.BooleanField()
     confirmed2 = models.BooleanField()
+    date = models.DateField(auto_now=True)
+    uc = models.ForeignKey("UC", on_delete=models.CASCADE)
+    class1 = models.ForeignKey("Class", on_delete=models.CASCADE, related_name = "class1", default = 0)
+    class1 = models.ForeignKey("Class", on_delete=models.CASCADE, related_name = "class2", default = 0)
+    class Meta:
+        unique_together = (('st1ID','st2ID'))

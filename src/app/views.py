@@ -29,13 +29,14 @@ def request(request):
 
 def viewrequest(request, idReq):
 
-    try:
-        requests = SwapRequest.objects.get(id = idReq)
-        date = requests.date
-    except SwapRequest.DoesNotExist:
-        raise Http404("Request does not exist")
+    # try:
+    #     requests = SwapRequest.objects.get(id = idReq)
+    #     date = requests.date
+    # except SwapRequest.DoesNotExist:
+    #     raise Http404("Request does not exist")
 
-    return render(request, 'viewrequest.html', {'id': idReq, 'date': date})
+    # return render(request, 'viewrequest.html', {'id': idReq, 'date': date})
+    return render('viewrequest.html')
 
 def importData(request):
 

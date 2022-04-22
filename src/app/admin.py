@@ -6,4 +6,3 @@ from app.models import *
 admin.site.register(Student)
 admin.site.register(UC)
 admin.site.register(Class)
-admin.site.register(SwapRequest)
