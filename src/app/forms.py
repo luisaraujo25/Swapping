@@ -1,5 +1,5 @@
 from django import forms
-from .models import UC
+from .models import UC, Class
 
 class RequestForm(forms.Form):
 
@@ -7,5 +7,5 @@ class RequestForm(forms.Form):
     email1 = forms.EmailField(required=True)
     email2 = forms.EmailField(required=True)
     uc = forms.ModelChoiceField(queryset = UC.objects.all(), required=True )
-    class1 = forms.IntegerField(required=True)
-    class2 = forms.IntegerField(required=True)
+    class1 = forms.ModelChoiceField(queryset = Class.objects.all(), required=True)
+    class2 = forms.ModelChoiceField(queryset = Class.objects.all(), required=True)

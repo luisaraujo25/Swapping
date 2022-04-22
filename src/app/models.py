@@ -65,6 +65,9 @@ class Class(models.Model):
     code = models.IntegerField()
     number = models.IntegerField()
 
+    def __str__(self):
+        return str(self.number)
+
 class ClassUC(models.Model):
     uc = models.ForeignKey("UC", on_delete=models.CASCADE)
     cl = models.ForeignKey("Class", on_delete=models.CASCADE)
