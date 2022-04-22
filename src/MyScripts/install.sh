@@ -15,3 +15,4 @@ pip install djangorestframework
 sudo apt-get install libpq-dev
 pipenv shell
 pip install psycopg2
+pip install python-csv
