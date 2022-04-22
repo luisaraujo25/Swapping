@@ -31,7 +31,7 @@ or directly throught the admin panel.
 
 ## UML
 
-![uml](uml.png)
+![uml](LogicalView.png)
 
 ## State Diagram for Requests
 
@@ -41,12 +41,20 @@ or directly throught the admin panel.
 
 - student(<u>id</u>, e-mail, name, up)
 - uc(<u>id</u>, name, code)
-- class(<u>id</u>, number, schedule)
 - studentUC(<u>sID->student</u>, <u>ucID->uc</u>)
+- class(<u>id</u>, number, code)
 - classUC(<u>cID->class</u>, <u>ucID->uc</u>)
 - studentClass(<u>sID->student</u>, <u>cID->class</u>)
-- request(<u>s1ID->student</u>,<u>s2ID->student</u>, date, confirmation_st1, confirmation_st2)
+- scheduleSlot(<u>id</u>, weekDay, startTime, duration, typeClass, id->classUC)
+- request(<u>s1ID->student</u>,<u>s2ID->student</u>, date, confirmation_st1, confirmation_st2, id->uc, class1->class, class2->class)
 
+
+uc
+* - *
+1 - *
+slot
+inicio
+class -> number para code
 
 ## Django Models
 
