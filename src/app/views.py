@@ -53,14 +53,12 @@ def request(request):
                 #save obj in the db
                 obj.save()
 
-                sendEmail(email1)
                 return HttpResponseRedirect('/')
     # if a GET (or any other method) we'll create a blank form
     else:
         form = RequestForm()
 
-    obj = Request.objects.get(pk=6)
-    return render(request, 'request.html', {'form': form, 'obj': obj})
+    return render(request, 'request.html', {'form': form})
 
 def viewrequest(request, idReq):
 

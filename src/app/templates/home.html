@@ -7,17 +7,15 @@
         
         {% load static %}
         <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-        
         <link rel="icon" type="image/x-icon" href="../static/img/favicon.ico">
+        
         <title>Home</title>
 
     </head>
     <body>
 
-        <header>
-            <a href="">Login</a>
-        </header>
-        
+        {% include "default.html" %}
+
         <div>
             <h1>Welcome!</h1>
             <p>Do you want to change classes with a friend?
@@ -25,12 +23,6 @@
             </p>
             <a class="button" href="{% url 'make request' %}">Make a Request</a>
         </div>
-        
-        <footer>
-            <a href="">About</a>
-            <a href="">FAQs</a>
-            <a href="">Contacts</a>
-        </footer>
 
         <!--
             {% if var %}

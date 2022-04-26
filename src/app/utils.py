@@ -19,14 +19,3 @@ def getUp(mail):
         up = up + i
     
     return int(up)
-
-def sendEmail(email):
-    send_mail(
-    'Class Exchange Request',
-    'Troca de turma.',
-    'swappingfeup@gmail.com',
-    [email],
-    fail_silently=False,
-)
-
-sendEmail("qfrabray300@gmail.com")

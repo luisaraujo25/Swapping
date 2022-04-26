@@ -7,7 +7,10 @@ body{
 }
 
 body > :not(header):not(footer){
-  margin: 15px;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .button{
@@ -26,15 +29,16 @@ header{
   right: 0;
   left: 0;
   background-color: rgb(30, 10, 102);
-  height: 50px;
+  height: 60px;
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: space-between;
   padding: 5px;
 }
 
 header > a{
   margin-right: 3%;
+  margin-left: 2%;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -43,6 +47,15 @@ a{
   text-decoration: none;
 }
 
+a:hover{
+  color:rgb(216, 216, 216);
+}
+/*.button a:active*/
+
+.title{
+  font-family: 'Philosopher', sans-serif;
+  font-size: 200%;
+}
 
 footer{
   position: fixed;
@@ -68,10 +81,6 @@ footer a:link, a:visited{
   color:rgb(255, 255, 255);
 }
 
-a:hover{
-  color:rgb(216, 216, 216);
-}
-/*.button a:active*/
 
 form > div{
   padding: 10px;
