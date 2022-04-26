@@ -1,4 +1,6 @@
 import re
+from django.core.mail import send_mail
+
 
 def validateEmail(mail):
     valid = re.search("^up[0-9]{9}@.+\.up\.pt$", mail)
@@ -18,5 +20,13 @@ def getUp(mail):
     
     return int(up)
 
+def sendEmail(email):
+    send_mail(
+    'Class Exchange Request',
+    'Troca de turma.',
+    'swappingfeup@gmail.com',
+    [email],
+    fail_silently=False,
+)
 
-# print(getUp("up201904996@fe.up.pt"))
+sendEmail("qfrabray300@gmail.com")

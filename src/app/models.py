@@ -53,7 +53,7 @@ class Request(models.Model):
     st2ID = models.ForeignKey("Student", on_delete=models.CASCADE, related_name = "request2", default = 0)
     confirmed1 = models.BooleanField()
     confirmed2 = models.BooleanField()
-    date = models.DateField(auto_now=True)
+    date = models.DateField(auto_now_add=True)
     uc = models.ForeignKey("UC", on_delete=models.CASCADE)
     class1 = models.ForeignKey("Class", on_delete=models.CASCADE, related_name = "class1", default = 0)
     class2 = models.ForeignKey("Class", on_delete=models.CASCADE, related_name = "class2", default = 0)

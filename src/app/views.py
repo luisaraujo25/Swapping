@@ -45,7 +45,7 @@ def request(request):
                 obj.st2ID = Student.objects.get(pk=up2)
                 obj.confirmed1 = False
                 obj.confirmed2 = False
-                obj.date = datetime.now()
+                # obj.date = datetime.now()
                 obj.uc = uc
                 obj.class1 = class1
                 obj.class2 = class2
@@ -53,12 +53,14 @@ def request(request):
                 #save obj in the db
                 obj.save()
 
+                sendEmail(email1)
                 return HttpResponseRedirect('/')
     # if a GET (or any other method) we'll create a blank form
     else:
         form = RequestForm()
 
-    return render(request, 'request.html', {'form': form})
+    obj = Request.objects.get(pk=6)
+    return render(request, 'request.html', {'form': form, 'obj': obj})
 
 def viewrequest(request, idReq):
 
