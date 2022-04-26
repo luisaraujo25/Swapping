@@ -3,7 +3,7 @@ from django.http import *
 from .models import *
 from .forms import *
 from .utils import *
-import datetime
+from datetime import datetime
 
 # Create your views here.
 
@@ -28,7 +28,6 @@ def request(request):
         # check whether it's valid:
         if form.is_valid():
 
-            name = form.cleaned_data['name']
             email1 = form.cleaned_data['email1']
             email2 = form.cleaned_data['email2']
             uc = form.cleaned_data['uc']
@@ -42,11 +41,11 @@ def request(request):
                 obj = Request()
                 up1 = getUp(email1) 
                 up2 = getUp(email2)
-                obj.st1ID = up1
-                obj.st2ID = up2
+                obj.st1ID = Student.objects.get(pk=up1)
+                obj.st2ID = Student.objects.get(pk=up2)
                 obj.confirmed1 = False
                 obj.confirmed2 = False
-                obj.date = datetime.datetime.now()
+                obj.date = datetime.now()
                 obj.uc = uc
                 obj.class1 = class1
                 obj.class2 = class2

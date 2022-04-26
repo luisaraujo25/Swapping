@@ -15,3 +15,8 @@ def getUp(mail):
         elif i == '@':
             break
         up = up + i
+    
+    return int(up)
+
+
+# print(getUp("up201904996@fe.up.pt"))

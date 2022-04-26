@@ -31,3 +31,8 @@ python manage.py runserver
 
 #SEE TABLES
 python manage.py sqlmigrate app 0001
+
+#DROP TABLES AND "REFRESH" WHEN MIGRATING IS NOT UPDATING
+DROP TABLE {app_name}_{model_name}
+python manage.py migrate app zero
+python manage.py migrate --fake-initial

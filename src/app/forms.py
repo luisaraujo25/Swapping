@@ -3,7 +3,7 @@ from .models import UC, Class
 
 class RequestForm(forms.Form):
 
-    name = forms.CharField(max_length=60, required=True)
+    # name = forms.CharField(max_length=60, required=False)
     email1 = forms.EmailField(required=True)
     email2 = forms.EmailField(required=True)
     uc = forms.ModelChoiceField(queryset = UC.objects.all(), required=True )
