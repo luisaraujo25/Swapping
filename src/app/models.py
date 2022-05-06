@@ -51,11 +51,14 @@ class ScheduleSlot(models.Model):
 class Request(models.Model):
     st1ID = models.ForeignKey("Student", on_delete=models.CASCADE, related_name = "request1", default = 0)
     st2ID = models.ForeignKey("Student", on_delete=models.CASCADE, related_name = "request2", default = 0)
-    confirmed1 = models.BooleanField()
-    confirmed2 = models.BooleanField()
+    confirmed1 = models.BooleanField(default = False)
+    confirmed2 = models.BooleanField(default = False)
     date = models.DateField(auto_now_add=True)
     uc = models.ForeignKey("UC", on_delete=models.CASCADE)
+    token1 = models.CharField(max_length=30, null=True)
+    token2 = models.CharField(max_length=30, null=True)
     class1 = models.ForeignKey("Class", on_delete=models.CASCADE, related_name = "class1", default = 0)
     class2 = models.ForeignKey("Class", on_delete=models.CASCADE, related_name = "class2", default = 0)
-    class Meta:
-        unique_together = (('st1ID','st2ID'))
+
+    # class Meta:
+    #     unique_together = (('st1ID','st2ID'))

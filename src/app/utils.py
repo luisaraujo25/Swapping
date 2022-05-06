@@ -1,6 +1,10 @@
 import re
-from django.core.mail import send_mail
-
+import datetime
+from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
+from django.core.mail import EmailMessage
+from django.template.loader import render_to_string
+from django.contrib.sites.shortcuts import get_current_site
+from django.utils.encoding import force_bytes
 
 def validateEmail(mail):
     valid = re.search("^up[0-9]{9}@.+\.up\.pt$", mail)
@@ -19,3 +23,29 @@ def getUp(mail):
         up = up + i
     
     return int(up)
+
+
+def tokenGenerator(id):
+    token = str(id) + str(datetime.datetime.now().timestamp())
+    return token
+
+
+def saveToken(uid, token):
+    id = force_text(urlsafe_base64_decode(uid))
+
+def sendEmail(r, user, request, token, email, first):
+
+    site = get_current_site(r)
+    subject = 'Confirm your request'
+    message = render_to_string('email.html', {
+        'user': user,
+        'domain': site.domain,
+        'rid': urlsafe_base64_encode(force_bytes(request.id)),
+        'token': token,
+        'first': first,
+    })
+    
+    email = EmailMessage(
+        mail_subject, message, to=[email]
+    )
+    email.send()

@@ -1,0 +1,11 @@
+{% autoescape on %}
+    Confirm your request, {{ user.name }}
+    <br>
+    Click on the link below:
+    <br>
+    {% if first %}
+    http://{{ domain }}{% url 'confirmRequest1' ridb64=rid token=token %}
+    {% else %}
+    http://{{ domain }}{% url 'confirmRequest2' ridb64=rid token=token %}
+    {% endif %}
+{% endautoescape %}

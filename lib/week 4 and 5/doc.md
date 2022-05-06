@@ -30,3 +30,9 @@ https://medium.com/@frfahim/django-registration-with-confirmation-email-bb5da011
 Num request st1 e st2 nao deviam ser unique (chaves estrangeiras) porque assim n podem haver varios pedidos q envolvem os mesmos estudantes em turmas diferentes
 
 adicionar constraints para st1 ser diferente de st2 e class1 ser diferente de class2
+
+
+autoescape¶
+Controls the current auto-escaping behavior. This tag takes either on or off as an argument and that determines whether auto-escaping is in effect inside the block. The block is closed with an endautoescape ending tag.
+
+When auto-escaping is in effect, all variable content has HTML escaping applied to it before placing the result into the output (but after any filters have been applied). This is equivalent to manually applying the escape filter to each variable.

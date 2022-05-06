@@ -3,7 +3,7 @@ from django.http import *
 from .models import *
 from .forms import *
 from .utils import *
-from datetime import datetime
+from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 
 # Create your views here.
 
@@ -34,17 +34,22 @@ def request(request):
                 obj = Request()
                 up1 = getUp(email1) 
                 up2 = getUp(email2)
+
+                #generate tokens
+                token1 = tokenGenerator(up1)
+
                 obj.st1ID = Student.objects.get(pk=up1)
                 obj.st2ID = Student.objects.get(pk=up2)
-                obj.confirmed1 = False
-                obj.confirmed2 = False
                 # obj.date = datetime.now()
                 obj.uc = uc
+                obj.token1 = token1
                 obj.class1 = class1
                 obj.class2 = class2
 
                 #save obj in the db
                 obj.save()
+
+                sendEmail(request, Student.objects.get(pk=up1), obj, token1, email1, True)
 
                 return HttpResponseRedirect('/')
     # if a GET (or any other method) we'll create a blank form
@@ -66,3 +71,32 @@ def viewrequest(request, idReq):
 def importData(request):
 
     return render(request, 'import.html')
+
+def confirmRequest1(r, ridb64, token):
+    
+    idRequest = force_text(urlsafe_base64_decode(ridb64))
+    request = Request.objects.get(pk = idRequest)
+
+    if request != None and token == request.token1:
+
+        request.confirmed1 = True
+        st2 = Student.objects.get(pk=request.st2ID)
+        token2 = tokenGenerator(st2.up)
+        request.token2 = token2
+        request.save()
+        sendEmail(r, st2, request, token2, st2.email, False)
+    else:
+        HttpResponse("Your request has already been confirmed")
+        
+
+
+def confirmRequest2(r, ridb64, token):
+    
+    idRequest = force_text(urlsafe_base64_decode(ridb64))
+    request = Request.objects.get(pk = idRequest)
+
+    if request != None and token == request.token2:
+        HttpResponse("Classes swapped!")
+        #FALTA ALTERAR OS DADOS AGORA
+    else:
+        HttpResponse("Unable to conclude your request")
