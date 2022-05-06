@@ -94,10 +94,11 @@ def confirmRequest1(request, ridb64, token):
 def confirmRequest2(request, ridb64, token):
     
     idRequest = force_bytes(urlsafe_base64_decode(ridb64))
-    request = Request.objects.get(pk = idRequest)
+    r = Request.objects.get(pk = idRequest)
 
     if request != None and token == request.token2:
+        #CHANGE DATA
+        r.confirmed2 = True
         return HttpResponse("Classes swapped!")
-        #FALTA ALTERAR OS DADOS AGORA
     else:
         return HttpResponse("Unable to conclude your request")

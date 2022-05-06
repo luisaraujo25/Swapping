@@ -21,6 +21,11 @@ class UC(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields = ['code'], name="codeUnique")
+        ]
+
 class StudentUC(models.Model):
     student = models.ForeignKey("Student", on_delete=models.CASCADE)
     uc = models.ForeignKey("UC", on_delete=models.CASCADE)
@@ -33,6 +38,11 @@ class Class(models.Model):
 
     def __str__(self):
         return str(self.number)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields = ['number'], name="classNoUnique")
+        ]
 
 class ClassUC(models.Model):
     uc = models.ForeignKey("UC", on_delete=models.CASCADE)

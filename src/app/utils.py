@@ -52,3 +52,24 @@ def sendEmail(r, user, request, token, email, first):
     connection.open()
     email.send()
     connection.close()
+
+def checkClassUC(cl, uc):
+
+    obj = ClassUC.objects.get(cl = cl, uc = uc)
+    if obj == None:
+        return False
+    else:
+        return True
+    
+def checkStudents(s1, s2):
+    if s1.up == s2.up:
+        return False
+    else:
+        return True
+
+def checkStudentUC(st, uc):
+    obj = StudentUC.objects.get(student = st, uc = uc)
+    if obj == None:
+        return False
+    else:
+        return True
