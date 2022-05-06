@@ -1,7 +1,7 @@
 import re
 import datetime
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
-from django.core.mail import EmailMessage
+from django.core import mail
 from django.template.loader import render_to_string
 from django.contrib.sites.shortcuts import get_current_site
 from django.utils.encoding import force_bytes
@@ -45,7 +45,10 @@ def sendEmail(r, user, request, token, email, first):
         'first': first,
     })
     
-    email = EmailMessage(
-        mail_subject, message, to=[email]
+    email = mail.EmailMessage(
+        subject, message, to=[email]
     )
+    connection = mail.get_connection()
+    connection.open()
     email.send()
+    connection.close()
