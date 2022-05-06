@@ -41,7 +41,7 @@ def sendEmail(r, user, request, token, email, first):
         'user': user,
         'domain': site.domain,
         'rid': urlsafe_base64_encode(force_bytes(request.id)),
-        'token': token,
+        'tokenV': token,
         'first': first,
     })
     

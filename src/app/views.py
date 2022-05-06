@@ -72,31 +72,32 @@ def importData(request):
 
     return render(request, 'import.html')
 
-def confirmRequest1(r, ridb64, token):
+def confirmRequest1(request, ridb64, token):
     
-    idRequest = force_text(urlsafe_base64_decode(ridb64))
-    request = Request.objects.get(pk = idRequest)
+    idRequest = force_bytes(urlsafe_base64_decode(ridb64))
+    r = Request.objects.get(pk = idRequest)
 
-    if request != None and token == request.token1:
+    if r != None and token == r.token1:
 
-        request.confirmed1 = True
-        st2 = Student.objects.get(pk=request.st2ID)
+        r.confirmed1 = True
+        st2 = r.st2ID
         token2 = tokenGenerator(st2.up)
-        request.token2 = token2
-        request.save()
-        sendEmail(r, st2, request, token2, st2.email, False)
+        r.token2 = token2
+        r.save()
+        sendEmail(request, st2, r, token2, st2.email, False)
+        return HttpResponse("confirmed")
     else:
-        HttpResponse("Your request has already been confirmed")
+        return HttpResponse("error")
         
 
 
-def confirmRequest2(r, ridb64, token):
+def confirmRequest2(request, ridb64, token):
     
-    idRequest = force_text(urlsafe_base64_decode(ridb64))
+    idRequest = force_bytes(urlsafe_base64_decode(ridb64))
     request = Request.objects.get(pk = idRequest)
 
     if request != None and token == request.token2:
-        HttpResponse("Classes swapped!")
+        return HttpResponse("Classes swapped!")
         #FALTA ALTERAR OS DADOS AGORA
     else:
-        HttpResponse("Unable to conclude your request")
+        return HttpResponse("Unable to conclude your request")
