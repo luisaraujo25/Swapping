@@ -22,6 +22,9 @@ def __str__(self):
 email: swappingfeup@gmail.com
 passe: swapclasses
 
+https://medium.com/@frfahim/django-registration-with-confirmation-email-bb5da011e4ef
+
+
 ## Duvidas
 
 Num request st1 e st2 nao deviam ser unique (chaves estrangeiras) porque assim n podem haver varios pedidos q envolvem os mesmos estudantes em turmas diferentes

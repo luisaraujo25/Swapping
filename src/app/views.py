@@ -11,13 +11,6 @@ from datetime import datetime
 #What the user sees is a template
 
 def home(request):
-    # return HttpResponse("Hello World")
-
-    # b = UC(name="ESOF")
-    # b.save()
-    # b = UC.objects.create(name='test')
-    # b.save()
-    # data = UC.objects.all()
     return render(request, 'home.html')
 
 def request(request):
