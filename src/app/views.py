@@ -26,14 +26,14 @@ def request(request):
             uc = form.cleaned_data['uc']
             class1 = form.cleaned_data['class1']
             class2 = form.cleaned_data['class2']
-
-            if validateEmail(email1) == -1 or validateEmail(email2) == -1:
-                return HttpResponse("Invalid email(s)")
+            up1 = getUp(email1) 
+            up2 = getUp(email2)
+            # return HttpResponse(up2)
+            if validateRequest(email1, email2, class1, class2, uc, up1, up2) == -1:
+                return HttpResponse("Invalid Request")
 
             else:
                 obj = Request()
-                up1 = getUp(email1) 
-                up2 = getUp(email2)
 
                 #generate tokens
                 token1 = tokenGenerator(up1)

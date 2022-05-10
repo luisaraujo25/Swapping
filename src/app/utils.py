@@ -5,6 +5,7 @@ from django.core import mail
 from django.template.loader import render_to_string
 from django.contrib.sites.shortcuts import get_current_site
 from django.utils.encoding import force_bytes
+from .models import *
 
 def validateEmail(mail):
     valid = re.search("^up[0-9]{9}@.+\.up\.pt$", mail)
@@ -58,7 +59,8 @@ def checkClassUC(cl, uc):
         return True
     
 def checkStudents(s1, s2):
-    if s1.up == s2.up:
+
+    if s1 == s2:
         return False
     else:
         return True
@@ -69,3 +71,28 @@ def checkStudentUC(st, uc):
         return False
     else:
         return True
+
+# def checkStudentClass(st,cl):
+#     obj = StudentUC.objects.get(student = st,  = uc)
+#     if obj == None:
+#         return False
+#     else:
+#         return True
+
+def validateRequest(email1, email2, cl1, cl2, uc, st1, st2):
+
+    s1 = Student.objects.get(pk = st1)
+    s2 = Student.objects.get(pk = st2)
+
+    if validateEmail(email1) == -1 or validateEmail(email2) == -1:
+        return -1
+    if checkClassUC(cl1,uc) == False or checkClassUC(cl2,uc) == False:
+        return -1
+    if checkStudents(s1,s2) == False:
+        return -1
+    if checkStudentUC(s1, uc) == False or checkStudentUC(s2, uc) == False:
+        return -1
+    # if checkStudentClass(s1, cl1) == False or checkStudentClass(s2, cl2):
+    #     return -1
+    else:
+        return 0
