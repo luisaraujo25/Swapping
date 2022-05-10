@@ -29,10 +29,6 @@ def tokenGenerator(id):
     token = str(id) + str(datetime.datetime.now().timestamp())
     return token
 
-
-def saveToken(uid, token):
-    id = force_text(urlsafe_base64_decode(uid))
-
 def sendEmail(r, user, request, token, email, first):
 
     site = get_current_site(r)
