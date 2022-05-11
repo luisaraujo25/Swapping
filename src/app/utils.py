@@ -52,12 +52,13 @@ def sendEmail(r, user, request, token, email, first):
 
 def checkClassUC(cl, uc):
 
-    obj = ClassUC.objects.get(cl = cl, uc = uc)
-    if obj == None:
+    try:
+        ClassUC.objects.get(cl = cl, uc = uc)
+    except:
         return False
-    else:
-        return True
-    
+
+    return True
+
 def checkStudents(s1, s2):
 
     if s1 == s2:
@@ -66,12 +67,25 @@ def checkStudents(s1, s2):
         return True
 
 def checkStudentUC(st, uc):
-    obj = StudentUC.objects.get(student = st, uc = uc)
-    if obj == None:
+
+    try:
+        StudentUC.objects.get(student = st, uc = uc)
+    except:
+        return False
+    return True
+
+def checkClass(cl1,cl2):
+    if cl1 == cl2:
         return False
     else:
         return True
 
+def checkStudent(st):
+    try:
+        Student.objects.get(pk = st)
+    except:
+        return False
+    return True
 # def checkStudentClass(st,cl):
 #     obj = StudentUC.objects.get(student = st,  = uc)
 #     if obj == None:
@@ -81,16 +95,18 @@ def checkStudentUC(st, uc):
 
 def validateRequest(email1, email2, cl1, cl2, uc, st1, st2):
 
-    s1 = Student.objects.get(pk = st1)
-    s2 = Student.objects.get(pk = st2)
-
+    
+    if checkStudent(st1) == False or checkStudent(st2) == False:
+        return -1
     if validateEmail(email1) == -1 or validateEmail(email2) == -1:
         return -1
     if checkClassUC(cl1,uc) == False or checkClassUC(cl2,uc) == False:
         return -1
-    if checkStudents(s1,s2) == False:
+    if checkStudents(st1,st2) == False:
         return -1
-    if checkStudentUC(s1, uc) == False or checkStudentUC(s2, uc) == False:
+    if checkStudentUC(st1, uc) == False or checkStudentUC(s2, uc) == False:
+        return -1
+    if checkClass(cl1, cl2) == False:
         return -1
     # if checkStudentClass(s1, cl1) == False or checkStudentClass(s2, cl2):
     #     return -1
@@ -98,6 +114,6 @@ def validateRequest(email1, email2, cl1, cl2, uc, st1, st2):
         return 0
 
 def fileHandler(file):
-    f = open('data.txt', 'wb+')
+    f = open('app/files/data.csv', 'wb+')
     for info in file.chunks():
         f.write(info)

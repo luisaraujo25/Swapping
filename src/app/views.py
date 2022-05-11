@@ -76,7 +76,7 @@ def importData(request):
         if form.is_valid():
             # fileHandler(request.FILES['file'])
             fileHandler(request.FILES['file'])
-            HttpResponse("uploaded")
+            return HttpResponse("uploaded")
     else:
         form = ImportData()
     
