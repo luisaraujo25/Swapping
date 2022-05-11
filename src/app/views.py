@@ -1,3 +1,4 @@
+from ast import Import
 from django.shortcuts import render
 from django.http import *
 from .models import *
@@ -70,7 +71,17 @@ def viewrequest(request, idReq):
 
 def importData(request):
 
-    return render(request, 'import.html')
+    if request.method == 'POST':
+        form = ImportData(request.POST, request.FILES)
+        if form.is_valid():
+            # fileHandler(request.FILES['file'])
+            fileHandler(request.FILES['file'])
+            HttpResponse("uploaded")
+    else:
+        form = ImportData()
+    
+    return render(request, 'import.html', {'form': form})
+
 
 def confirmRequest1(request, ridb64, token):
     

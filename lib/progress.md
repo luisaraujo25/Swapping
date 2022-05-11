@@ -43,3 +43,9 @@ Wireframes: https://docs.google.com/document/u/2/d/e/2PACX-1vSGjJUvGKDjAfjxnFitf
 
 Actors and User Stories:
 https://web.fe.up.pt/~ssn/wiki/teach/lbaw/202122/artefacts/a02
+
+
+ADD:
+TURMAS
+
+OPÇOES DE UPLOAD

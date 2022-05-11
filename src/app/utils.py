@@ -96,3 +96,8 @@ def validateRequest(email1, email2, cl1, cl2, uc, st1, st2):
     #     return -1
     else:
         return 0
+
+def fileHandler(file):
+    f = open('data.txt', 'wb+')
+    for info in file.chunks():
+        f.write(info)
