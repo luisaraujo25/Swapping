@@ -114,3 +114,12 @@ def confirmRequest2(request, ridb64, token):
         return HttpResponse("Classes swapped!")
     else:
         return HttpResponse("Unable to conclude your request")
+
+def faqs(request):
+    return render(request, 'faqs.html')
+
+def about(request):
+    return render(request, 'about.html')
+
+def contacts(request):
+    return render(request, 'contacts.html')
