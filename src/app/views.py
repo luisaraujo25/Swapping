@@ -83,6 +83,11 @@ def importData(request):
         if form.is_valid():
             # fileHandler(request.FILES['file'])
             fileHandler(request.FILES['file'])
+            fileHandler(request.FILES['file2'])
+            fileHandler(request.FILES['file3'])
+            fileHandler(request.FILES['file4'])
+            fileHandler(request.FILES['file5'])
+            fileHandler(request.FILES['file6'])
             return HttpResponse("uploaded")
     else:
         form = ImportData()

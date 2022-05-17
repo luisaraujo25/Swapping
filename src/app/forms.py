@@ -10,5 +10,10 @@ class RequestForm(forms.Form):
     class2 = forms.ModelChoiceField(queryset = Class.objects.all(), required=True)
     
 class ImportData(forms.Form):
-    file = forms.FileField(help_text='max. 42 megabytes')
+    file = forms.FileField(help_text='max. 40 megabytes')
+    file2 = forms.FileField(help_text='max. 40 megabytes')
+    file3 = forms.FileField(help_text='max. 40 megabytes')
+    file4 = forms.FileField(help_text='max. 40 megabytes')
+    file5 = forms.FileField(help_text='max. 40 megabytes')
+    file6 = forms.FileField(help_text='max. 40 megabytes')
     

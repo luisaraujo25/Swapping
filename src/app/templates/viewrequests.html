@@ -25,6 +25,7 @@
             <th>Class Student 2</th>
             <th>Confirmed</th>
             <th>UC</th>
+            <th>Status</th>
         </tr>
         {% for req in requests %}
             <tr>
@@ -44,7 +45,11 @@
                     <td><img src="{% static 'img/uncheck.png' %}" alt="confirmed" width=20 height=20></td>
                 {% endif %}
                 <td>{{ req.uc.name }}</td>
-
+                {% if req.confirmed1 and req.confirmed2 %}
+                    <td>Concluded</td>
+                {% else %}
+                    <td>In Progress</td>
+                {% endif %}
             </tr>
         {% endfor %}
     </table>
