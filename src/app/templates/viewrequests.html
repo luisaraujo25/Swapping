@@ -15,20 +15,37 @@
 
     {% include "default.html" %}
 
-    <table>
-        <th>
-            <li>ID</li>
-            <li></li>
-        </th>
+    <table class="requestsTable">
+        <tr>
+            <th>ID</th>
+            <th>Student 1</th>
+            <th>Class Student 1</th>
+            <th>Confirmed</th>
+            <th>Student 2</th>
+            <th>Class Student 2</th>
+            <th>Confirmed</th>
+            <th>UC</th>
+        </tr>
         {% for req in requests %}
-            <ul>
-                <li>{{ req.id }}</li>
-                <li>{{ req.id }}</li>
-                <li>{{ req.id }}</li>
-                <li>{{ req.id }}</li>
-                <li>{{ req.id }}</li>
+            <tr>
+                <td>{{ req.id }}</td>
+                <td>{{ req.st1ID.name }}</td>
+                <td>{{ req.class1.number }}</td>
+                {% if req.confirmed1 %}
+                    <td><img src="{% static 'img/check.png' %}" alt="confirmed" width=20 height=20></td>
+                {% else %}
+                    <td><img src="{% static 'img/uncheck.png' %}" alt="confirmed" width=20 height=20></td>
+                {% endif %}
+                <td>{{ req.st2ID.name }}</td>
+                <td>{{ req.class2.number }}</td>
+                {% if req.confirmed2 %}
+                    <td><img src="{% static 'img/check.png' %}" alt="confirmed" width=20 height=20></td>
+                {% else %}
+                    <td><img src="{% static 'img/uncheck.png' %}" alt="confirmed" width=20 height=20></td>
+                {% endif %}
+                <td>{{ req.uc.name }}</td>
 
-            </ul>
+            </tr>
         {% endfor %}
     </table>
     

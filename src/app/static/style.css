@@ -91,3 +91,7 @@ a:hover{
   color:rgb(216,216,216);
 }
 /*.button a:active*/
+
+.requestsTable{
+  margin: 2%;
+}
