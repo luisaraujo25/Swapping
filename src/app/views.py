@@ -59,15 +59,22 @@ def request(request):
 
     return render(request, 'request.html', {'form': form})
 
+def viewrequests(request):
+
+    requests = Request.objects.all()
+
+    return render(request, 'viewrequests.html', {'requests': requests})
+
 def viewrequest(request, idReq):
 
     try:
-        requests = SwapRequest.objects.get(id = idReq)
+        requests = Request.objects.get(id = idReq)
         date = requests.date
-    except SwapRequest.DoesNotExist:
+    except Request.DoesNotExist:
         raise Http404("Request does not exist")
 
     return render(request, 'viewrequest.html', {'id': idReq, 'date': date})
+
 
 def importData(request):
 

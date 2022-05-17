@@ -10,7 +10,7 @@ body > :not(header):not(footer){
   margin-left: 3%;
   margin-right: 3%;
   margin-top: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
 
 .button{
@@ -55,7 +55,7 @@ a{
 
 footer{
   position: fixed;
-  height: 8%;
+  height: 9%;
   background-color: rgb(30, 10, 102);
   bottom: 0px;
   left: 0px;
