@@ -29,8 +29,10 @@ class UC(models.Model):
 class StudentUC(models.Model):
     student = models.ForeignKey("Student", on_delete=models.CASCADE)
     uc = models.ForeignKey("UC", on_delete=models.CASCADE)
+    cl = models.ForeignKey("Class", on_delete=models.CASCADE)
+
     class Meta:
-        unique_together = (('student', 'uc'))
+        unique_together = (('student', 'uc', 'cl'))
 
 class Class(models.Model):
     number = models.IntegerField()

@@ -123,6 +123,19 @@ def confirmRequest2(request, ridb64, token):
         #CHANGE DATA
         r.confirmed2 = True
         r.save()
+        cl1 = r.class1
+        cl2 = r.class2
+        st1 = r.st1ID
+        st2 = r.st2ID
+        uc = r.uc
+        stClassUc1 = StudentUC.objects.get(cl = cl1, student = st1, uc = uc)
+        stClassUc2 = StudentUC.objects.get(cl = cl2, student = st2, uc = uc)
+
+        stClassUc1.cl = cl2
+        stClassUc2.cl = cl1
+
+        stClassUc1.save()
+        stClassUc2.save()
         return HttpResponse("Classes swapped!")
     else:
         return HttpResponse("Unable to conclude your request")

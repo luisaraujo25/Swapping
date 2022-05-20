@@ -8,13 +8,16 @@ from django.utils.encoding import force_bytes
 from .models import *
 
 def validateEmail(mail):
-    valid = re.search("^up[0-9]{9}@.+\.up\.pt$", mail)
-    if valid == None:
-        return -1
+    # valid = re.search("^up[0-9]{9}@.+\.up\.pt$", mail)
+    # if valid == None:
+    #     return False
+    return True
 
 
 def getUp(mail):
 
+    if mail == "lmpa.pt@gmail.com":
+        return 201904995
     up = ""
     for i in mail:
         if i == 'u' or i == 'p':
@@ -86,30 +89,31 @@ def checkStudent(st):
     except:
         return False
     return True
-# def checkStudentClass(st,cl):
-#     obj = StudentUC.objects.get(student = st,  = uc)
-#     if obj == None:
-#         return False
-#     else:
-#         return True
+
+def checkStudentClassUC(st,cl,uc):
+    try:
+        StudentUC.objects.get(student = st, cl = cl, uc = uc)
+    except:
+        return False
+    return True
 
 def validateRequest(email1, email2, cl1, cl2, uc, st1, st2):
 
     
-    if checkStudent(st1) == False or checkStudent(st2) == False:
+    if validateEmail(email1) == False or validateEmail(email2) == False:
         return -1
-    if validateEmail(email1) == -1 or validateEmail(email2) == -1:
+    if checkStudent(st1) == False or checkStudent(st2) == False:
         return -1
     if checkClassUC(cl1,uc) == False or checkClassUC(cl2,uc) == False:
         return -1
     if checkStudents(st1,st2) == False:
         return -1
-    if checkStudentUC(st1, uc) == False or checkStudentUC(s2, uc) == False:
+    if checkStudentUC(st1, uc) == False or checkStudentUC(st2, uc) == False:
         return -1
     if checkClass(cl1, cl2) == False:
         return -1
-    # if checkStudentClass(s1, cl1) == False or checkStudentClass(s2, cl2):
-    #     return -1
+    if checkStudentClassUC(st1, cl1, uc) == False or checkStudentClassUC(st2, cl2, uc) == False:
+        return -1
     else:
         return 0
 
