@@ -52,3 +52,13 @@ COMPLETAR CLASS MODEL, ETC
 CRIAR MODEL FILE? E SER A PK SER O NOME? PARA NAO REPETIR FILES
 LOGIN?
 TRATAR CONSTRAINTS
+
+autenticação federada:
+numero up person affiliation (aluno, fucnionario), email, nome, 
+maquina virtual?
+cookies?
+js?
+contactar o sigarra para buscar info
+api json
+dupla atutenticação -> a segunda n exige as credenciais
+butao o user n tera de intervir

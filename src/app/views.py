@@ -81,13 +81,20 @@ def importData(request):
     if request.method == 'POST':
         form = ImportData(request.POST, request.FILES)
         if form.is_valid():
-            # fileHandler(request.FILES['file'])
-            fileHandler(request.FILES['file'])
-            fileHandler(request.FILES['file2'])
-            fileHandler(request.FILES['file3'])
-            fileHandler(request.FILES['file4'])
-            fileHandler(request.FILES['file5'])
-            fileHandler(request.FILES['file6'])
+
+            try:
+                f = request.FILES['Class']
+            except:
+                print("s")
+            else:
+                fileHandler(f)
+                # saveImports()
+            fileHandler(request.FILES['ClassUC'])
+            fileHandler(request.FILES['StudentUC'])
+            fileHandler(request.FILES['ScheduleSlot'])
+            fileHandler(request.FILES['Student'])
+            fileHandler(request.FILES['UC'])
+
             return HttpResponse("uploaded")
     else:
         form = ImportData()

@@ -1,4 +1,5 @@
 import re
+import csv
 import datetime
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.core import mail
@@ -121,3 +122,31 @@ def fileHandler(file):
     f = open('app/files/data.csv', 'wb+')
     for info in file.chunks():
         f.write(info)
+    f.close()
+    
+# def saveImports(obj):
+
+#     file = open('app/files/data.csv', 'r')
+#     csvReader = csv.reader(file)
+#     header = []
+#     header = next(csvReader)
+#     rows = []
+#     for row in csvReader:
+#         rows.append(row)
+
+    # if obj == "Class":
+    #     Class.objects.all().delete()
+    #     for obj in ...:
+    #         
+#     elif obj == "ClassUC":
+
+#     elif obj == "StudentUC":
+
+#     elif obj == "Schedule Slot":
+
+#     elif obj == "Student":
+
+#     elif obj == "UC":
+
+
+#     file.close()

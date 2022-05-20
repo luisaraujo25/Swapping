@@ -9,6 +9,7 @@ sudo apt-get install postgresql-12
 
 #I NEEDED THE FOLLOWING COMMAND SINCE I COULDNT CONNECT TO THE SERVICE
 sudo service postgresql restart
+sudo service postgresql start
 
 sudo -i -u postgres
 #TO ACCESS POSTGRESQL PROMPT:
