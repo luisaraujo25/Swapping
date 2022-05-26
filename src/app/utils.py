@@ -9,16 +9,16 @@ from django.utils.encoding import force_bytes
 from .models import *
 
 def validateEmail(mail):
-    # valid = re.search("^up[0-9]{9}@.+\.up\.pt$", mail)
-    # if valid == None:
-    #     return False
+    valid = re.search("^up[0-9]{9}@.+\.up\.pt$", mail)
+    if valid == None:
+        return False
     return True
 
 
 def getUp(mail):
 
-    if mail == "lmpa.pt@gmail.com":
-        return 201904995
+    #if mail == "lmpa.pt@gmail.com":
+    #    return 201904995
     up = ""
     for i in mail:
         if i == 'u' or i == 'p':

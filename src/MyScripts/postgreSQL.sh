@@ -6,6 +6,7 @@ sudo apt-get install postgresql-12
 
 #https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-20-04
 #https://stackpython.medium.com/how-to-start-django-project-with-a-database-postgresql-aaa1d74659d8
+#https://www.digitalocean.com/community/tutorials/como-instalar-e-configurar-o-pgadmin-4-no-modo-servidor-pt
 
 #I NEEDED THE FOLLOWING COMMAND SINCE I COULDNT CONNECT TO THE SERVICE
 sudo service postgresql restart

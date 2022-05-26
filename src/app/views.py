@@ -29,7 +29,7 @@ def request(request):
             class2 = form.cleaned_data['class2']
             up1 = getUp(email1) 
             up2 = getUp(email2)
-            # return HttpResponse(up2)
+            #return HttpResponse(up2)
             if validateRequest(email1, email2, class1, class2, uc, up1, up2) == -1:
                 return HttpResponse("Invalid Request")
 
