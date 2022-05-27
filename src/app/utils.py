@@ -1,6 +1,7 @@
 import re
 import csv
 import datetime
+from django.http import HttpResponse
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.core import mail
 from django.template.loader import render_to_string
@@ -129,7 +130,6 @@ def getCourse(classCode):
         else:
             course += i
 
-    print(course)
     return course
 
 def getNumber(classCode):
@@ -159,7 +159,7 @@ def fileHandler(file, obj):
 def saveImports(obj):    
 
     path = "app/files/data.csv"
-
+    #return HttpResponse(obj)
     if obj == "Class":
         Class.objects.all().delete()
         classes = readClasses(path)
@@ -174,6 +174,13 @@ def saveImports(obj):
     elif obj == "ClassUC":
         ClassUC.objects.all().delete()
         classUC = readClassUC(path)
+        for i in classUC:
+            try:
+                uc = UC.objects.get(code = i.uc)
+                cl = Class.objects.get(cl = i.cl)
+            except:
+                return False
+            ClassUC(uc = uc, cl = cl).save()
 
     #elif obj == "StudentUC":
 
@@ -182,7 +189,11 @@ def saveImports(obj):
     elif obj == "Student":
         Student.objects.all().delete()
         students = readStudents(path)
+        for i in students:
+            Student(up = i['up'], name = i['name'], email = i['email'], course = i['course']).save()
 
     elif obj == "UC":
         UC.objects.all().delete()
         ucs = readUC(path)
+        for i in ucs:
+            UC(code = i['code'], initials = i['initials'], name = i['name']).save()

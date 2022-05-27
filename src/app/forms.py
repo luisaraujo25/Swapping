@@ -10,9 +10,9 @@ class RequestForm(forms.Form):
     class2 = forms.ModelChoiceField(queryset = Class.objects.all(), required=True)
     
 class ImportData(forms.Form):
-    Class = forms.FileField(help_text='max. 40 megabytes', required=False)
-    ClassUC = forms.FileField(help_text='max. 40 megabytes', required=False)
-    StudentUC = forms.FileField(help_text='max. 40 megabytes', required=False)
-    ScheduleSlot = forms.FileField(help_text='max. 40 megabytes', required=False)
-    Students = forms.FileField(help_text='max. 40 megabytes', required=False)
-    UCs = forms.FileField(help_text='max. 40 megabytes', required=False)
+    Class = forms.FileField(required=False)
+    ClassUC = forms.FileField(required=False)
+    StudentUC = forms.FileField(required=False)
+    ScheduleSlot = forms.FileField(required=False)
+    Students = forms.FileField(required=False)
+    UCs = forms.FileField(required=False)

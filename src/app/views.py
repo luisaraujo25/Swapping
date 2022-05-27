@@ -77,42 +77,49 @@ def viewrequest(request, idReq):
 
 
 def importData(request):
-
+    
+    countFiles = 0
     if request.method == 'POST':
         form = ImportData(request.POST, request.FILES)
         if form.is_valid():
 
             try:
+                fileHandler(request.FILES['UCs'], "UC")
+                countFiles += 1
+            except:
+                print("No UC")
+
+            try:
                 fileHandler(request.FILES['Class'], "Class")
+                countFiles += 1
             except:
                 print("No Class")
                 
             try:
                 fileHandler(request.FILES['ClassUC'], "ClassUC")
+                countFiles += 1
             except:
                 print("No ClassUC")
 
             try:
                 fileHandler(request.FILES['StudentUC'], "StudentUC")
+                countFiles += 1
             except:
                 print("No StudentUC")
 
             try:
                 fileHandler(request.FILES['ScheduleSlot'], "ScheduleSlot")
+                countFiles += 1
             except:
                 print("No ScheduleSlot")
 
             try:
-                fileHandler(request.FILES['Student'], "Student")
+                fileHandler(request.FILES['Students'], "Student")
+                countFiles += 1
             except:
                 print("No Student")
 
-            try:
-                fileHandler(request.FILES['UC'], "UC")
-            except:
-                print("No UC")
-
-            return HttpResponse("uploaded")
+            return HttpResponse("uploaded " + str(countFiles) + " files!")
     else:
         form = ImportData()
     

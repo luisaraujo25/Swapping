@@ -1,6 +1,14 @@
 import csv
-from mimetypes import init
-from operator import delitem
+from os import remove
+
+#remove dups (some files arent clean)
+def removeDups(list):
+    aux = []
+    for i in list:
+        if i not in aux:
+            aux.append(i)
+
+    return aux
 
 def readClasses(file):
 
@@ -14,29 +22,24 @@ def readClasses(file):
         
     f.close()
 
-    return classes
+    return remove(classes)
 
 def readUC(file):
 
     f = open(file, 'r', encoding = "ISO-8859-1")
     reader = csv.DictReader(f, delimiter=';')
 
-    codes = []
-    initials = []
-    names = []
+    ucs = []
 
     for row in reader:
-        codes.append(row['CODIGO'])
-        initials.append(row['SIGLA'])
-        names.append(row['NOME'])
+        elem = {
+            "code": row['CODIGO'],
+            "initials": row['SIGLA'],
+            "name": row['NOME']
+        }
+        ucs.append(elem)
 
-    dict = {
-        "codes": codes,
-        "initials": initials,
-        "names": names
-    }
-
-    return dict
+    return removeDups(ucs)
 
 
 def readClassUC(fileClasses):
@@ -46,10 +49,13 @@ def readClassUC(fileClasses):
 
     classUC = []
     for row in reader:
-        elem = [row['CODIGO'], row['SIGLA']]
+        elem = {
+            "uc": row['CODIGO'],
+            "cl": row['SIGLA']
+        }
         classUC.append(elem)
 
-    return classUC
+    return removeDups(classUC)
 
 def readStudents(file):
 
@@ -58,10 +64,15 @@ def readStudents(file):
     
     students = []
     for row in reader:
-        elem = [row['Numero'], row['Nome'], row['Email'], row['Sigla do curso']]
+        elem = {
+            "up": row['Numero'],
+            "name": row['Nome'],
+            "email": row['Email'],
+            "course": row['Sigla do curso']
+        }
         students.append(elem)
 
-    return students
+    return removeDups(students)
     #suggestion: create dics and then list of dics
 
 #MISSING STUDENT UC CLASS, schedule slot
@@ -69,3 +80,5 @@ def readStudents(file):
 #print(readStudents('../../exp/EstudantesL.EIC.csv'))
 
 #print(readClasses("files/data.csv"))
+
+#print(readClassUC('../../exp/turmas.csv'))

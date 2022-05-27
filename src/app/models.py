@@ -8,7 +8,7 @@ from django.utils import timezone
 class Student(models.Model):
     up = models.IntegerField(primary_key = True)
     name = models.CharField(max_length=60)
-    email = models.EmailField(max_length=25)
+    email = models.EmailField(max_length=45)
     course = models.CharField(max_length=10)
 
     # class Meta:
@@ -17,11 +17,11 @@ class Student(models.Model):
 
 class UC(models.Model):
     code = models.CharField(max_length=15)
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=100)
     initials = models.CharField(max_length=8)
     
     def __str__(self):
-        return self.name
+        return self.initials
 
     class Meta:
         constraints = [
