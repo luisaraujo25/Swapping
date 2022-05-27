@@ -22,7 +22,7 @@ def readClasses(file):
         
     f.close()
 
-    return remove(classes)
+    return removeDups(classes)
 
 def readUC(file):
 

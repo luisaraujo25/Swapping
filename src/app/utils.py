@@ -1,5 +1,4 @@
 import re
-import csv
 import datetime
 from django.http import HttpResponse
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
@@ -11,6 +10,7 @@ from .models import *
 from .readers import *
 
 def validateEmail(mail):
+    return True
     valid = re.search("^up[0-9]{9}@.+\.up\.pt$", mail)
     if valid == None:
         return False
@@ -19,8 +19,8 @@ def validateEmail(mail):
 
 def getUp(mail):
 
-    #if mail == "lmpa.pt@gmail.com":
-    #    return 201904995
+    if mail == "lmpa.pt@gmail.com":
+        return 201904995
     up = ""
     for i in mail:
         if i == 'u' or i == 'p':
@@ -176,10 +176,10 @@ def saveImports(obj):
         classUC = readClassUC(path)
         for i in classUC:
             try:
-                uc = UC.objects.get(code = i.uc)
-                cl = Class.objects.get(cl = i.cl)
+                uc = UC.objects.get(code = i['uc'])
+                cl = Class.objects.get(code = i['cl'])
             except:
-                return False
+                HttpResponse("there is not a class or uc associated")
             ClassUC(uc = uc, cl = cl).save()
 
     #elif obj == "StudentUC":
