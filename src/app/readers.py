@@ -73,7 +73,21 @@ def readStudents(file):
         students.append(elem)
 
     return removeDups(students)
-    #suggestion: create dics and then list of dics
+
+def readStudentUC(file):
+    f = open(file, 'r')
+    reader = csv.DictReader(f, delimiter=';')
+
+    list = []
+    for row in reader:
+        elem = {
+            "up": row['ESTUDANTE'],
+            "uc": row['UC'],
+            "class": row['TURMA']
+        }
+        list.append(elem)
+
+    return removeDups(list)
 
 #MISSING STUDENT UC CLASS, schedule slot
 

@@ -178,11 +178,21 @@ def saveImports(obj):
             try:
                 uc = UC.objects.get(code = i['uc'])
                 cl = Class.objects.get(code = i['cl'])
+                ClassUC(uc = uc, cl = cl).save()
             except:
                 HttpResponse("there is not a class or uc associated")
-            ClassUC(uc = uc, cl = cl).save()
 
-    #elif obj == "StudentUC":
+    elif obj == "StudentUC":
+        StudentUC.objects.all().delete()
+        list = readStudentUC(path)
+        for i in list:
+            try:
+                uc = UC.objects.get(code = i['uc'])
+                cl = Class.objects.get(code = i['class'])
+                st = Student.objects.get(up = i['up'])
+                StudentUC(student = st, uc = uc, cl = cl).save()
+            except:
+                HttpResponse("student is not in the class X of uc Y")
 
     #elif obj == "Schedule Slot":
 
