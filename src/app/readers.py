@@ -51,8 +51,21 @@ def readClassUC(fileClasses):
 
     return classUC
 
+def readStudents(file):
 
-#MISSING STUDENT UC CLASS
+    f = open(file, 'r')
+    reader = csv.DictReader(f, delimiter=';')
+    
+    students = []
+    for row in reader:
+        elem = [row['Numero'], row['Nome'], row['Email'], row['Sigla do curso']]
+        students.append(elem)
 
-dict = readUC("uc.csv")
-print(dict['codes'])
+    return students
+    #suggestion: create dics and then list of dics
+
+#MISSING STUDENT UC CLASS, schedule slot
+
+#print(readStudents('../../exp/EstudantesL.EIC.csv'))
+
+#print(readClasses("files/data.csv"))

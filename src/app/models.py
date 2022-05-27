@@ -42,7 +42,7 @@ class Class(models.Model):
     course = models.CharField(max_length=10)
 
     def __str__(self):
-        return str(self.number)
+        return str(self.code)
 
     class Meta:
         constraints = [

@@ -82,30 +82,35 @@ def importData(request):
         form = ImportData(request.POST, request.FILES)
         if form.is_valid():
 
-            if request.FILES['Class'] != None:
-                fileHandler(request.FILES['Class'])
-                saveImports("Class")
+            try:
+                fileHandler(request.FILES['Class'], "Class")
+            except:
+                print("No Class")
                 
-            if request.FILES['ClassUC'] != None:
-                fileHandler(request.FILES['ClassUC'])
-                saveImports("ClassUC")
+            try:
+                fileHandler(request.FILES['ClassUC'], "ClassUC")
+            except:
+                print("No ClassUC")
 
-            if request.FILES['StudentUC'] != None:
-                fileHandler(request.FILES['StudentUC'])
-                saveImports("StudentUC")
+            try:
+                fileHandler(request.FILES['StudentUC'], "StudentUC")
+            except:
+                print("No StudentUC")
 
-            if request.FILES['ScheduleSlot'] != None:
-                fileHandler(request.FILES['ScheduleSlot'])
-                saveImports("ScheduleSlot")
+            try:
+                fileHandler(request.FILES['ScheduleSlot'], "ScheduleSlot")
+            except:
+                print("No ScheduleSlot")
 
-            if request.FILES['Student'] != None:
-                fileHandler(request.FILES['Student'])
-                saveImports("Student")
+            try:
+                fileHandler(request.FILES['Student'], "Student")
+            except:
+                print("No Student")
 
-            if request.FILES['UC'] != None:
-                fileHandler(request.FILES['UC'])
-                saveImports("UC")
-    
+            try:
+                fileHandler(request.FILES['UC'], "UC")
+            except:
+                print("No UC")
 
             return HttpResponse("uploaded")
     else:

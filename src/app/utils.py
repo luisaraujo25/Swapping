@@ -7,6 +7,7 @@ from django.template.loader import render_to_string
 from django.contrib.sites.shortcuts import get_current_site
 from django.utils.encoding import force_bytes
 from .models import *
+from .readers import *
 
 def validateEmail(mail):
     valid = re.search("^up[0-9]{9}@.+\.up\.pt$", mail)
@@ -119,35 +120,69 @@ def validateRequest(email1, email2, cl1, cl2, uc, st1, st2):
         return 0
 
 
-def fileHandler(file):
+def getCourse(classCode):
+
+    course = ""
+    for i in classCode:
+        if i.isnumeric():
+            continue
+        else:
+            course += i
+
+    print(course)
+    return course
+
+def getNumber(classCode):
+    
+    number = ""
+    first = True
+    for i in classCode:
+        if first:
+            first = False
+            continue
+        
+        if i.isnumeric() == False:
+            continue
+        else:
+            number += i
+
+    return int(number)
+
+
+def fileHandler(file, obj):
     f = open('app/files/data.csv', 'wb+')
     for info in file.chunks():
         f.write(info)
     f.close()
+    saveImports(obj)
     
-""" def saveImports(obj):
+def saveImports(obj):    
 
-    file = open('app/files/data.csv', 'r')
-    csvReader = csv.reader(file)
-    header = []
-    header = next(csvReader)
-    rows = []
-    for row in csvReader:
-        rows.append(row)
+    path = "app/files/data.csv"
 
     if obj == "Class":
         Class.objects.all().delete()
-        for ob in obj:
-            
+        classes = readClasses(path)
+        aux = []
+        for cl in classes:
+            course = getCourse(cl)
+            no = getNumber(cl)
+            if cl not in aux:
+                Class(number = no, course = course, code = cl).save()
+                aux.append(cl)
+
     elif obj == "ClassUC":
+        ClassUC.objects.all().delete()
+        classUC = readClassUC(path)
 
-    elif obj == "StudentUC":
+    #elif obj == "StudentUC":
 
-    elif obj == "Schedule Slot":
+    #elif obj == "Schedule Slot":
 
     elif obj == "Student":
+        Student.objects.all().delete()
+        students = readStudents(path)
 
     elif obj == "UC":
-
-    file.close()
- """
+        UC.objects.all().delete()
+        ucs = readUC(path)
