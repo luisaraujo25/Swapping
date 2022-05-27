@@ -1,0 +1,44 @@
+CODIGO;SIGLA;NOME;SEMESTRE;N_HORAS_SEMANAIS;OPTATIVA
+L.EIC011;AED;Algoritmos e Estruturas de Dados;1S;3;0
+L.EIC002;AM I;An�lise Matem�tica I;1S;3;0
+L.EIC006;AC;Arquitetura de Computadores;1S;3;0
+L.EIC012;BD;Bases de Dados;1S;3;0
+L.EIC003;FP;Fundamentos da Programa��o;1S;3;0
+L.EIC021;FSI;Fundamentos de Seguran�a Inform�tica;1S;3;0
+L.EIC004;FSC;Fundamentos de Sistemas Computacionais;1S;3;0
+L.EIC013;F II;F�sica II;1S;3;0
+L.EIC022;IPC;Intera��o Pessoa Computador;1S;3;0
+L.EIC023;LBAW;Laborat�rio de Bases de Dados e Aplica��es Web;1S;3;0
+L.EIC014;LDTS;Laborat�rio de Desenho e Teste de Software;1S;3;0
+L.EIC019;LTW;Linguagens e Tecnologias Web;1S;3;0
+L.EIC005;MD;Matem�tica Discreta;1S;3;0
+L.EIC009;P;Programa��o;1S;3;0
+L.EIC024;PFL;Programa��o Funcional e em L�gica;1S;3;0
+L.EIC025;RC;Redes de Computadores;1S;3;0
+L.EIC010;TC;Teoria da Computa��o;1S;3;0
+L.EIC001;ALGA;�lgebra Linear e Geometria Anal�tica;1S;3;0
+M.EIC030;API;An�lise de Projetos de Investimento;1S;3;1
+M.EIC031;AID;An�lise e Integra��o de Dados;1S;3;1
+M.EIC001;AC;Aprendizagem Computacional;1S;3;0
+M.EIC011;CAC;Complementos de Aprendizagem Computacional;1S;3;1
+M.EIC033;CHE;Computa��o Heterog�nea Eficiente;1S;3;1
+M.EIC002;DS;Desenvolvimento de Software de Larga Escala;1S;3;0
+M.EIC035;ELS;Engenharia de Linguagens de Software;1S;3;1
+M.EIC036;ESS;Engenharia de Software Seguro;1S;3;1
+L.EIC021;FSI;Fundamentos de Seguran�a Inform�tica;1S;3;0
+M.EIC018;GSAI;Gest�o de Seguran�a da Informa��o;1S;3;1
+L.EIC022;IPC;Intera��o Pessoa Computador;1S;3;0
+M.EIC038;MS;Modela��o e Simula��o;1S;3;1
+M.EIC039;MNEC;Modelos de Neg�cio para a Economia Digital;1S;3;1
+M.EIC007;PD;Prepara��o da Disserta��o;1S;3;0
+M.EIC003;PRI;Processamento e Recupera��o de Informa��o;1S;3;0
+M.EIC040;RVA;Realidade Virtual e Aumentada;1S;3;1
+M.EIC041;RI;Rob�tica Inteligente;1S;3;1
+M.EIC042;S;Semin�rios;1S;3;1
+M.EIC043;SCI;Sistemas Ciberf�sicos e Internet das Coisas;1S;3;1
+M.EIC004;SDLE;Sistemas Distribu�dos de Larga Escala;1S;3;0
+M.EIC005;SGI;Sistemas Gr�ficos Interativos;1S;3;0
+M.EIC045;TVVS;Teste Verifica��o e Valida��o de Software;1S;3;1
+M.EIC044;TACS;T�cnicas Avan�adas de Constru��o de Software;1S;3;1
+M.EIC046;TAIM;T�picos Avan�ados de Intera��o e Multim�dia;1S;3;1
+M.EIC047;WSDL;Web Sem�ntica e Dados Ligados;1S;3;1

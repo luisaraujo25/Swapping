@@ -118,35 +118,36 @@ def validateRequest(email1, email2, cl1, cl2, uc, st1, st2):
     else:
         return 0
 
+
 def fileHandler(file):
     f = open('app/files/data.csv', 'wb+')
     for info in file.chunks():
         f.write(info)
     f.close()
     
-# def saveImports(obj):
+""" def saveImports(obj):
 
-#     file = open('app/files/data.csv', 'r')
-#     csvReader = csv.reader(file)
-#     header = []
-#     header = next(csvReader)
-#     rows = []
-#     for row in csvReader:
-#         rows.append(row)
+    file = open('app/files/data.csv', 'r')
+    csvReader = csv.reader(file)
+    header = []
+    header = next(csvReader)
+    rows = []
+    for row in csvReader:
+        rows.append(row)
 
-    # if obj == "Class":
-    #     Class.objects.all().delete()
-    #     for obj in ...:
-    #         
-#     elif obj == "ClassUC":
+    if obj == "Class":
+        Class.objects.all().delete()
+        for ob in obj:
+            
+    elif obj == "ClassUC":
 
-#     elif obj == "StudentUC":
+    elif obj == "StudentUC":
 
-#     elif obj == "Schedule Slot":
+    elif obj == "Schedule Slot":
 
-#     elif obj == "Student":
+    elif obj == "Student":
 
-#     elif obj == "UC":
+    elif obj == "UC":
 
-
-#     file.close()
+    file.close()
+ """

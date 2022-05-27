@@ -9,14 +9,16 @@ class Student(models.Model):
     up = models.IntegerField(primary_key = True)
     name = models.CharField(max_length=60)
     email = models.EmailField(max_length=25)
+    course = models.CharField(max_length=10)
 
     # class Meta:
     #     constraints = [
     #     models.UniqueConstraint(fields=['upNumber'], name='unique_up')]
 
 class UC(models.Model):
-    code = models.CharField(max_length=20)
+    code = models.CharField(max_length=15)
     name = models.CharField(max_length=50)
+    initials = models.CharField(max_length=8)
     
     def __str__(self):
         return self.name
@@ -36,14 +38,15 @@ class StudentUC(models.Model):
 
 class Class(models.Model):
     number = models.IntegerField()
-    code = models.CharField(max_length=50)
+    code = models.CharField(max_length=12)
+    course = models.CharField(max_length=10)
 
     def __str__(self):
         return str(self.number)
 
     class Meta:
         constraints = [
-            models.UniqueConstraint(fields = ['number'], name="classNoUnique")
+            models.UniqueConstraint(fields = ['code'], name="classCodeUnique")
         ]
 
 class ClassUC(models.Model):

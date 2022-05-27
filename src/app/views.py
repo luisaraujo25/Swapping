@@ -68,8 +68,8 @@ def viewrequests(request):
 def viewrequest(request, idReq):
 
     try:
-        requests = Request.objects.get(id = idReq)
-        date = requests.date
+        req = Request.objects.get(id = idReq)
+        date = req.date
     except Request.DoesNotExist:
         raise Http404("Request does not exist")
 
@@ -82,18 +82,30 @@ def importData(request):
         form = ImportData(request.POST, request.FILES)
         if form.is_valid():
 
-            try:
-                f = request.FILES['Class']
-            except:
-                print("s")
-            else:
-                fileHandler(f)
-                # saveImports()
-            fileHandler(request.FILES['ClassUC'])
-            fileHandler(request.FILES['StudentUC'])
-            fileHandler(request.FILES['ScheduleSlot'])
-            fileHandler(request.FILES['Student'])
-            fileHandler(request.FILES['UC'])
+            if request.FILES['Class'] != None:
+                fileHandler(request.FILES['Class'])
+                saveImports("Class")
+                
+            if request.FILES['ClassUC'] != None:
+                fileHandler(request.FILES['ClassUC'])
+                saveImports("ClassUC")
+
+            if request.FILES['StudentUC'] != None:
+                fileHandler(request.FILES['StudentUC'])
+                saveImports("StudentUC")
+
+            if request.FILES['ScheduleSlot'] != None:
+                fileHandler(request.FILES['ScheduleSlot'])
+                saveImports("ScheduleSlot")
+
+            if request.FILES['Student'] != None:
+                fileHandler(request.FILES['Student'])
+                saveImports("Student")
+
+            if request.FILES['UC'] != None:
+                fileHandler(request.FILES['UC'])
+                saveImports("UC")
+    
 
             return HttpResponse("uploaded")
     else:
