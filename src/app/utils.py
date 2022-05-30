@@ -207,3 +207,17 @@ def saveImports(obj):
         ucs = readUC(path)
         for i in ucs:
             UC(code = i['code'], initials = i['initials'], name = i['name']).save()
+
+
+def generateFile():
+    
+    f = open('app/files/output.csv', 'w')
+    list = StudentUC.objects.all()
+    
+    writer = csv.writer(f, delimiter=';')
+    header = ['ESTUDANTE', 'UC', 'TURMA']
+    writer.writerow(header)
+    for i in list:
+        data = [i.student.up, i.uc.code, i.cl.code]
+        writer.writerow(data)
+    f.close()

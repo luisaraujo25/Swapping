@@ -5,6 +5,8 @@ from .models import *
 from .forms import *
 from .utils import *
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
+import mimetypes
+import os
 
 # Create your views here.
 
@@ -125,6 +127,20 @@ def importData(request):
     
     return render(request, 'import.html', {'form': form})
 
+def exportData(request):
+
+    file = generateFile()
+    return render(request, 'export.html')
+
+def downloadFile(request):
+
+    fileName = 'output.csv'
+    dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    path = dir + "/app/files/" + fileName
+    f = open(path, 'r')
+    response = HttpResponse(f.read(), content_type="application/vnd.ms-excel")
+    response['Content-Disposition'] = "attachment; fileName=" + fileName
+    return response
 
 def confirmRequest1(request, ridb64, token):
     
