@@ -138,7 +138,7 @@ def downloadFile(request):
     dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     path = dir + "/app/files/" + fileName
     f = open(path, 'r')
-    response = HttpResponse(f.read(), content_type="application/vnd.ms-excel")
+    response = HttpResponse(f.read(), content_type="text/csv")
     response['Content-Disposition'] = "attachment; fileName=" + fileName
     return response
 

@@ -53,3 +53,7 @@ https://dev.to/mungaigikure/how-to-set-up-postgres-in-your-django-project-575i
 
 - Check if uml is correct
 - 2 actors? User and admin?
+
+
+CONTENT-TYPES:
+https://stackoverflow.com/questions/23714383/what-are-all-the-possible-values-for-http-content-type-header
