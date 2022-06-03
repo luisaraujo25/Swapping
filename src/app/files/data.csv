@@ -1,5 +1,1031 @@
-ESTUDANTE;UC;TURMA
-201904996;L.EIC011;2LEIC05
-201904996;L.EIC002;1LEIC01
-201904995;L.EIC011;2LEIC06
-201904995;L.EIC002;1LEIC02
+Numero;Nome;Estatuto;Login;Email;Sigla do curso
+201107963;Abel Augusto Dias Tiago;;up201107963;up201107963@edu.fe.up.pt;L.EIC
+202007519;Adam Gershenson Nogueira;;up202007519;up202007519@edu.fe.up.pt;L.EIC
+201907487;Adelaide Isabel Miranda dos Santos;;up201907487;up201907487@edu.fe.up.pt;L.EIC
+202105352;Adriano Alexandre dos Santos Machado;;up202105352;up202105352@edu.fe.up.pt;L.EIC
+201904873;Adriano Filipe Ribeiro Soares;;up201904873;up201904873@edu.fe.up.pt;L.EIC
+202008323;Afonso Campelo Po�as;;up202008323;up202008323@edu.fe.up.pt;L.EIC
+202004598;Afonso Castanheira de Abreu Nabais Baldo;;up202004598;up202004598@edu.fe.up.pt;L.EIC
+202108700;Afonso Castro Vaz Osorio;;up202108700;up202108700@edu.fe.up.pt;L.EIC
+202008014;Afonso da Silva Pinto;;up202008014;up202008014@edu.fe.up.pt;L.EIC
+201907284;Afonso Duarte de Carvalho Monteiro;;up201907284;up201907284@edu.fe.up.pt;L.EIC
+202006721;Afonso Gouveia Dias;;up202006721;up202006721@edu.fe.up.pt;L.EIC
+202005900;Afonso Jorge Farroco Martins;;up202005900;up202005900@edu.fe.up.pt;L.EIC
+202008552;Afonso Jos� Pinheiro Oliveira Esteves Abreu;;up202008552;up202008552@edu.fe.up.pt;L.EIC
+202108884;Afonso Machado Neves;;up202108884;up202108884@edu.fe.up.pt;L.EIC
+202007585;Afonso Magno Rocha Sousa;;up202007585;up202007585@edu.fc.up.pt;L.EIC
+201807481;Afonso Marques Morais Cabral de Carvalho;;up201807481;up201807481@edu.fe.up.pt;L.EIC
+202006020;Afonso Montenegro Gon�alves Ribeiro da Cruz;;up202006020;up202006020@edu.fc.up.pt;L.EIC
+202004551;Aires Miguel Novo Teixeira;;up202004551;up202004551@edu.fc.up.pt;L.EIC
+202103627;Alberto Daniel Alves Serra;;up202103627;up202103627@edu.fe.up.pt;L.EIC
+201906325;Alberto Jos� Ribeiro da Cunha;;up201906325;up201906325@edu.fe.up.pt;L.EIC
+202109242;Al�ssia �gueda Tiberio Jorge;;up202109242;up202109242@edu.fe.up.pt;L.EIC
+201806784;Alexandra Matilde Santos Ferreira;;up201806784;up201806784@edu.fe.up.pt;L.EIC
+201805455;Alexandre Antunes Afonso;;up201805455;up201805455@edu.fc.up.pt;L.EIC
+201906049;Alexandre Felgueiras de Morais;;up201906049;up201906049@edu.fc.up.pt;L.EIC
+201704956;Alexandre Ferreira Martins Soto Marta;;up201704956;up201704956@edu.fc.up.pt;L.EIC
+202005358;Alexandre Ferreira Nunes;;up202005358;up202005358@edu.fe.up.pt;L.EIC
+202007042;Alexandre Guimaraes Gomes Correia;;up202007042;up202007042@edu.fe.up.pt;L.EIC
+202108671;Alexandre Henrique Silva dos Santos;;up202108671;up202108671@edu.fe.up.pt;L.EIC
+201303674;Alexandre Jos� Gonzalvez Meneses;;up201303674;up201303674@edu.fc.up.pt;L.EIC
+202005319;Alexandre Manuel Luz Rodrigues da Costa;;up202005319;up202005319@edu.fe.up.pt;L.EIC
+202109243;Allan Ferreira Rebeca dos Santos;;up202109243;up202109243@edu.fe.up.pt;L.EIC
+201603694;�lvaro Francisco Barbosa Miranda;;up201603694;up201603694@edu.fe.up.pt;L.EIC
+201800698;Amanda de Oliveira Silva;;up201800698;up201800698@edu.fe.up.pt;L.EIC
+201906704;Ana B�rbara Carvalho Barbosa;;up201906704;up201906704@edu.fc.up.pt;L.EIC
+202003574;Ana Beatriz Cruz Font�o;;up202003574;up202003574@edu.fe.up.pt;L.EIC
+201906230;Ana Beatriz Melo Aguiar;;up201906230;up201906230@edu.fe.up.pt;L.EIC
+202004461;Ana Carolina Ara�jo Marques de Brito Brand�o;;up202004461;up202004461@edu.fc.up.pt;L.EIC
+202108685;Ana Carolina da Costa Coutinho;;up202108685;up202108685@edu.fe.up.pt;L.EIC
+202108757;Ana Carolina Ribeirinho Soares Almeida;;up202108757;up202108757@edu.fe.up.pt;L.EIC
+202009029;Ana Catarina da Silva Oliveira;;up202009029;up202009029@edu.fe.up.pt;L.EIC
+202004380;Ana Catarina Novais da Silva;;up202004380;up202004380@edu.fc.up.pt;L.EIC
+201905129;Ana Catarina Rocha Santos;;up201905129;up201905129@edu.fc.up.pt;L.EIC
+201904969;Ana Cristina Vil�o Ramos;;up201904969;up201904969@edu.fe.up.pt;L.EIC
+202007640;Ana Ferreira Cosme;;up202007640;up202007640@edu.fc.up.pt;L.EIC
+201907565;Ana Lu�sa Ferreira Marques;;up201907565;up201907565@edu.fe.up.pt;L.EIC
+200103916;Ana Margarida Barbosa Ribeiro Pereira;;up200103916;up200103916@edu.fc.up.pt;L.EIC
+201607842;Ana Margarida dos Santos Pessoa;;up201607842;up201607842@edu.fe.up.pt;L.EIC
+201904795;Ana Matilde Guedes Perez da Silva Barra;;up201904795;up201904795@edu.fe.up.pt;L.EIC
+201905529;Ana Raquel Rodrigues dos Reis;;up201905529;up201905529@edu.fe.up.pt;L.EIC
+201904565;Ana Rita Antunes Ramada;;up201904565;up201904565@edu.fe.up.pt;L.EIC
+202004155;Ana Rita Baptista de Oliveira;;up202004155;up202004155@edu.fe.up.pt;L.EIC
+202008569;Ana Rita de Oliveira Carneiro;;up202008569;up202008569@edu.fe.up.pt;L.EIC
+201306168;Ana Rita Jesus Costa;;up201306168;up201306168@edu.fe.up.pt;L.EIC
+202108798;Ana Rita Varanda Cachaldora Pereira;;up202108798;up202108798@edu.fe.up.pt;L.EIC
+201906031;Ana Sofia de Castro Teixeira;;up201906031;up201906031@edu.fc.up.pt;L.EIC
+202108654;Ana Sofia Ferreira Azevedo;;up202108654;up202108654@edu.fe.up.pt;L.EIC
+201806466;Ana Sofia Gomes Carrega e Resende Teixeira;;up201806466;up201806466@edu.fe.up.pt;L.EIC
+202007602;Ana Sofia Guedes Vieira Santos Costa;;up202007602;up202007602@edu.fe.up.pt;L.EIC
+201806629;Ana Sofia Oliveira Teixeira;;up201806629;up201806629@edu.fe.up.pt;L.EIC
+202004606;Ana Sofia Silva Pinto;;up202004606;up202004606@edu.fc.up.pt;L.EIC
+202108658;Andr� Bernardo Ferreira Santos;;up202108658;up202108658@edu.fe.up.pt;L.EIC
+201905916;Andr� Correia da Costa;;up201905916;up201905916@edu.fe.up.pt;L.EIC
+202008169;Andr� Costa Lima;;up202008169;up202008169@edu.fe.up.pt;L.EIC
+202108721;Andr� Dantas Rodrigues;;up202108721;up202108721@edu.fe.up.pt;L.EIC
+202007189;Andr� David Aires de Freitas;;up202007189;up202007189@edu.fc.up.pt;L.EIC
+201907001;Andr� de Jesus Fernandes Flores;;up201907001;up201907001@edu.fe.up.pt;L.EIC
+201905650;Andr� Diogo Bastos Pereira;;up201905650;up201905650@edu.fe.up.pt;L.EIC
+202108695;Andr� dos Santos Faria Relva;;up202108695;up202108695@edu.fe.up.pt;L.EIC
+202007398;Andre Filipe Cardoso Barbosa;;up202007398;up202007398@edu.fe.up.pt;L.EIC
+202005277;Andr� Filipe Garcez Moreira de Sousa;;up202005277;up202005277@edu.fe.up.pt;L.EIC
+202004159;Andr� Gabriel Correia Vieira;;up202004159;up202004159@edu.fe.up.pt;L.EIC
+202108856;Andr� Gon�alves Pinto;;up202108856;up202108856@edu.fe.up.pt;L.EIC
+202006767;Andr� Ismael Ferraz �vila;;up202006767;up202006767@edu.fe.up.pt;L.EIC
+201904721;Andr� J�lio Moreira;;up201904721;up201904721@edu.fe.up.pt;L.EIC
+201907879;Andr� Lino dos Santos;;up201907879;up201907879@edu.fe.up.pt;L.EIC
+201705768;Andr� Magalh�es Cruz;;up201705768;up201705768@edu.fc.up.pt;L.EIC
+202005303;Andr� Miguel Pacheco Morais;;up202005303;up202005303@edu.fe.up.pt;L.EIC
+201806860;Andr� Moreira Leal Leonor;;up201806860;up201806860@edu.fe.up.pt;L.EIC
+202108882;Andr� Moreira Teixeira;;up202108882;up202108882@edu.fe.up.pt;L.EIC
+201706280;Andr� Pedro de Melo Malheiro;;up201706280;up201706280@edu.fe.up.pt;L.EIC
+202109775;Andr� Pinto de Sousa;;up202109775;up202109775@edu.fe.up.pt;L.EIC
+202108724;Andr� Tiago Moreira Soares da Costa e Silva;;up202108724;up202108724@edu.fe.up.pt;L.EIC
+202004161;Andr� Tom�s da Cunha Soares;;up202004161;up202004161@edu.fe.up.pt;L.EIC
+202108769;Andreia Filipa Gon�alves Silva;;up202108769;up202108769@edu.fe.up.pt;L.EIC
+202008856;Anete Medina Pereira;;up202008856;up202008856@edu.fe.up.pt;L.EIC
+201907549;�ngela Filipa Ribeiro Coelho;;up201907549;up201907549@edu.fe.up.pt;L.EIC
+201806781;Angela Manuela Correia Antelo Costa Cruz;;up201806781;up201806781@edu.fe.up.pt;L.EIC
+199901596;�ngelo Jos� Barrigas Lopes;;up199901596;up199901596@edu.fe.up.pt;L.EIC
+200700604;�ngelo Miguel da Silva Oliveira;;up200700604;up200700604@edu.fe.up.pt;L.EIC
+202007253;Angy Vanessa da Cruz Pita;;up202007253;up202007253@edu.fc.up.pt;L.EIC
+202005429;Anibal Pereira Neves Ferreira;;up202005429;up202005429@edu.fe.up.pt;L.EIC
+202000705;Antonio Augusto Brito de Sousa;;up202000705;up202000705@edu.fe.up.pt;L.EIC
+202108666;Antonio Costa Rego;;up202108666;up202108666@edu.fe.up.pt;L.EIC
+202108704;Ant�nio F�lix da Costa Ricardo Rom�o;;up202108704;up202108704@edu.fe.up.pt;L.EIC
+201704987;Ant�nio Ferreira Cabral de Barbosa Campelo;;up201704987;up201704987@edu.fc.up.pt;L.EIC
+201906761;Antonio Francisco Rente Ribeiro;;up201906761;up201906761@edu.fe.up.pt;L.EIC
+202108760;Ant�nio Guilherme Sanches de Magalh�es Koch e Silva;;up202108760;up202108760@edu.fe.up.pt;L.EIC
+202108689;Ant�nio Henrique Martins Azevedo;;up202108689;up202108689@edu.fe.up.pt;L.EIC
+201404375;Ant�nio Jos� Magalh�es da Cruz Magalh�es;;up201404375;up201404375@edu.fe.up.pt;L.EIC
+201804832;Ant�nio Jos� Salazar Correia;;up201804832;up201804832@edu.fc.up.pt;L.EIC
+202003386;Ant�nio Jos� Vieira Lima;;up202003386;up202003386@edu.fe.up.pt;L.EIC
+201705558;Ant�nio Lino dos Santos;;up201705558;up201705558@edu.fe.up.pt;L.EIC
+202006866;Ant�nio Maria Gameiro Campos Sampaio de Matos;;up202006866;up202006866@edu.fe.up.pt;L.EIC
+202108801;Antonio Marujo Rama;;up202108801;up202108801@edu.fe.up.pt;L.EIC
+202008423;Ant�nio Miguel Miller Aguiar Tavares;;up202008423;up202008423@edu.fc.up.pt;L.EIC
+202004735;Ant�nio Oliveira Ferreira;;up202004735;up202004735@edu.fe.up.pt;L.EIC
+202008004;Ant�nio Oliveira Santos;;up202008004;up202008004@edu.fe.up.pt;L.EIC
+201907156;Ant�nio Pedro Cabral dos Santos;;up201907156;up201907156@edu.fc.up.pt;L.EIC
+202105378;Ant�nio Pedro Sampaio Fernandes;;up202105378;up202105378@edu.fe.up.pt;L.EIC
+202108834;Ant�nio Rodolfo de Almeida Seara Ferreira;;up202108834;up202108834@edu.fe.up.pt;L.EIC
+201900839;Artur Candiani dos Santos;;up201900839;up201900839@edu.fc.up.pt;L.EIC
+202108663;Artur Jos� Albuquerque Oliveira;;up202108663;up202108663@edu.fe.up.pt;L.EIC
+201504823;Artur Jos� Gon�alves Zeferino;;up201504823;up201504823@edu.fe.up.pt;L.EIC
+202104487;Artur Telo Lu�s;;up202104487;up202104487@edu.fe.up.pt;L.EIC
+202108792;Athos Coghi Freitas;;up202108792;up202108792@edu.fe.up.pt;L.EIC
+202007163;B�rbara Ema Pinto Rodrigues;;up202007163;up202007163@edu.fe.up.pt;L.EIC
+202004695;B�rbara Filipa da Silva Carvalho;;up202004695;up202004695@edu.fe.up.pt;L.EIC
+202108860;Beatriz Ferreira de Almeida;;up202108860;up202108860@edu.fe.up.pt;L.EIC
+201905517;Beatriz Maia da Silva Cruz;;up201905517;up201905517@edu.fc.up.pt;L.EIC
+201510376;Beneeta Mendez;;up201510376;up201510376@edu.fe.up.pt;L.EIC
+202108745;Bernardo Antonio Coelho Gon�alves;;up202108745;up202108745@edu.fe.up.pt;L.EIC
+201806581;Bernardo Ant�nio Magalh�es Ferreira;;up201806581;up201806581@edu.fe.up.pt;L.EIC
+202108842;Bernardo Dinis Guimar�es Pinto;;up202108842;up202108842@edu.fe.up.pt;L.EIC
+202006056;Bernardo Ferreira Campos;;up202006056;up202006056@edu.fe.up.pt;L.EIC
+201504711;Bernardo Oliveira Teixeira Santos;;up201504711;up201504711@edu.fe.up.pt;L.EIC
+201800169;Bianca Sequeira da Mota;;up201800169;up201800169@edu.fe.up.pt;L.EIC
+202007191;Bruna Brasil Le�o Marques;;up202007191;up202007191@edu.fe.up.pt;L.EIC
+201804925;Bruna Sofia Oliveira Ribeiro;;up201804925;up201804925@edu.fc.up.pt;L.EIC
+202006608;Bruno Alexandre Alves Castanheira;;up202006608;up202006608@edu.fc.up.pt;L.EIC
+200707284;Bruno Andr� de Oliveira Vale Marques Fernandes;;up200707284;up200707284@edu.fe.up.pt;L.EIC
+201906334;Bruno Andr� Moreira Rosendo;;up201906334;up201906334@edu.fe.up.pt;L.EIC
+201906401;Bruno Campos Gomes;;up201906401;up201906401@edu.fe.up.pt;L.EIC
+201906166;Bruno Daniel Dur�es Pereira Mendes;;up201906166;up201906166@edu.fe.up.pt;L.EIC
+201707297;Bruno Filipe Ferreira de Almeida;;up201707297;up201707297@edu.fc.up.pt;L.EIC
+202109244;Bruno Miguel de Siu�ia Duvane;;up202109244;up202109244@edu.fe.up.pt;L.EIC
+202108871;Bruno Miguel Lopes da Rocha Fernandes;;up202108871;up202108871@edu.fe.up.pt;L.EIC
+201705562;Bruno Miguel Pascoal Pinheiro;;up201705562;up201705562@edu.fc.up.pt;L.EIC
+201503818;Bruno Pereira da Silva;;up201503818;up201503818@edu.fc.up.pt;L.EIC
+201202666;Bruno Pinto da Silva Drumond;;up201202666;up201202666@edu.fe.up.pt;L.EIC
+201905971;Bruno Rafael Granja Alves;;up201905971;up201905971@edu.fc.up.pt;L.EIC
+201907715;Bruno Rafael Oliveira Machado;;up201907715;up201907715@edu.fe.up.pt;L.EIC
+202008047;Bruno Vilela Cardoso Leal;;up202008047;up202008047@edu.fc.up.pt;L.EIC
+202109812;Camila Santos Silva;;up202109812;up202109812@edu.fe.up.pt;L.EIC
+202005954;Carlos Alberto Ferreira Teles de Sousa;;up202005954;up202005954@edu.fc.up.pt;L.EIC
+201805156;Carlos Daniel dos Santos Reis;;up201805156;up201805156@edu.fc.up.pt;L.EIC
+202108885;Carlos Daniel Lopes Rebelo;;up202108885;up202108885@edu.fe.up.pt;L.EIC
+201907716;Carlos Eduardo Coelho Ver�ssimo;;up201907716;up201907716@edu.fe.up.pt;L.EIC
+202004151;Carlos Manuel da Silva Costa;;up202004151;up202004151@edu.fe.up.pt;L.EIC
+201906622;Carlos Manuel Ferreira Gomes;;up201906622;up201906622@edu.fe.up.pt;L.EIC
+201404616;Carlos Manuel Pires Bras;;up201404616;up201404616@edu.fe.up.pt;L.EIC
+201607406;Carlos Manuel Pires dos Santos;;up201607406;up201607406@edu.fc.up.pt;L.EIC
+201706405;Carlos Miguel Guerra Soeiro;;up201706405;up201706405@edu.fe.up.pt;L.EIC
+201605785;Carlos Miguel Morim Figueiredo de Moura Ram�a;;up201605785;up201605785@edu.fc.up.pt;L.EIC
+202005472;Carlos Miguel Po�as Oliveira;;up202005472;up202005472@edu.fc.up.pt;L.EIC
+201604906;Carlos Rafael Barbosa Madaleno;;up201604906;up201604906@edu.fe.up.pt;L.EIC
+201905810;Carolina Alexandre Vig�rio Ferreira;;up201905810;up201905810@edu.fc.up.pt;L.EIC
+201906845;Carolina Cintra Fernandes Figueira;;up201906845;up201906845@edu.fe.up.pt;L.EIC
+202108781;Carolina Cunha Senra Bogas Gon�alves;;up202108781;up202108781@edu.fe.up.pt;L.EIC
+201800171;Carolina Rosemback Guilhermino;;up201800171;up201800171@edu.fe.up.pt;L.EIC
+202108802;Carolina Teixeira Lopes Couto Viana;;up202108802;up202108802@edu.fe.up.pt;L.EIC
+202103628;Catarina Isabel Moreira Canelas;;up202103628;up202103628@edu.fe.up.pt;L.EIC
+201907925;Catarina Oliveira Pires;;up201907925;up201907925@edu.fe.up.pt;L.EIC
+201906638;Catarina Raquel Silva Gon�alves;;up201906638;up201906638@edu.fc.up.pt;L.EIC
+202004898;Catarina Rute Pinheiro Barbosa;;up202004898;up202004898@edu.fc.up.pt;L.EIC
+201604735;Christopher Fernandes de Abreu;;up201604735;up201604735@edu.fe.up.pt;L.EIC
+202008444;Clarisse Maria Teixeira de Carvalho;;up202008444;up202008444@edu.fc.up.pt;L.EIC
+202108813;Cristiano Filipe Moreira Rocha;;up202108813;up202108813@edu.fe.up.pt;L.EIC
+201907321;Cristina Atamanchuk Martins Cicouro de P�ra;;up201907321;up201907321@edu.fc.up.pt;L.EIC
+201109252;Cristov�o Alexandre Coutinho Silva;;up201109252;up201109252@edu.fe.up.pt;L.EIC
+201909711;Daniel Ant�nio Mendes Novais;;up201909711;up201909711@edu.fc.up.pt;L.EIC
+201900188;Daniel Bohrer Lopes;;up201900188;up201900188@edu.fe.up.pt;L.EIC
+202108667;Daniel Cabral Bernardo;;up202108667;up202108667@edu.fe.up.pt;L.EIC
+201809384;Daniel da Silva Gon�alves;;up201809384;up201809384@edu.fe.up.pt;L.EIC
+202108808;Daniel D�ria Pinto;;up202108808;up202108808@edu.fe.up.pt;L.EIC
+202108771;Daniel dos Santos Ferreira;;up202108771;up202108771@edu.fe.up.pt;L.EIC
+202108664;Daniel Filipe Calado de Simas Bel�m;;up202108664;up202108664@edu.fe.up.pt;L.EIC
+201905189;Daniel Filipe Souto F�lix;;up201905189;up201905189@edu.fe.up.pt;L.EIC
+201705113;Daniel Frantisek Azevedo Vecera;;up201705113;up201705113@edu.fe.up.pt;L.EIC
+201700494;Daniel Gazola Bradaschia;;up201700494;up201700494@edu.fe.up.pt;L.EIC
+201909935;Daniel Gomes Silva;;up201909935;up201909935@edu.fe.up.pt;L.EIC
+202108791;Daniel Jos� de Aguiar Gago;;up202108791;up202108791@edu.fe.up.pt;L.EIC
+202006562;Daniel Jos� Mendes Rodrigues;;up202006562;up202006562@edu.fe.up.pt;L.EIC
+202108832;Daniel Moreira Carneiro;;up202108832;up202108832@edu.fe.up.pt;L.EIC
+201910371;Daniela Cristina Ferreira Lascasas Aguiar;;up201910371;up201910371@edu.fe.up.pt;L.EIC
+202004946;Daniela dos Santos Tom�s;;up202004946;up202004946@edu.fc.up.pt;L.EIC
+201404491;Daniela Filipa Abreu Cunha;;up201404491;up201404491@edu.fc.up.pt;L.EIC
+201405738;Daniela Sofia Marques Soa Lobo;;up201405738;up201405738@edu.fc.up.pt;L.EIC
+201706117;Daniil Puzyryov;;up201706117;up201706117@edu.fc.up.pt;L.EIC
+202109245;Danilo dos Santos Oliveira;;up202109245;up202109245@edu.fe.up.pt;L.EIC
+202108799;Dany Ferreira;;up202108799;up202108799@edu.fe.up.pt;L.EIC
+202109246;Daun�sia Augusto Jone;;up202109246;up202109246@edu.fe.up.pt;L.EIC
+202108820;David Amorim Cordeiro;;up202108820;up202108820@edu.fe.up.pt;L.EIC
+201906050;David Amorim Peixoto;;up201906050;up201906050@edu.fc.up.pt;L.EIC
+202004948;David da Costa Santos;;up202004948;up202004948@edu.fc.up.pt;L.EIC
+202006302;David dos Santos Ferreira;;up202006302;up202006302@edu.fc.up.pt;L.EIC
+201902431;David Douglas D'esposito;;up201902431;up201902431@edu.fc.up.pt;L.EIC
+202004179;David Fang;;up202004179;up202004179@edu.fe.up.pt;L.EIC
+201907075;David Jos� Prata Barbedo Magalh�es;;up201907075;up201907075@edu.fc.up.pt;L.EIC
+202108763;David Jos� Soares Castro;;up202108763;up202108763@edu.fe.up.pt;L.EIC
+201704300;David Manuel Rodrigues da Costa Pinto;;up201704300;up201704300@edu.fc.up.pt;L.EIC
+201905574;David Oliveira Espinha Marques;;up201905574;up201905574@edu.fe.up.pt;L.EIC
+201904726;David Teixeira Preda;;up201904726;up201904726@edu.fe.up.pt;L.EIC
+201806102;Deborah Marques Lago;;up201806102;up201806102@edu.fe.up.pt;L.EIC
+202108815;Diana Sofia Sampaio Martins;;up202108815;up202108815@edu.fe.up.pt;L.EIC
+202006303;Dinis Ribeiro dos Santos Bessa de Sousa;;up202006303;up202006303@edu.fe.up.pt;L.EIC
+202004175;Diogo Alexandre da Costa Melo Moreira da Fonte;;up202004175;up202004175@edu.fc.up.pt;L.EIC
+202009291;Diogo Alexandre da Silva Santos;;up202009291;up202009291@edu.fe.up.pt;L.EIC
+202105327;Diogo Alexandre Oliveira da Silva;;up202105327;up202105327@edu.fe.up.pt;L.EIC
+201905383;Diogo Alexandre Paredes Azevedo Costa e S�;;up201905383;up201905383@edu.fe.up.pt;L.EIC
+202108883;Diogo Alexandre Soares Martins;;up202108883;up202108883@edu.fe.up.pt;L.EIC
+201808546;Diogo Andr� Barbosa Nunes;;up201808546;up201808546@edu.fe.up.pt;L.EIC
+201804904;Diogo Andr� Fernandes Moreira;;up201804904;up201804904@edu.fc.up.pt;L.EIC
+202004950;Diogo Andr� Pereira Babo;;up202004950;up202004950@edu.fe.up.pt;L.EIC
+202103629;Diogo Andr� Pereira Rodrigues;;up202103629;up202103629@edu.fe.up.pt;L.EIC
+202003484;Diogo Azevedo Lemos;;up202003484;up202003484@edu.fe.up.pt;L.EIC
+201505676;Diogo Barbeitos Alves Torres Gomes;;up201505676;up201505676@edu.fc.up.pt;L.EIC
+202108875;Diogo Carvalho Pintado;;up202108875;up202108875@edu.fe.up.pt;L.EIC
+202104794;Diogo Coutinho da Silva;;up202104794;up202104794@edu.fe.up.pt;L.EIC
+201805152;Diogo da Costa Vale;;up201805152;up201805152@edu.fc.up.pt;L.EIC
+202103341;Diogo Fernando Pinheiro Sousa;;up202103341;up202103341@edu.fe.up.pt;L.EIC
+202006343;Diogo Ferreira Neves;;up202006343;up202006343@edu.fe.up.pt;L.EIC
+202108800;Diogo Filipe Couto Monteiro;;up202108800;up202108800@edu.fe.up.pt;L.EIC
+202007895;Diogo Filipe Faia Nunes;;up202007895;up202007895@edu.fc.up.pt;L.EIC
+202004288;Diogo Filipe Ferreira da Silva;;up202004288;up202004288@edu.fe.up.pt;L.EIC
+201904974;Diogo Filipe Moreira Maia;;up201904974;up201904974@edu.fe.up.pt;L.EIC
+202108747;Diogo Filipe Pereira Santos;;up202108747;up202108747@edu.fe.up.pt;L.EIC
+201405188;Diogo Filipe Pinho Vieira;;up201405188;up201405188@edu.fc.up.pt;L.EIC
+201806280;Diogo Filipe Ventura Martins;;up201806280;up201806280@edu.fe.up.pt;L.EIC
+202108655;Diogo Lima da Silva Costa;;up202108655;up202108655@edu.fe.up.pt;L.EIC
+201907014;Diogo Lu�s Araujo de Faria;;up201907014;up201907014@edu.fe.up.pt;L.EIC
+201907847;Diogo Lu�s Borges Geraldes;;up201907847;up201907847@edu.fc.up.pt;L.EIC
+201906731;Diogo Lu�s Henriques Costa;;up201906731;up201906731@edu.fe.up.pt;L.EIC
+201806572;Diogo Miguel Borges Gomes;;up201806572;up201806572@edu.fe.up.pt;L.EIC
+201906422;Diogo Miguel Chaves dos Santos Antunes Pereira;;up201906422;up201906422@edu.fe.up.pt;L.EIC
+201906067;Diogo Miguel Farias Pinto;;up201906067;up201906067@edu.fc.up.pt;L.EIC
+202007770;Diogo Miguel Ferreira da Costa;;up202007770;up202007770@edu.fe.up.pt;L.EIC
+201804265;Diogo Miguel Oliveira de Sousa;;up201804265;up201804265@edu.fc.up.pt;L.EIC
+202109663;Diogo Miranda de Figueiredo Sarmento;;up202109663;up202109663@edu.fe.up.pt;L.EIC
+202006059;Diogo Pinheiro Almeida;;up202006059;up202006059@edu.fc.up.pt;L.EIC
+201605360;Diogo Rafael Amorim Mendes;;up201605360;up201605360@edu.fe.up.pt;L.EIC
+202004887;Diogo Rafael Cardoso Moreira;;up202004887;up202004887@edu.fc.up.pt;L.EIC
+201909892;Diogo Rafael Morais de Oliveira;;up201909892;up201909892@edu.fe.up.pt;L.EIC
+202005304;Diogo Silva Leandro;;up202005304;up202005304@edu.fc.up.pt;L.EIC
+202108803;Diogo Silveira Viana;;up202108803;up202108803@edu.fe.up.pt;L.EIC
+201805367;Diogo Sim�o Correia Gomes;;up201805367;up201805367@edu.fc.up.pt;L.EIC
+201606166;Diogo Soares Rocha;;up201606166;up201606166@edu.fc.up.pt;L.EIC
+202108752;Diogo Tom�s Valente Fernandes;;up202108752;up202108752@edu.fe.up.pt;L.EIC
+201905166;Diogo Tom�z C�mara;;up201905166;up201905166@edu.fe.up.pt;L.EIC
+202109247;Diomaxi Ant�nio Morais;;up202109247;up202109247@edu.fe.up.pt;L.EIC
+201906680;Domingos Jos� Silva Moreira dos Santos;;up201906680;up201906680@edu.fe.up.pt;L.EIC
+202108728;Domingos Manuel Orden� Neto;;up202108728;up202108728@edu.fe.up.pt;L.EIC
+202006408;Duarte Filipe Campos Barbosa Lopes;;up202006408;up202006408@edu.fe.up.pt;L.EIC
+202108772;Duarte Francisco Sousa Gon�alves;;up202108772;up202108772@edu.fe.up.pt;L.EIC
+201905497;Duarte Guedes Sardao;;up201905497;up201905497@edu.fe.up.pt;L.EIC
+201906573;Edgar Ferreira da Torre;;up201906573;up201906573@edu.fe.up.pt;L.EIC
+201604910;Edgar Miguel Pinto Louren�o;;up201604910;up201604910@edu.fc.up.pt;L.EIC
+201607407;Edson Aires J�nior Ferreira;;up201607407;up201607407@edu.fc.up.pt;L.EIC
+202105337;Eduardo Afonso Soares Ferreira Machado;;up202105337;up202105337@edu.fe.up.pt;L.EIC
+202108705;Eduardo Bessa e Silva de Ara�jo Barbosa;;up202108705;up202108705@edu.fe.up.pt;L.EIC
+202004999;Eduardo Duarte da Silva;;up202004999;up202004999@edu.fe.up.pt;L.EIC
+201809716;Eduardo Escaleira de Sousa;;up201809716;up201809716@edu.fc.up.pt;L.EIC
+201804996;Eduardo Fernando Vieira da Silva;;up201804996;up201804996@edu.fc.up.pt;L.EIC
+202005283;Eduardo Filipe Leite da Silva;;up202005283;up202005283@edu.fe.up.pt;L.EIC
+202108843;Eduardo Jos� Neto Oliveira;;up202108843;up202108843@edu.fe.up.pt;L.EIC
+202108758;Eduardo Lu�s Fernandes Ro�adas;;up202108758;up202108758@edu.fe.up.pt;L.EIC
+201906732;Eduardo Lu�s Tronjo Ramos;;up201906732;up201906732@edu.fe.up.pt;L.EIC
+201907116;Eduardo Machado Gon�alves;;up201907116;up201907116@edu.fe.up.pt;L.EIC
+202103342;Eduardo Machado Teixeira de Sousa;;up202103342;up202103342@edu.fe.up.pt;L.EIC
+202108690;Eduardo Martins Oliveira;;up202108690;up202108690@edu.fe.up.pt;L.EIC
+201909914;Eduardo Miguel Magalh�es Duarte Correia;;up201909914;up201909914@edu.fc.up.pt;L.EIC
+201907816;Eduardo Miguel Santos Marques da Silva;;up201907816;up201907816@edu.fc.up.pt;L.EIC
+202108859;Eduardo Renato Fernandes Barbosa;;up202108859;up202108859@edu.fe.up.pt;L.EIC
+201805189;Eduardo Rui Nascimento Amaral;;up201805189;up201805189@edu.fc.up.pt;L.EIC
+201704961;Eliseu Ant�nio Pinto Amaro;;up201704961;up201704961@edu.fc.up.pt;L.EIC
+201908676;Elton Jer�nimo Tamele;;up201908676;up201908676@edu.fe.up.pt;L.EIC
+201605389;Emanuel Correia de Sousa Dias Trigo;;up201605389;up201605389@edu.fe.up.pt;L.EIC
+202005485;Emanuel Silva Gestosa;;up202005485;up202005485@edu.fe.up.pt;L.EIC
+202008859;Eriton Laury Felisberto Naife;;up202008859;up202008859@edu.fe.up.pt;L.EIC
+201904920;Eunice Juliana Freitas Amorim;;up201904920;up201904920@edu.fe.up.pt;L.EIC
+202006379;Eva Filipa da Silva Correia de Carvalho;;up202006379;up202006379@edu.fe.up.pt;L.EIC
+202005478;F�bio Alexandre Campos Rocha;;up202005478;up202005478@edu.fc.up.pt;L.EIC
+202006345;F�bio Almeida Teixeira;;up202006345;up202006345@edu.fe.up.pt;L.EIC
+202007658;F�bio Ara�jo de S�;;up202007658;up202007658@edu.fe.up.pt;L.EIC
+202008052;F�bio Cunha Morais;;up202008052;up202008052@edu.fe.up.pt;L.EIC
+201206080;F�bio Miguel Caetano Lino;;up201206080;up201206080@edu.fe.up.pt;L.EIC
+201806829;Fabio Miguel Chen Huang;;up201806829;up201806829@edu.fe.up.pt;L.EIC
+202102359;Felipe Jacob de Jesus Ferreira;;up202102359;up202102359@edu.fe.up.pt;L.EIC
+202108837;F�lix Marcial Alves Martins;;up202108837;up202108837@edu.fe.up.pt;L.EIC
+202108686;Fernando da Silva Pereira Borges Afonso;;up202108686;up202108686@edu.fe.up.pt;L.EIC
+201905951;Fernando Luis Santos Rego;;up201905951;up201905951@edu.fe.up.pt;L.EIC
+201005231;Fernando Manuel de Melo Oliveira;;up201005231;up201005231@edu.fe.up.pt;L.EIC
+201910223;Fernando Miguel Santos Borges de Barros;;up201910223;up201910223@edu.fc.up.pt;L.EIC
+201508484;Filipa Daniela Gon�alves Sousa;;up201508484;up201508484@edu.fe.up.pt;L.EIC
+202006409;Filipe de Azevedo Cardoso;;up202006409;up202006409@edu.fe.up.pt;L.EIC
+201907747;Filipe de Morais Teixeira Pinto;;up201907747;up201907747@edu.fe.up.pt;L.EIC
+202108846;Filipe Pereira de Castro Ferreira;;up202108846;up202108846@edu.fe.up.pt;L.EIC
+201905609;Filipe Pinto Campos;;up201905609;up201905609@edu.fe.up.pt;L.EIC
+202108862;Filipe Rafael Bai�o da Silva;;up202108862;up202108862@edu.fe.up.pt;L.EIC
+201708999;Filipe Reis Almeida;;up201708999;up201708999@edu.fe.up.pt;L.EIC
+202003474;Filipe Rodrigues Fonseca;;up202003474;up202003474@edu.fe.up.pt;L.EIC
+201509918;Fl�vio Lobo Vaz;;up201509918;up201509918@edu.fc.up.pt;L.EIC
+202005977;Francisca Correia de Moura Sineiro Andrade;;up202005977;up202005977@edu.fc.up.pt;L.EIC
+202004229;Francisca Horta Guimar�es;;up202004229;up202004229@edu.fe.up.pt;L.EIC
+202005140;Francisca Oliveira e Silva;;up202005140;up202005140@edu.fe.up.pt;L.EIC
+201508213;Francisco Ademar Freitas Friande;;up201508213;up201508213@edu.fe.up.pt;L.EIC
+202108715;Francisco Dias Pires Ferreira de Sousa;;up202108715;up202108715@edu.fe.up.pt;L.EIC
+201604320;Francisco Ernesto Oliveira del Barco Baptista;;up201604320;up201604320@edu.fe.up.pt;L.EIC
+202108656;Francisco Fernandes Augusto;;up202108656;up202108656@edu.fe.up.pt;L.EIC
+201905337;Francisco Gon�alves Cerqueira;;up201905337;up201905337@edu.fe.up.pt;L.EIC
+202108838;Francisco Gon�alves de Sousa;;up202108838;up202108838@edu.fe.up.pt;L.EIC
+201806326;Francisco Jo�o Gon�alves Calado Ara�jo;;up201806326;up201806326@edu.fe.up.pt;L.EIC
+201905405;Francisco Jos� Barbosa Marques Colino;;up201905405;up201905405@edu.fe.up.pt;L.EIC
+200903096;Francisco Jos� Nunes Santos;;up200903096;up200903096@edu.fc.up.pt;L.EIC
+201704790;Francisco Jos� Paiva Gon�alves;;up201704790;up201704790@edu.fe.up.pt;L.EIC
+202006728;Francisco Lopes Mendon�a;;up202006728;up202006728@edu.fe.up.pt;L.EIC
+202007723;Francisco Maria Lopes Pinto Pimentel Serra;;up202007723;up202007723@edu.fe.up.pt;L.EIC
+202004646;Francisco Miguel Alcobia Maia Prada;;up202004646;up202004646@edu.fe.up.pt;L.EIC
+202108793;Francisco Miguel Correia Mariano Pinheiro Cardoso;;up202108793;up202108793@edu.fe.up.pt;L.EIC
+200904191;Francisco Orlando Silva Bernardo;;up200904191;up200904191@edu.fe.up.pt;L.EIC
+201907361;Francisco Pinto de Oliveira;;up201907361;up201907361@edu.fe.up.pt;L.EIC
+202105288;Francisco Pinto Trist�o da Cunha Bettencourt;;up202105288;up202105288@edu.fe.up.pt;L.EIC
+202108762;Francisco Pires da Ana;;up202108762;up202108762@edu.fe.up.pt;L.EIC
+201806242;Francisco Rafael dos Santos Borralho;;up201806242;up201806242@edu.fe.up.pt;L.EIC
+202006111;Francisco Rafael Pereira Teixeira;;up202006111;up202006111@edu.fc.up.pt;L.EIC
+201908044;Francisco Renato Barbosa Pires;;up201908044;up201908044@edu.fe.up.pt;L.EIC
+202108735;Francisco Silva Cunha Campos;;up202108735;up202108735@edu.fe.up.pt;L.EIC
+201908253;Francisco Tavares Ventura Barros Nunes;;up201908253;up201908253@edu.fc.up.pt;L.EIC
+202108796;Francisco Tom�s Marques Lopes;;up202108796;up202108796@edu.fe.up.pt;L.EIC
+201904580;Frederico Manuel Alves Pereira Oliveira Lopes;;up201904580;up201904580@edu.fe.up.pt;L.EIC
+201904508;Gabriel Amorim Carvalho;;up201904508;up201904508@edu.fc.up.pt;L.EIC
+202108816;Gabriel Anibal dos Santos Sousa;;up202108816;up202108816@edu.fe.up.pt;L.EIC
+201800172;Gabriel Augusto Rocco;;up201800172;up201800172@edu.fe.up.pt;L.EIC
+201902223;Gabriel Ferreira Coelho;;up201902223;up201902223@edu.fc.up.pt;L.EIC
+202108722;Gabriel Filipe Gon�alves Campos Ferreira;;up202108722;up202108722@edu.fe.up.pt;L.EIC
+201906072;Gabriel Martins Ferreira;;up201906072;up201906072@edu.fe.up.pt;L.EIC
+201709532;Gabriel Pedrosa Alves;;up201709532;up201709532@edu.fc.up.pt;L.EIC
+202008860;Gabriel Tomaz Machado J�nior;;up202008860;up202008860@edu.fe.up.pt;L.EIC
+202005540;Gabriel Vieira Lemos;;up202005540;up202005540@edu.fc.up.pt;L.EIC
+202004443;Gabriela Dias Salazar Neto Silva;;up202004443;up202004443@edu.fe.up.pt;L.EIC
+202108797;Gaspar Manuel Ferr�s Faria;;up202108797;up202108797@edu.fe.up.pt;L.EIC
+200807826;Gil Cabral da Mota;;up200807826;up200807826@edu.fe.up.pt;L.EIC
+201604138;Gil Martins Andrade;;up201604138;up201604138@edu.fe.up.pt;L.EIC
+202108814;Gon�alo Bessa Costa;;up202108814;up202108814@edu.fe.up.pt;L.EIC
+202006874;Gon�alo Carvalho Marques;;up202006874;up202006874@edu.fe.up.pt;L.EIC
+202108710;Gon�alo Coelho Morais;;up202108710;up202108710@edu.fe.up.pt;L.EIC
+202004907;Gon�alo da Costa Sequeira Pinto;;up202004907;up202004907@edu.fe.up.pt;L.EIC
+202108703;Gon�alo de Abreu Matias;;up202108703;up202108703@edu.fe.up.pt;L.EIC
+202108707;Gon�alo de Castilho Serra Alves Martins;;up202108707;up202108707@edu.fe.up.pt;L.EIC
+202108693;Gon�alo Furtado Estrela Ferreira Pinto;;up202108693;up202108693@edu.fe.up.pt;L.EIC
+202108773;Gon�alo Gon�alves Miranda;;up202108773;up202108773@edu.fe.up.pt;L.EIC
+202108804;Gon�alo Guimar�es Gon�alves de Morais Figueira;;up202108804;up202108804@edu.fe.up.pt;L.EIC
+202004761;Gon�alo Jorge Soares Ferreira;;up202004761;up202004761@edu.fe.up.pt;L.EIC
+202007914;Gon�alo Jos� Vicente e Domingues;;up202007914;up202007914@edu.fe.up.pt;L.EIC
+202108839;Gon�alo L�sias Possacos dos Santos;;up202108839;up202108839@edu.fe.up.pt;L.EIC
+202108672;Gon�alo Pedro Nadais de Pinho;;up202108672;up202108672@edu.fe.up.pt;L.EIC
+202108761;Gon�alo Rodrigues Matos;;up202108761;up202108761@edu.fe.up.pt;L.EIC
+202108680;Gon�alo Rosas Cunha;;up202108680;up202108680@edu.fe.up.pt;L.EIC
+202108733;Gon�alo Vilhena Pinto da Silva;;up202108733;up202108733@edu.fe.up.pt;L.EIC
+202005285;Guilherme Ant�nio Cerqueira Magalh�es;;up202005285;up202005285@edu.fe.up.pt;L.EIC
+201709560;Guilherme Attianese Pereira da Costa;;up201709560;up201709560@edu.fc.up.pt;L.EIC
+202108668;Guilherme Brand�o Monteiro;;up202108668;up202108668@edu.fe.up.pt;L.EIC
+201800157;Guilherme Candicella Calassi;;up201800157;up201800157@edu.fe.up.pt;L.EIC
+202002142;Guilherme Carvalho de Sousa;;up202002142;up202002142@edu.fe.up.pt;L.EIC
+202108872;Guilherme Correia da Silva Coutinho;;up202108872;up202108872@edu.fe.up.pt;L.EIC
+202105090;Guilherme Cortes Pina Oliveira Santos;;up202105090;up202105090@edu.fe.up.pt;L.EIC
+202008866;Guilherme Cunha Seco Fernandes de Almeida;;up202008866;up202008866@edu.fe.up.pt;L.EIC
+202006137;Guilherme de Matos Ferreira de Almeida;;up202006137;up202006137@edu.fe.up.pt;L.EIC
+202000141;Guilherme de Oliveira Coelho;;up202000141;up202000141@edu.fc.up.pt;L.EIC
+202005369;Guilherme de Sousa Carvalho;;up202005369;up202005369@edu.fc.up.pt;L.EIC
+202108731;Guilherme de Sousa Ribeiro;;up202108731;up202108731@edu.fe.up.pt;L.EIC
+202007375;Guilherme Dias da Rocha Pereira;;up202007375;up202007375@edu.fe.up.pt;L.EIC
+201705374;Guilherme Manuel Bica Brand�o Coelho;;up201705374;up201705374@edu.fc.up.pt;L.EIC
+202004809;Guilherme Miguel de Lima Freire;;up202004809;up202004809@edu.fe.up.pt;L.EIC
+201905407;Guilherme Pereira Garrido;;up201905407;up201905407@edu.fe.up.pt;L.EIC
+202004648;Guilherme Soares Sequeira;;up202004648;up202004648@edu.fe.up.pt;L.EIC
+202007036;Guilherme Valler Moreira;;up202007036;up202007036@edu.fe.up.pt;L.EIC
+202004187;Gustavo Gomes Moura Almeida da Costa;;up202004187;up202004187@edu.fe.up.pt;L.EIC
+201403478;Gustavo Martins Brand�o;;up201403478;up201403478@edu.fc.up.pt;L.EIC
+201700129;Gustavo Speranzini Tosi Tavares;;up201700129;up201700129@edu.fe.up.pt;L.EIC
+202108730;Haochang Fu;;up202108730;up202108730@edu.fe.up.pt;L.EIC
+201900643;Hegner Schmidel Kautsky;;up201900643;up201900643@edu.fc.up.pt;L.EIC
+201503035;Helder Emanuel Moreira Bessa;;up201503035;up201503035@edu.fc.up.pt;L.EIC
+202108719;H�lder Gabriel Silva Costa;;up202108719;up202108719@edu.fe.up.pt;L.EIC
+201404947;Helder Lu�s Silva Torres dos Reis;;up201404947;up201404947@edu.fc.up.pt;L.EIC
+202005321;Henrique Correia Vicente;;up202005321;up202005321@edu.fc.up.pt;L.EIC
+201906681;Henrique Costa Sousa;;up201906681;up201906681@edu.fe.up.pt;L.EIC
+202108817;Henrique Filipe Pereira da Silva Caridade;;up202108817;up202108817@edu.fe.up.pt;L.EIC
+202108725;Henrique Manuel Cordeiro Rodrigues Garde;;up202108725;up202108725@edu.fe.up.pt;L.EIC
+202007242;Henrique Oliveira Silva;;up202007242;up202007242@edu.fe.up.pt;L.EIC
+201606462;Henrique Reis Sendim Rodrigues;;up201606462;up201606462@edu.fe.up.pt;L.EIC
+201906852;Henrique Ribeiro Nunes;;up201906852;up201906852@edu.fe.up.pt;L.EIC
+202007459;Henrique Santos Ferreira;;up202007459;up202007459@edu.fe.up.pt;L.EIC
+202007044;Henrique Seabra Ferreira;;up202007044;up202007044@edu.fe.up.pt;L.EIC
+202109249;Hilton Joel de Ara�jo Pereira;;up202109249;up202109249@edu.fe.up.pt;L.EIC
+202006814;Hugo Filipe Rodrigues de Almeida;;up202006814;up202006814@edu.fe.up.pt;L.EIC
+201808548;Hugo Melvin Monteiro Trindade;;up201808548;up201808548@edu.fe.up.pt;L.EIC
+202004343;Hugo Miguel Fernandes Gomes;;up202004343;up202004343@edu.fe.up.pt;L.EIC
+202108785;Hugo Miguel Gon�alves da Costa;;up202108785;up202108785@edu.fe.up.pt;L.EIC
+202006770;Hugo Reis de Castro;;up202006770;up202006770@edu.fe.up.pt;L.EIC
+201908143;Huigui Guo;;up201908143;up201908143@edu.fc.up.pt;L.EIC
+202102360;Ian da N�brega Beltr�o;;up202102360;up202102360@edu.fe.up.pt;L.EIC
+202000707;Ian Italo Martins Gomes;;up202000707;up202000707@edu.fe.up.pt;L.EIC
+202105300;Igor Cherstnev;;up202105300;up202105300@edu.fe.up.pt;L.EIC
+202109250;Igor de Jesus Barreto Rodrigues;;up202109250;up202109250@edu.fe.up.pt;L.EIC
+202000161;Igor Liberato de Castro;;up202000161;up202000161@edu.fe.up.pt;L.EIC
+202108674;Igor Monteiro de Andrade;;up202108674;up202108674@edu.fe.up.pt;L.EIC
+202000162;Igor Rodrigues Diniz;;up202000162;up202000162@edu.fe.up.pt;L.EIC
+201604450;In Young Jang;;up201604450;up201604450@edu.fe.up.pt;L.EIC
+202103343;In�s Alexandre Queir�s Matos Macedo de Oliveira;;up202103343;up202103343@edu.fe.up.pt;L.EIC
+201107323;In�s Caldeira Sampaio dos Aidos;;up201107323;up201107323@edu.fe.up.pt;L.EIC
+202004810;In�s de Magalh�es Garcia;;up202004810;up202004810@edu.fe.up.pt;L.EIC
+202005435;In�s de Sousa Cardoso;;up202005435;up202005435@edu.fe.up.pt;L.EIC
+202004513;In�s Ferreira de Almeida;;up202004513;up202004513@edu.fe.up.pt;L.EIC
+201907886;In�s Margarida Carmezim Guimar�es;;up201907886;up201907886@edu.fc.up.pt;L.EIC
+202108852;In�s Martin Soares;;up202108852;up202108852@edu.fe.up.pt;L.EIC
+202007210;In�s S� Pereira Estev�o Gaspar;;up202007210;up202007210@edu.fe.up.pt;L.EIC
+202008076;In�s Sousa da Silva;;up202008076;up202008076@edu.fc.up.pt;L.EIC
+202006677;Isabel Andr� Amaral;;up202006677;up202006677@edu.fe.up.pt;L.EIC
+201904925;Isabel Maria Couto da Silva;;up201904925;up201904925@edu.fe.up.pt;L.EIC
+202108767;Isabel Maria Lima Moutinho;;up202108767;up202108767@edu.fe.up.pt;L.EIC
+201907399;Isabel Rodrigues Pinheiro Vieira;;up201907399;up201907399@edu.fe.up.pt;L.EIC
+201902617;Isabella Vit�ria Gon�alves Colombarolli;;up201902617;up201902617@edu.fc.up.pt;L.EIC
+201808549;Isla Patr�cia Loureiro Cassamo;;up201808549;up201808549@edu.fe.up.pt;L.EIC
+202010030;Ivan Eug�nio Williams Mubai;;up202010030;up202010030@edu.fe.up.pt;L.EIC
+201307718;Ivo Daniel Loureiro Casal Ribeiro;;up201307718;up201307718@edu.fc.up.pt;L.EIC
+201805073;Jaime de Azevedo Silva;;up201805073;up201805073@edu.fc.up.pt;L.EIC
+202108789;Jaime Francisco Rodrigues Fonseca;;up202108789;up202108789@edu.fe.up.pt;L.EIC
+202109251;Jennifer Cristina Jos� Manuel Ricardo;;up202109251;up202109251@edu.fe.up.pt;L.EIC
+202109252;Jerson Narciso Amone;;up202109252;up202109252@edu.fe.up.pt;L.EIC
+201806723;J�ssica Mireie Fernandes do Nascimento;;up201806723;up201806723@edu.fe.up.pt;L.EIC
+202108835;Joana Cerqueira Maia;;up202108835;up202108835@edu.fe.up.pt;L.EIC
+201805191;Joana Filipa de Sousa Pereira;;up201805191;up201805191@edu.fc.up.pt;L.EIC
+202006279;Joana In�s Gon�alves dos Santos;;up202006279;up202006279@edu.fe.up.pt;L.EIC
+202103346;Joana Rita Batista Marques;;up202103346;up202103346@edu.fe.up.pt;L.EIC
+201907878;Joana Teixeira Mesquita;;up201907878;up201907878@edu.fe.up.pt;L.EIC
+202108691;Jo�o Afonso Carvalho Viveiros;;up202108691;up202108691@edu.fe.up.pt;L.EIC
+202005519;Jo�o Afonso Cerqueira Pacheco;;up202005519;up202005519@edu.fc.up.pt;L.EIC
+202108694;Jo�o Afonso da Silva Gaspar;;up202108694;up202108694@edu.fe.up.pt;L.EIC
+201905589;Jo�o Afonso Martins Domingues Andrade;;up201905589;up201905589@edu.fe.up.pt;L.EIC
+202108805;Jo�o Afonso Oliveira Teixeira Santos;;up202108805;up202108805@edu.fe.up.pt;L.EIC
+201905175;Jo�o Aires Gon�alves;;up201905175;up201905175@edu.fc.up.pt;L.EIC
+201904881;Jo�o Andr� Bastos Moura;;up201904881;up201904881@edu.fc.up.pt;L.EIC
+201905952;Jo�o Andr� Silva Roleira Marinho;;up201905952;up201905952@edu.fe.up.pt;L.EIC
+202006605;Jo�o Ant�nio Maricato Malva;;up202006605;up202006605@edu.fe.up.pt;L.EIC
+202007145;Jo�o Ant�nio Semedo Pereira;;up202007145;up202007145@edu.fe.up.pt;L.EIC
+202004846;Jo�o Ant�nio Teixeira Coelho;;up202004846;up202004846@edu.fe.up.pt;L.EIC
+201405904;Jo�o Augusto Alexandre Fonseca;;up201405904;up201405904@edu.fc.up.pt;L.EIC
+201904739;Jo�o Bernardo Pereira de Sousa;;up201904739;up201904739@edu.fc.up.pt;L.EIC
+202108670;Jo�o Brand�o Alves;;up202108670;up202108670@edu.fe.up.pt;L.EIC
+201907863;Jo�o Carlos Macedo Rodrigues;;up201907863;up201907863@edu.fc.up.pt;L.EIC
+202005959;Jo�o Carlos Sousa Mendes;;up202005959;up202005959@edu.fe.up.pt;L.EIC
+202108780;Jo�o Carlos Tom� Longras;;up202108780;up202108780@edu.fe.up.pt;L.EIC
+202008559;Jo�o Castro Magalh�es;;up202008559;up202008559@edu.fe.up.pt;L.EIC
+202108867;Jo�o das Neves Fernandes;;up202108867;up202108867@edu.fe.up.pt;L.EIC
+202008133;Jo�o de Oliveira Gigante Pinheiro;;up202008133;up202008133@edu.fe.up.pt;L.EIC
+202108873;Jo�o Diogo Figueiredo;;up202108873;up202108873@edu.fe.up.pt;L.EIC
+202006731;Jo�o Diogo Nunes Cruz;;up202006731;up202006731@edu.fe.up.pt;L.EIC
+201806162;Jo�o Diogo Vila Franca Gon�alves;;up201806162;up201806162@edu.fe.up.pt;L.EIC
+201905616;Jo�o Ferreira Baltazar;;up201905616;up201905616@edu.fe.up.pt;L.EIC
+202006918;Jo�o Filipe Campos Pedro;;up202006918;up202006918@edu.fc.up.pt;L.EIC
+202006280;Jo�o Filipe Carvalhais dos Santos de Matos;;up202006280;up202006280@edu.fe.up.pt;L.EIC
+202108711;Jo�o Filipe de Menezes Falc�o e Sousa Guedes;;up202108711;up202108711@edu.fe.up.pt;L.EIC
+202108723;Jo�o Filipe Moreno Martins;;up202108723;up202108723@edu.fe.up.pt;L.EIC
+202108743;Jo�o Filipe Oliveira Ramos;;up202108743;up202108743@edu.fe.up.pt;L.EIC
+201905212;Jo�o Francisco Campos Moreira;;up201905212;up201905212@edu.fc.up.pt;L.EIC
+201705573;Jo�o Francisco de Pinho Brand�o;;up201705573;up201705573@edu.fe.up.pt;L.EIC
+202004244;Jo�o Francisco Ferreira Maldonado;;up202004244;up202004244@edu.fe.up.pt;L.EIC
+201707427;Jo�o Francisco Ribeiro dos Santos;;up201707427;up201707427@edu.fe.up.pt;L.EIC
+201810087;Jo�o Gabriel Ferreira Alves;;up201810087;up201810087@edu.fc.up.pt;L.EIC
+201906682;Jo�o Gil Marinho Mesquita;;up201906682;up201906682@edu.fe.up.pt;L.EIC
+201808910;Jo�o Guilherme Guedes Perez da Silva Barra;;up201808910;up201808910@edu.fe.up.pt;L.EIC
+202108677;Jo�o Guimar�es Mota;;up202108677;up202108677@edu.fe.up.pt;L.EIC
+201805000;Jo�o Henrique Nunes de Pinho;;up201805000;up201805000@edu.fc.up.pt;L.EIC
+201805137;Jo�o Jorge Azevedo Gon�alves;;up201805137;up201805137@edu.fc.up.pt;L.EIC
+201705110;Jo�o Lu�s Cardoso Rodrigo;;up201705110;up201705110@edu.fe.up.pt;L.EIC
+202004407;Jo�o Lu�s Pimenta da Silva Oliveira;;up202004407;up202004407@edu.fe.up.pt;L.EIC
+202108891;Jo�o Macedo Lima;;up202108891;up202108891@edu.fe.up.pt;L.EIC
+201909699;Jo�o Manuel Miranda Costa;;up201909699;up201909699@edu.fc.up.pt;L.EIC
+201907007;Jo�o Margato Borlido Pereira;;up201907007;up201907007@edu.fc.up.pt;L.EIC
+202108777;Jo�o Mendes Silva Belchior;;up202108777;up202108777@edu.fe.up.pt;L.EIC
+201403343;Jo�o Miguel Aguiar Cunha;;up201403343;up201403343@edu.fe.up.pt;L.EIC
+201806416;Jo�o Miguel Almeida da Silva;;up201806416;up201806416@edu.fe.up.pt;L.EIC
+202108863;Jo�o Miguel da Silva Louren�o;;up202108863;up202108863@edu.fe.up.pt;L.EIC
+202108829;Jo�o Miguel de Castro Figueiredo;;up202108829;up202108829@edu.fe.up.pt;L.EIC
+201705580;Jo�o Miguel dos Santos de Lima Monteiro;;up201705580;up201705580@edu.fe.up.pt;L.EIC
+201905892;Jo�o Miguel Ferreira de Ara�jo Pinto Correia;;up201905892;up201905892@edu.fc.up.pt;L.EIC
+201805078;Jo�o Miguel Santos Lopes;;up201805078;up201805078@edu.fc.up.pt;L.EIC
+202108732;Jo�o Miguel Vieira Cardoso;;up202108732;up202108732@edu.fe.up.pt;L.EIC
+202108726;Jo�o Moreira da Silva;;up202108726;up202108726@edu.fe.up.pt;L.EIC
+202003518;Jo�o Nunes Miranda;;up202003518;up202003518@edu.fe.up.pt;L.EIC
+201504397;Jo�o Nuno Diegues Vasconcelos;;up201504397;up201504397@edu.fe.up.pt;L.EIC
+201708566;Jo�o Oliveira da Rocha;;up201708566;up201708566@edu.fe.up.pt;L.EIC
+202108713;Jo�o Pacheco Veiga Dias da Silva;;up202108713;up202108713@edu.fe.up.pt;L.EIC
+201805032;Jo�o Paulo Afonso Gomes Luis;;up201805032;up201805032@edu.fc.up.pt;L.EIC
+200000316;Jo�o Paulo de Jesus Pereira Correia da Silva;;up200000316;up200000316@edu.fc.up.pt;L.EIC
+201707984;Jo�o Paulo Jesus Duarte;;up201707984;up201707984@edu.fc.up.pt;L.EIC
+202004293;Jo�o Paulo Moreira Ara�jo;;up202004293;up202004293@edu.fe.up.pt;L.EIC
+201806261;Jo�o Paulo Silva da Rocha;;up201806261;up201806261@edu.fe.up.pt;L.EIC
+202006525;Jo�o Paulo Silva Santos;;up202006525;up202006525@edu.fe.up.pt;L.EIC
+202108702;Jo�o Paulo Vieira da Silva;;up202108702;up202108702@edu.fe.up.pt;L.EIC
+202108736;Jo�o Pedro Ant�o Sobral;;up202108736;up202108736@edu.fe.up.pt;L.EIC
+202004558;Jo�o Pedro Azevedo Carvalho;;up202004558;up202004558@edu.fc.up.pt;L.EIC
+202005801;Jo�o Pedro Brito Veloso;;up202005801;up202005801@edu.fc.up.pt;L.EIC
+202006526;Jo�o Pedro Cardoso do Couto;;up202006526;up202006526@edu.fe.up.pt;L.EIC
+202005015;Jo�o Pedro Carvalho Correia;;up202005015;up202005015@edu.fc.up.pt;L.EIC
+202005035;Jo�o Pedro Carvalho Moreira;;up202005035;up202005035@edu.fe.up.pt;L.EIC
+202108737;Jo�o Pedro Cruz Moreira de Oliveira;;up202108737;up202108737@edu.fe.up.pt;L.EIC
+201704851;Jo�o Pedro da Costa Ribeiro;;up201704851;up201704851@edu.fe.up.pt;L.EIC
+201900190;Jo�o Pedro de Almeida Teixeira;;up201900190;up201900190@edu.fe.up.pt;L.EIC
+202108044;Jo�o Pedro Dias Fernandes;;up202108044;up202108044@edu.fe.up.pt;L.EIC
+201304970;Jo�o Pedro Duarte Lou��o;;up201304970;up201304970@edu.letras.up.pt;L.EIC
+202108765;Joao Pedro Ferreira Gomes Lopes Genesio;;up202108765;up202108765@edu.fe.up.pt;L.EIC
+201806389;Jo�o Pedro Fontes Vilhena e Mascarenhas;;up201806389;up201806389@edu.fe.up.pt;L.EIC
+201805199;Jo�o Pedro Martins Rocha;;up201805199;up201805199@edu.fc.up.pt;L.EIC
+202007855;Jo�o Pedro Matos de Ara�jo;;up202007855;up202007855@edu.fe.up.pt;L.EIC
+202005164;Jo�o Pedro Matos Gon�alves;;up202005164;up202005164@edu.fc.up.pt;L.EIC
+202108714;Jo�o Pedro Moreira Costa;;up202108714;up202108714@edu.fe.up.pt;L.EIC
+201705254;Jo�o Pedro Oliveira L�rio;;up201705254;up201705254@edu.fe.up.pt;L.EIC
+202108823;Jo�o Pedro Oliveira Sequeira;;up202108823;up202108823@edu.fe.up.pt;L.EIC
+201806496;Jo�o Pedro Ramos de Sousa;;up201806496;up201806496@edu.fe.up.pt;L.EIC
+202005437;Jo�o Pedro Reis Teixeira;;up202005437;up202005437@edu.fe.up.pt;L.EIC
+202108787;Jo�o Pedro Rodrigues Coutinho;;up202108787;up202108787@edu.fe.up.pt;L.EIC
+201906478;Jo�o Pedro Rodrigues da Silva;;up201906478;up201906478@edu.fe.up.pt;L.EIC
+202108833;Jo�o Pedro S� Torres Neiva Passos;;up202108833;up202108833@edu.fe.up.pt;L.EIC
+202106996;Jo�o Pedro Seabra Pedrosa Botelho de Sousa;;up202106996;up202106996@edu.fe.up.pt;L.EIC
+201504089;Jo�o Pedro Silva Duarte;;up201504089;up201504089@edu.fe.up.pt;L.EIC
+200000668;Jo�o Pedro Vieira da Costa;;up200000668;up200000668@edu.fe.up.pt;L.EIC
+201706978;Jo�o Pinto Ferreira Martins;;up201706978;up201706978@edu.fe.up.pt;L.EIC
+201705547;Jo�o Renato da Costa Pinto;;up201705547;up201705547@edu.fe.up.pt;L.EIC
+202007614;Jo�o Ricardo Ramos Alves;;up202007614;up202007614@edu.fe.up.pt;L.EIC
+202007227;Jo�o Rola Reis;;up202007227;up202007227@edu.fe.up.pt;L.EIC
+202108692;Joao Rui Farias Soares do Rego;;up202108692;up202108692@edu.fe.up.pt;L.EIC
+201406255;Jo�o Serra Vilhena Gusm�o;;up201406255;up201406255@edu.fc.up.pt;L.EIC
+202108864;Jo�o Tiago Morais Louren�o;;up202108864;up202108864@edu.fe.up.pt;L.EIC
+202108738;Jo�o Tom�s Cardinal Pinho Teixeira;;up202108738;up202108738@edu.fe.up.pt;L.EIC
+202004587;Jo�o Tom�s Cardoso Mata;;up202004587;up202004587@edu.fc.up.pt;L.EIC
+202008867;Jo�o Tom�s Marques F�lix;;up202008867;up202008867@edu.fe.up.pt;L.EIC
+202108766;Joao Tomas Matos Fernandes Garcia Padrao;;up202108766;up202108766@edu.fe.up.pt;L.EIC
+202108848;Jo�o Torre Onofre Pereira;;up202108848;up202108848@edu.fe.up.pt;L.EIC
+201802644;Jo�o Vitor Silva Santos;;up201802644;up201802644@edu.fe.up.pt;L.EIC
+202000416;Jo�o Vitor Torres Tedesco;;up202000416;up202000416@edu.fc.up.pt;L.EIC
+202108779;Joaquim Afonso Marques da Cunha;;up202108779;up202108779@edu.fe.up.pt;L.EIC
+201905257;Joaquim Alberto Lima Monteiro;;up201905257;up201905257@edu.fe.up.pt;L.EIC
+201908075;Joaquim Tiago Goncalves Oliveira;;up201908075;up201908075@edu.fc.up.pt;L.EIC
+201904977;Joel Alexandre Vieira Fernandes;;up201904977;up201904977@edu.fe.up.pt;L.EIC
+202108886;Jorge Andr� Cola�o Restivo;;up202108886;up202108886@edu.fe.up.pt;L.EIC
+200801677;Jorge Carlos Baptista Duarte;;up200801677;up200801677@edu.fe.up.pt;L.EIC
+202006140;Jorge Daniel de Almeida Sousa;;up202006140;up202006140@edu.fe.up.pt;L.EIC
+201706518;Jorge Levi Perdigoto da Costa;;up201706518;up201706518@edu.fe.up.pt;L.EIC
+201606590;Jorge Miguel de Sousa Barbosa;;up201606590;up201606590@edu.fc.up.pt;L.EIC
+202008561;Jos� Albano de Almeida Gaspar;;up202008561;up202008561@edu.fe.up.pt;L.EIC
+201705226;Jos� Ant�nio Dantas Macedo;;up201705226;up201705226@edu.fe.up.pt;L.EIC
+202108794;Jos� Ant�nio Pereira Martins;;up202108794;up202108794@edu.fe.up.pt;L.EIC
+202108868;Jos� Ant�nio Rodrigues Ribeiro;;up202108868;up202108868@edu.fe.up.pt;L.EIC
+202004823;Jos� Ant�nio Santos Costa;;up202004823;up202004823@edu.fe.up.pt;L.EIC
+202000163;Jos� Artur Lima Assun��o;;up202000163;up202000163@edu.fe.up.pt;L.EIC
+201905451;Jos� Carlos Cardiano Mota Gon�alves da Cunha;;up201905451;up201905451@edu.fe.up.pt;L.EIC
+202003529;Jos� Diogo Pinto;;up202003529;up202003529@edu.fe.up.pt;L.EIC
+201907216;Jos� Eduardo Ferreira da Costa;;up201907216;up201907216@edu.fe.up.pt;L.EIC
+202108753;Jos� Francisco Reis Pedreiras Neves Veiga;;up202108753;up202108753@edu.fe.up.pt;L.EIC
+201807626;Jos� Frederico Gomes Ferreira Marques Rodrigues;;up201807626;up201807626@edu.fe.up.pt;L.EIC
+202108879;Jose Henrique Nogueira Campos de Morais Pinheiro;;up202108879;up202108879@edu.fe.up.pt;L.EIC
+202008061;Jos� Leandro Rodrigues da Silva;;up202008061;up202008061@edu.fe.up.pt;L.EIC
+202007921;Jos� Luis Barbosa de Ara�jo;;up202007921;up202007921@edu.fe.up.pt;L.EIC
+201906576;Jos� Lu�s Barbosa Soares da Silva;;up201906576;up201906576@edu.fc.up.pt;L.EIC
+202008462;Jos� Lu�s Cunha Rodrigues;;up202008462;up202008462@edu.fe.up.pt;L.EIC
+202004653;Jos� Lu�s Nunes Os�rio;;up202004653;up202004653@edu.fe.up.pt;L.EIC
+202103344;Jos� Luiz Rodriguez Carib�;;up202103344;up202103344@edu.fe.up.pt;L.EIC
+202108657;Jos� Manuel Fernandes Felisberto;;up202108657;up202108657@edu.fe.up.pt;L.EIC
+202006141;Jose Manuel Henriques Valente Marques de Sousa;;up202006141;up202006141@edu.fe.up.pt;L.EIC
+200606068;Jos� Manuel Pereira Bernardino;;up200606068;up200606068@edu.fe.up.pt;L.EIC
+202008861;Jos� Marcelino Zacarias J�nior;;up202008861;up202008861@edu.fe.up.pt;L.EIC
+202006963;Jos� Maria Borges Pires do Couto e Castro;;up202006963;up202006963@edu.fe.up.pt;L.EIC
+200705464;Jos� Maria Lopes Monteiro Semedo;;up200705464;up200705464@edu.fe.up.pt;L.EIC
+202108739;Jos� Martim Peixoto Campos;;up202108739;up202108739@edu.fe.up.pt;L.EIC
+202007231;Jos� Miguel Ara�jo Ribeiro;;up202007231;up202007231@edu.fe.up.pt;L.EIC
+201809590;Jos� Miguel Carvalho Rodrigues;;up201809590;up201809590@edu.fc.up.pt;L.EIC
+202005827;Jos� Miguel Ferreira Carvalho;;up202005827;up202005827@edu.fc.up.pt;L.EIC
+202006485;Jos� Miguel Moreira Isidro;;up202006485;up202006485@edu.fe.up.pt;L.EIC
+201605976;Jos� Miguel Pimenta Rodrigues;;up201605976;up201605976@edu.fe.up.pt;L.EIC
+202108729;Jos� Miguel Sereno Santos;;up202108729;up202108729@edu.fe.up.pt;L.EIC
+202108712;Jos� Nuno Barbosa Quintas;;up202108712;up202108712@edu.fe.up.pt;L.EIC
+201102690;Jos� Nuno de Moura Machado;;up201102690;up201102690@edu.fe.up.pt;L.EIC
+202007651;Jos� Nuno Pascoal Guedes;;up202007651;up202007651@edu.fe.up.pt;L.EIC
+201904775;Jos� Pedro Abreu Silva;;up201904775;up201904775@edu.fe.up.pt;L.EIC
+202108673;Jos� Pedro Almeida Batista de Sousa Santos;;up202108673;up202108673@edu.fe.up.pt;L.EIC
+202108818;Jos� Pedro Evans de Carvalho Nobre Joao;;up202108818;up202108818@edu.fe.up.pt;L.EIC
+201303544;Jos� Pedro Morgado Maia;;up201303544;up201303544@edu.fc.up.pt;L.EIC
+201708806;Jos� Pedro Nogueira Rodrigues;;up201708806;up201708806@edu.fe.up.pt;L.EIC
+201904515;Jos� Pedro Peixoto Ferreira;;up201904515;up201904515@edu.fe.up.pt;L.EIC
+202108764;Jos� Pedro Soares de Oliveira;;up202108764;up202108764@edu.fe.up.pt;L.EIC
+202005460;Jos� Pedro Teixeira Ramos;;up202005460;up202005460@edu.fe.up.pt;L.EIC
+202108836;Jose Pedro Trocado Ferreira;;up202108836;up202108836@edu.fe.up.pt;L.EIC
+201908142;Juan Bellon Lopez;;up201908142;up201908142@edu.fe.up.pt;L.EIC
+202109253;Kaamil Nurmahomed Hassane;;up202109253;up202109253@edu.fe.up.pt;L.EIC
+201808612;Kendira Noory Ver�ssimo Santos;;up201808612;up201808612@edu.fc.up.pt;L.EIC
+202108876;Lara In�s Alves Cunha;;up202108876;up202108876@edu.fe.up.pt;L.EIC
+201806762;Lara Machado de Medicis;;up201806762;up201806762@edu.fe.up.pt;L.EIC
+202108740;Lara Santos Bastos;;up202108740;up202108740@edu.fe.up.pt;L.EIC
+201207603;Leonor Ribeiro e Sousa Mendes de Freitas;;up201207603;up201207603@edu.fe.up.pt;L.EIC
+202108877;Let�cia Mendes Coelho;;up202108877;up202108877@edu.fe.up.pt;L.EIC
+202005042;Lia da Silva Linhares Vieira;;up202005042;up202005042@edu.fe.up.pt;L.EIC
+202108741;Lia Margarida Mota Sobral;;up202108741;up202108741@edu.fe.up.pt;L.EIC
+202005545;Linda In�s de Pina Marques Rodrigues;;up202005545;up202005545@edu.fc.up.pt;L.EIC
+202108696;Lino Branco Vaz;;up202108696;up202108696@edu.fe.up.pt;L.EIC
+202004816;Louren�o Alexandre Correia Gon�alves;;up202004816;up202004816@edu.fe.up.pt;L.EIC
+202002810;Lucas Bittencourt de Farias;;up202002810;up202002810@edu.fc.up.pt;L.EIC
+202001337;Lucas Borborema Nakajima;;up202001337;up202001337@edu.fe.up.pt;L.EIC
+202004682;Lucas Ferreira de Sousa;;up202004682;up202004682@edu.fe.up.pt;L.EIC
+201904517;Lucas Jorge Calvet de Magalh�es Fernandes Santos;;up201904517;up201904517@edu.fe.up.pt;L.EIC
+201806140;Lu�s Andr� Santos Correia Assun��o;;up201806140;up201806140@edu.fe.up.pt;L.EIC
+201904624;Lu�s Ant�nio Carvalho Albergaria Lucas;;up201904624;up201904624@edu.fe.up.pt;L.EIC
+201904979;Luis Carlos Barros Viegas;;up201904979;up201904979@edu.fe.up.pt;L.EIC
+201905767;Lu�s Carlos Ferreira Freitas;;up201905767;up201905767@edu.fe.up.pt;L.EIC
+201303776;Luis Carlos Gomes de Pinho;;up201303776;up201303776@edu.fc.up.pt;L.EIC
+202108727;Lu�s Carlos Novais Alves;;up202108727;up202108727@edu.fe.up.pt;L.EIC
+201905962;Lu�s Filipe Carvalhais dos Santos de Matos;;up201905962;up201905962@edu.fe.up.pt;L.EIC
+202108683;Lu�s Filipe da Silva Jesus;;up202108683;up202108683@edu.fe.up.pt;L.EIC
+202108770;Lu�s Filipe Gon�alves Fernandes;;up202108770;up202108770@edu.fe.up.pt;L.EIC
+202108742;Lu�s Filipe Moura Oliveira da Silveira Contreiras;;up202108742;up202108742@edu.fe.up.pt;L.EIC
+201709375;Lu�s Filipe Pinto Cunha;;up201709375;up201709375@edu.fc.up.pt;L.EIC
+201806340;Luis Guilherme de Melo F�lix Diogo;;up201806340;up201806340@edu.fe.up.pt;L.EIC
+202004196;Lu�s Henrique da Cunha Castanho Gon�alves Gan�o;;up202004196;up202004196@edu.fc.up.pt;L.EIC
+201906750;Lu�s Manuel Duarte Silva dos Santos Leite;;up201906750;up201906750@edu.fc.up.pt;L.EIC
+202005832;Lu�s Manuel Ribeiro de Sousa;;up202005832;up202005832@edu.fc.up.pt;L.EIC
+201806206;Lu�s Miguel Afonso Pinto;;up201806206;up201806206@edu.fe.up.pt;L.EIC
+198901822;Lu�s Miguel de Barros Proen�a Fernandes;;up198901822;up198901822@edu.fe.up.pt;L.EIC
+201104354;Lu�s Miguel Guimas Marques;;up201104354;up201104354@edu.fe.up.pt;L.EIC
+202108662;Lu�s Miguel Lima Tavares;;up202108662;up202108662@edu.fe.up.pt;L.EIC
+202108734;Lu�s Miguel Mota Duarte;;up202108734;up202108734@edu.fe.up.pt;L.EIC
+202006094;Lu�s Miguel Moura Paiva;;up202006094;up202006094@edu.fe.up.pt;L.EIC
+201406356;Lu�s Oct�vio Pais Ferreira dos Santos Soares;;up201406356;up201406356@edu.fe.up.pt;L.EIC
+201306340;Lu�s Paulo da Rocha Miranda;;up201306340;up201306340@edu.fe.up.pt;L.EIC
+202105385;Lu�s Pedro Du;;up202105385;up202105385@edu.fe.up.pt;L.EIC
+200800621;Luis Pedro Rodrigues de Morais;;up200800621;up200800621@edu.fe.up.pt;L.EIC
+201406189;Lu�s Rafael Fernandes Mendes Afonso;;up201406189;up201406189@edu.fe.up.pt;L.EIC
+201604835;Lu�s Ricardo Matos Mendes;;up201604835;up201604835@edu.fe.up.pt;L.EIC
+202006464;Lu�s Tiago Trindade Cabral;;up202006464;up202006464@edu.fe.up.pt;L.EIC
+202108661;Luis Vieira Relvas;;up202108661;up202108661@edu.fe.up.pt;L.EIC
+201704805;Luisa Maria Cabral Mesquita Oliveira Correia;;up201704805;up201704805@edu.fe.up.pt;L.EIC
+201904996;Lu�sa Maria Pereira Ara�jo;;up201904996;up201904996@edu.fe.up.pt;L.EIC
+202102362;Luiz Henrique Mamede Queiroz;;up202102362;up202102362@edu.fe.up.pt;L.EIC
+202108795;Madalena Ye;;up202108795;up202108795@edu.fe.up.pt;L.EIC
+202006417;Mafalda Bastos da Costa;;up202006417;up202006417@edu.fe.up.pt;L.EIC
+201707066;Mafalda da Costa Cabral Magalh�es;;up201707066;up201707066@edu.fe.up.pt;L.EIC
+202109254;Magalh�es Bramugi J�nior;;up202109254;up202109254@edu.fe.up.pt;L.EIC
+202102355;Mansur Mustafin;;up202102355;up202102355@edu.fe.up.pt;L.EIC
+201402718;Manuel Anselmo Gomes Moreira;;up201402718;up201402718@edu.fe.up.pt;L.EIC
+201906910;Manuel Carlos Ramos Alves;;up201906910;up201906910@edu.fe.up.pt;L.EIC
+201805273;Manuel da Silva S�;;up201805273;up201805273@edu.fc.up.pt;L.EIC
+202106250;Manuel Jo�o Ferreira Mota Oliveira da Silva;;up202106250;up202106250@edu.fe.up.pt;L.EIC
+202007485;Manuel Jo�o Gomes Alves Amorim;;up202007485;up202007485@edu.fe.up.pt;L.EIC
+202108874;Manuel Maria Faria de Sousa e Silva;;up202108874;up202108874@edu.fe.up.pt;L.EIC
+202108744;Manuel Ramos Leite Carvalho Neto;;up202108744;up202108744@edu.fe.up.pt;L.EIC
+202007554;Manuel Tadeu Veloso Rodrigues;;up202007554;up202007554@edu.fe.up.pt;L.EIC
+201809566;Marcelo Augusto Reis;;up201809566;up201809566@edu.fe.up.pt;L.EIC
+201900192;Marcelo de Marcelos Arruda;;up201900192;up201900192@edu.fe.up.pt;L.EIC
+201603903;Marcelo Guarniero Apolin�rio;;up201603903;up201603903@edu.fe.up.pt;L.EIC
+201906086;Marcelo Henriques Couto;;up201906086;up201906086@edu.fe.up.pt;L.EIC
+202108821;Marco Andr� Pereira da Costa;;up202108821;up202108821@edu.fe.up.pt;L.EIC
+202004891;Marco Andr� Rocha Pinto;;up202004891;up202004891@edu.fe.up.pt;L.EIC
+202108774;Marco Filipe Gon�alves Vilas Boas;;up202108774;up202108774@edu.fe.up.pt;L.EIC
+202108869;Marcos Ant�nio Sousa Costa;;up202108869;up202108869@edu.fe.up.pt;L.EIC
+202006888;Marcos Rafael Peixoto Aires;;up202006888;up202006888@edu.fe.up.pt;L.EIC
+201800177;Marcos William Ferreira Pinto;;up201800177;up201800177@edu.fe.up.pt;L.EIC
+201704599;Margarida Alves Pinho;;up201704599;up201704599@edu.fe.up.pt;L.EIC
+201905046;Margarida Assis Ferreira;;up201905046;up201905046@edu.fe.up.pt;L.EIC
+201907907;Margarida Jorge Cerqueira Vieira;;up201907907;up201907907@edu.fe.up.pt;L.EIC
+201908209;Margarida Nazar� Pereira dos Santos;;up201908209;up201908209@edu.fc.up.pt;L.EIC
+201709304;Margarida Ribeiro Cosme;;up201709304;up201709304@edu.fe.up.pt;L.EIC
+201906784;Margarida Rocha Raposo de Oliveira;;up201906784;up201906784@edu.fe.up.pt;L.EIC
+201909858;Margarida Vilas Boas Miranda;;up201909858;up201909858@edu.fc.up.pt;L.EIC
+202108849;Maria Abreu da Costa;;up202108849;up202108849@edu.fe.up.pt;L.EIC
+201704951;Maria Alexandra Quintas Ba�a;;up201704951;up201704951@edu.fe.up.pt;L.EIC
+202107798;Maria Beatriz Monteiro Carneiro;;up202107798;up202107798@edu.fe.up.pt;L.EIC
+201906888;Maria Beatriz Russo Lopes dos Santos;;up201906888;up201906888@edu.fe.up.pt;L.EIC
+201909937;Maria Benedita Prata Pinto Oliveira e Bacelar;;up201909937;up201909937@edu.fe.up.pt;L.EIC
+202005428;Maria Carlota Gomes Ribeiro Matos Leite;;up202005428;up202005428@edu.fe.up.pt;L.EIC
+201908057;Maria Carlota Gomes Silva;;up201908057;up201908057@edu.fe.up.pt;L.EIC
+201709467;Maria Eduarda Fornelos Dantas;;up201709467;up201709467@edu.fc.up.pt;L.EIC
+202004473;Maria Eduarda Pacheco Mendes Ara�jo;;up202004473;up202004473@edu.fc.up.pt;L.EIC
+201806398;Maria Francisca Ferr�o Castelo Branco de Faria e Almeida;;up201806398;up201806398@edu.fe.up.pt;L.EIC
+202108775;Maria In�s Gon�alves Miranda;;up202108775;up202108775@edu.fe.up.pt;L.EIC
+201906942;Maria Jo�o Barbosa Oliveira Correia Campos;;up201906942;up201906942@edu.fc.up.pt;L.EIC
+201704313;Maria Joao Lopes Machado;;up201704313;up201704313@edu.fe.up.pt;L.EIC
+201907726;Maria Jos� Valente da Silva Carneiro;;up201907726;up201907726@edu.fe.up.pt;L.EIC
+201806798;Maria Leonor Monteiro Beir�o;;up201806798;up201806798@edu.fe.up.pt;L.EIC
+202004453;Maria Leonor Ribeiro Laranjeira;;up202004453;up202004453@edu.fe.up.pt;L.EIC
+202006471;Maria Lu�sa Fontanete Loureiro Salvador;;up202006471;up202006471@edu.fe.up.pt;L.EIC
+201604530;Maria Marta Nunes Andrade Lobo dos Santos;;up201604530;up201604530@edu.fe.up.pt;L.EIC
+201906945;Maria Miguel Ferreira Gomes Veiga Ribeiro;;up201906945;up201906945@edu.fc.up.pt;L.EIC
+202108819;Maria Rita Nogueira Lopes;;up202108819;up202108819@edu.fe.up.pt;L.EIC
+202006927;Maria Sofia Brand�o Porto Carvalho Gon�alves;;up202006927;up202006927@edu.fe.up.pt;L.EIC
+201904675;Maria Sofia Diogo Figueiredo;;up201904675;up201904675@edu.fe.up.pt;L.EIC
+202007342;Maria Sofia Vasconcelos e Sousa Minnemann;;up202007342;up202007342@edu.fe.up.pt;L.EIC
+202005204;Mariana Bourbon Meireles Dias Nogueira;;up202005204;up202005204@edu.fc.up.pt;L.EIC
+202007620;Mariana Costa Osiecka de Carvalho;;up202007620;up202007620@edu.fe.up.pt;L.EIC
+202004260;Mariana de Matos Louren�o Lob�o;;up202004260;up202004260@edu.fe.up.pt;L.EIC
+201905705;Mariana Lima Teixeira;;up201905705;up201905705@edu.fe.up.pt;L.EIC
+202108824;Mariana Marujo Conde;;up202108824;up202108824@edu.fe.up.pt;L.EIC
+202003480;Mariana Mirra Monteiro;;up202003480;up202003480@edu.fe.up.pt;L.EIC
+202005658;Mariana Mota Azevedo;;up202005658;up202005658@edu.fe.up.pt;L.EIC
+202004656;Mariana Solange Monteiro Rocha;;up202004656;up202004656@edu.fe.up.pt;L.EIC
+201706254;Marina Ribeiro Amorim;;up201706254;up201706254@edu.fc.up.pt;L.EIC
+201806787;Marina Tost�es Fernandes Leit�o Dias;;up201806787;up201806787@edu.fe.up.pt;L.EIC
+201806363;M�rio Ant�nio Lage Dixo de Sousa;;up201806363;up201806363@edu.fe.up.pt;L.EIC
+202108841;M�rio Costa R�go da Silva;;up202108841;up202108841@edu.fe.up.pt;L.EIC
+202008219;M�rio Jorge dos Santos Borges Branco;;up202008219;up202008219@edu.fe.up.pt;L.EIC
+201905871;M�rio Manuel Seixas Travassos;;up201905871;up201905871@edu.fe.up.pt;L.EIC
+201907727;M�rio Pedro Soares Pinto Mota Ferreira;;up201907727;up201907727@edu.fe.up.pt;L.EIC
+201907020;Marta Cristina dos Santos Mariz;;up201907020;up201907020@edu.fe.up.pt;L.EIC
+202006289;Martim Afonso Rodrigues dos Santos Castro Videira;;up202006289;up202006289@edu.fe.up.pt;L.EIC
+202004421;Martim Ra�l da Rocha Henriques;;up202004421;up202004421@edu.fe.up.pt;L.EIC
+202108709;Mateus Afonso Namora Baldaque Marinho;;up202108709;up202108709@edu.fe.up.pt;L.EIC
+201906232;Mateus Ferreira da Silva;;up201906232;up201906232@edu.fe.up.pt;L.EIC
+202102363;Matheus Negrini Liotti;;up202102363;up202102363@edu.fe.up.pt;L.EIC
+201700131;Matheus Stiehler Alves;;up201700131;up201700131@edu.fe.up.pt;L.EIC
+201900194;Matias Lessa Vaz;;up201900194;up201900194@edu.fc.up.pt;L.EIC
+202108853;Matilde Faro Martins Castelo Pires;;up202108853;up202108853@edu.fe.up.pt;L.EIC
+202108782;Matilde Isabel da Silva Sim�es;;up202108782;up202108782@edu.fe.up.pt;L.EIC
+201906954;Matilde Jacinto Oliveira;;up201906954;up201906954@edu.fe.up.pt;L.EIC
+202007928;Matilde Maria Amaral Silva;;up202007928;up202007928@edu.fe.up.pt;L.EIC
+202007623;Matilde Pinho Borges Sequeira;;up202007623;up202007623@edu.fe.up.pt;L.EIC
+202109255;Mauro Filipe Aguiar Afonso Moniz;;up202109255;up202109255@edu.fe.up.pt;L.EIC
+202108887;M�ximo Brand�o Pereira;;up202108887;up202108887@edu.fe.up.pt;L.EIC
+201905076;Melissa Moreira da Silva;;up201905076;up201905076@edu.fe.up.pt;L.EIC
+202005488;Miguel �ngelo Aguiar e Nogueira;;up202005488;up202005488@edu.fe.up.pt;L.EIC
+201704608;Miguel �ngelo Pacheco Valente;;up201704608;up201704608@edu.fc.up.pt;L.EIC
+202005208;Miguel �ngelo Silva Teixeira;;up202005208;up202005208@edu.fe.up.pt;L.EIC
+202002811;Miguel Ant�nio Borges Tavares;;up202002811;up202002811@edu.fc.up.pt;L.EIC
+201706939;Miguel Ant�nio Mesquita Dantas;;up201706939;up201706939@edu.fc.up.pt;L.EIC
+201704590;Miguel Azevedo Lopes;;up201704590;up201704590@edu.fe.up.pt;L.EIC
+201906042;Miguel Boaventura Rodrigues;;up201906042;up201906042@edu.fe.up.pt;L.EIC
+201706105;Miguel Bravo de Almeida e Silva Figueiredo;;up201706105;up201706105@edu.fe.up.pt;L.EIC
+202007972;Miguel Campos Ferreira Silva;;up202007972;up202007972@edu.fe.up.pt;L.EIC
+201608657;Miguel Carreira Neves;;up201608657;up201608657@edu.fe.up.pt;L.EIC
+202006475;Miguel de Sousa Neri;;up202006475;up202006475@edu.fe.up.pt;L.EIC
+202108720;Miguel Diogo Andrade Rocha;;up202108720;up202108720@edu.fe.up.pt;L.EIC
+202108678;Miguel Duarte de Antas de Barros;;up202108678;up202108678@edu.fe.up.pt;L.EIC
+201907756;Miguel Faria Amorim;;up201907756;up201907756@edu.fe.up.pt;L.EIC
+201105191;Miguel Faria Curval;;up201105191;up201105191@edu.fe.up.pt;L.EIC
+202108659;Miguel Filipe Brand�o Martins Lima;;up202108659;up202108659@edu.fe.up.pt;L.EIC
+202008450;Miguel Filipe Rodrigues dos Santos;;up202008450;up202008450@edu.fc.up.pt;L.EIC
+202108889;Miguel Jorge Medeiros Garrido;;up202108889;up202108889@edu.fe.up.pt;L.EIC
+202108865;Miguel Jos� da Silva Garfejo;;up202108865;up202108865@edu.fe.up.pt;L.EIC
+202108809;Miguel Jose Pinho Freitas de Carvalho Pedrosa;;up202108809;up202108809@edu.fe.up.pt;L.EIC
+201905395;Miguel Li Xu;;up201905395;up201905395@edu.fe.up.pt;L.EIC
+202007516;Miguel Louren�o Pregal de Mesquita Montes;;up202007516;up202007516@edu.fe.up.pt;L.EIC
+201407191;Miguel Lucas Calado Raposo Baptista;;up201407191;up201407191@edu.fe.up.pt;L.EIC
+202108851;Miguel Martins Leitao;;up202108851;up202108851@edu.fe.up.pt;L.EIC
+202108788;Miguel Morais Dion�sio;;up202108788;up202108788@edu.fe.up.pt;L.EIC
+202108822;Miguel Nogueira Marinho;;up202108822;up202108822@edu.fe.up.pt;L.EIC
+201906159;Miguel Norberto Costa Freitas;;up201906159;up201906159@edu.fe.up.pt;L.EIC
+201605908;Miguel Rodrigues Gomes;;up201605908;up201605908@edu.fe.up.pt;L.EIC
+201504403;Miguel Silva Figueiredo;;up201504403;up201504403@edu.fc.up.pt;L.EIC
+202108888;Miguel Teixeira Lopes da Fonte;;up202108888;up202108888@edu.fe.up.pt;L.EIC
+201506074;Miguel Wojciech de Vasconcelos Charchalis;;up201506074;up201506074@edu.fe.up.pt;L.EIC
+202008862;Milena Lu�sa Pereira Gouveia;;up202008862;up202008862@edu.fe.up.pt;L.EIC
+202005209;M�nica Azevedo Ara�jo;;up202005209;up202005209@edu.fc.up.pt;L.EIC
+201905753;M�nica Moura Pereira;;up201905753;up201905753@edu.fe.up.pt;L.EIC
+201700132;Muriel de Ara�jo Pinho;;up201700132;up201700132@edu.fe.up.pt;L.EIC
+201808613;Naldo Neves Monteiro Delgado;;up201808613;up201808613@edu.fc.up.pt;L.EIC
+202005083;N�lson Teixeira Campos;;up202005083;up202005083@edu.fe.up.pt;L.EIC
+202008863;Ntsay Zacarias;;up202008863;up202008863@edu.fe.up.pt;L.EIC
+202007865;Nuno Afonso Anjos Pereira;;up202007865;up202007865@edu.fe.up.pt;L.EIC
+201807530;Nuno Andr� Gomes Fran�a;;up201807530;up201807530@edu.fe.up.pt;L.EIC
+201706864;Nuno Duarte Ferreira Neves Mourinha Gon�alves;;up201706864;up201706864@edu.fe.up.pt;L.EIC
+201405774;Nuno Guilherme Amaral Santos;;up201405774;up201405774@edu.fe.up.pt;L.EIC
+201906051;Nuno Jorge da Costa Ramos;;up201906051;up201906051@edu.fc.up.pt;L.EIC
+202008405;Nuno Martim Viana Penafort;;up202008405;up202008405@edu.fc.up.pt;L.EIC
+201907095;Nuno Miguel Braga Ramos Antunes;;up201907095;up201907095@edu.fc.up.pt;L.EIC
+201905477;Nuno Miguel Carvalho de Jesus;;up201905477;up201905477@edu.fe.up.pt;L.EIC
+201908250;Nuno Miguel da Silva Alves;;up201908250;up201908250@edu.fe.up.pt;L.EIC
+201708997;Nuno Miguel Fernandes Marques;;up201708997;up201708997@edu.fe.up.pt;L.EIC
+202005501;Nuno Miguel Lopes da Silva;;up202005501;up202005501@edu.fe.up.pt;L.EIC
+202003324;Nuno Miguel Paiva de Melo e Castro;;up202003324;up202003324@edu.fe.up.pt;L.EIC
+201906272;Nuno Ricardo Teixeira da Costa;;up201906272;up201906272@edu.fe.up.pt;L.EIC
+202108827;Nuno Rodrigo Moreira Silva;;up202108827;up202108827@edu.fe.up.pt;L.EIC
+202008227;Nuno Sanches Leite de Faria;;up202008227;up202008227@edu.fe.up.pt;L.EIC
+201906834;�scar Gon�alo Martins Esteves;;up201906834;up201906834@edu.fe.up.pt;L.EIC
+201805238;Patr�cia Daniela Tavares Vieira;;up201805238;up201805238@edu.fc.up.pt;L.EIC
+201905427;Patr�cia do Carmo Nunes Oliveira;;up201905427;up201905427@edu.fe.up.pt;L.EIC
+202109256;Patr�cia Palmira de Sousa;;up202109256;up202109256@edu.fe.up.pt;L.EIC
+201706415;Paulo Andr� Areias Gomes Leal Pinto;;up201706415;up201706415@edu.fe.up.pt;L.EIC
+201709896;Paulo Filipe Fonseca Moreira;;up201709896;up201709896@edu.fc.up.pt;L.EIC
+201804977;Paulo Francisco da Costa Ferreira;;up201804977;up201804977@edu.fc.up.pt;L.EIC
+201806603;Paulo Miguel de Jesus Coutinho dos Santos Fidalgo;;up201806603;up201806603@edu.fep.up.pt;L.EIC
+201705616;Paulo Roberto Dias Mourato;;up201705616;up201705616@edu.fe.up.pt;L.EIC
+201904642;Pedro Albernaz Moreira;;up201904642;up201904642@edu.fe.up.pt;L.EIC
+202004985;Pedro Alexandre Ferreira e Silva;;up202004985;up202004985@edu.fe.up.pt;L.EIC
+202108784;Pedro Caetano Ferreira Valinhas Reis;;up202108784;up202108784@edu.fe.up.pt;L.EIC
+200700267;Pedro Casimiro Ferreira Fernandes;;up200700267;up200700267@edu.fc.up.pt;L.EIC
+202007525;Pedro Cerejeira Pr�ncipe Ferreira;;up202007525;up202007525@edu.fe.up.pt;L.EIC
+202108718;Pedro da Cunha Teixeira e Faro Beirao;;up202108718;up202108718@edu.fe.up.pt;L.EIC
+202108806;Pedro de Almeida Lima;;up202108806;up202108806@edu.fe.up.pt;L.EIC
+202107987;Pedro de Teixeira Lopes Basilio Pl�cido;;up202107987;up202107987@edu.fe.up.pt;L.EIC
+201406991;Pedro Diogo Veludo Tavares;;up201406991;up201406991@edu.fe.up.pt;L.EIC
+202108653;Pedro Emanuel Faria da Fonseca;;up202108653;up202108653@edu.fe.up.pt;L.EIC
+201806251;Pedro Emanuel Sousa Pinto;;up201806251;up201806251@edu.fe.up.pt;L.EIC
+201303693;Pedro Fardilha Barbeira;;up201303693;up201303693@edu.fe.up.pt;L.EIC
+202005448;Pedro Filipe Monteiro de Almeida;;up202005448;up202005448@edu.fe.up.pt;L.EIC
+202108669;Pedro Filipe Pinho Oliveira;;up202108669;up202108669@edu.fe.up.pt;L.EIC
+202108825;Pedro Filipe Vale Gomes;;up202108825;up202108825@edu.fe.up.pt;L.EIC
+201905348;Pedro Gon�alo de Castro Correia;;up201905348;up201905348@edu.fe.up.pt;L.EIC
+202108756;Pedro Guilherme Pinto Magalh�es;;up202108756;up202108756@edu.fe.up.pt;L.EIC
+201906293;Pedro Gustavo Veloso Fernandes Carneiro;;up201906293;up201906293@edu.fc.up.pt;L.EIC
+201904865;Pedro Henrique da Silva Valente;;up201904865;up201904865@edu.fc.up.pt;L.EIC
+202102365;Pedro Henrique Pess�a Camargo;;up202102365;up202102365@edu.fe.up.pt;L.EIC
+202008467;Pedro Jo�o Gon�alves Novo Paix�o;;up202008467;up202008467@edu.fe.up.pt;L.EIC
+202004324;Pedro Joaquim Alves Oliveira;;up202004324;up202004324@edu.fc.up.pt;L.EIC
+202005097;Pedro Jorge da Rocha Balazeiro;;up202005097;up202005097@edu.fe.up.pt;L.EIC
+202103337;Pedro Jorge Mendes Jesus Landolt;;up202103337;up202103337@edu.fe.up.pt;L.EIC
+201806824;Pedro Jorge Ribeiro Botelho de Moniz Pacheco;;up201806824;up201806824@edu.fe.up.pt;L.EIC
+201905429;Pedro Jos� Ferreira Moreira;;up201905429;up201905429@edu.fe.up.pt;L.EIC
+202108706;Pedro Jos� Nunes Moutinho de Antas de Barros;;up202108706;up202108706@edu.fe.up.pt;L.EIC
+202109661;Pedro Jos� Teixeira Torr�o;;up202109661;up202109661@edu.fe.up.pt;L.EIC
+202008307;Pedro Lu�s Jer�nimo Martins Guimar�es Fonseca;;up202008307;up202008307@edu.fe.up.pt;L.EIC
+201907254;Pedro Lu�s Moreira Santos;;up201907254;up201907254@edu.fc.up.pt;L.EIC
+201905396;Pedro Magalh�es Moreira Nunes;;up201905396;up201905396@edu.fe.up.pt;L.EIC
+201905966;Pedro Manuel Bernardo Azevedo;;up201905966;up201905966@edu.fe.up.pt;L.EIC
+202006086;Pedro Manuel Costa Aguiar Botelho Gomes;;up202006086;up202006086@edu.fe.up.pt;L.EIC
+202006322;Pedro Manuel da Silva Gomes;;up202006322;up202006322@edu.fe.up.pt;L.EIC
+202108844;Pedro Marques Moreira;;up202108844;up202108844@edu.fe.up.pt;L.EIC
+201505916;Pedro Miguel Afonso Teixeira;;up201505916;up201505916@edu.fe.up.pt;L.EIC
+201904529;Pedro Miguel Cunha Santos;;up201904529;up201904529@edu.fc.up.pt;L.EIC
+201806728;Pedro Miguel da Costa Azevedo;;up201806728;up201806728@edu.fe.up.pt;L.EIC
+202006199;Pedro Miguel da Silva Correia;;up202006199;up202006199@edu.fe.up.pt;L.EIC
+201907523;Pedro Miguel Jesus da Silva;;up201907523;up201907523@edu.fe.up.pt;L.EIC
+202004714;Pedro Miguel Magalh�es Nunes;;up202004714;up202004714@edu.fe.up.pt;L.EIC
+202108826;Pedro Miguel Marques da Silva Pinto;;up202108826;up202108826@edu.fe.up.pt;L.EIC
+202108660;Pedro Miguel Martins Rom�o;;up202108660;up202108660@edu.fe.up.pt;L.EIC
+200404215;Pedro Miguel Monteiro Galv�o;;up200404215;up200404215@edu.fe.up.pt;L.EIC
+202004715;Pedro Miguel Moreira Ramalho;;up202004715;up202004715@edu.fe.up.pt;L.EIC
+202108854;Pedro Miguel Mota Santos;;up202108854;up202108854@edu.fe.up.pt;L.EIC
+201806083;Pedro Miguel Novais do Vale;;up201806083;up201806083@edu.fe.up.pt;L.EIC
+201603816;Pedro Miguel Oliveira Azevedo;;up201603816;up201603816@edu.fe.up.pt;L.EIC
+202108892;Pedro Miguel Oliveira Estela;;up202108892;up202108892@edu.fe.up.pt;L.EIC
+201806802;Pedro Miguel Pires Coelho;;up201806802;up201806802@edu.fe.up.pt;L.EIC
+201906712;Pedro Miguel Sampaio Ferreira Machado;;up201906712;up201906712@edu.fe.up.pt;L.EIC
+202107525;Pedro Moreira Belo Marques;;up202107525;up202107525@edu.fe.up.pt;L.EIC
+201604558;Pedro Nuno Batista Bastos;;up201604558;up201604558@edu.fe.up.pt;L.EIC
+202007531;Pedro Nuno Ferreira Moura de Macedo;;up202007531;up202007531@edu.fe.up.pt;L.EIC
+202004986;Pedro Pereira Ferreira;;up202004986;up202004986@edu.fe.up.pt;L.EIC
+202108866;Pedro Rafael Ang�lico Madureira;;up202108866;up202108866@edu.fe.up.pt;L.EIC
+201900513;Pedro Rezende de Carvalho;;up201900513;up201900513@edu.fe.up.pt;L.EIC
+201605125;Pedro Santos Pedroso de Lima;;up201605125;up201605125@edu.fe.up.pt;L.EIC
+201905508;Pedro Santos Pereira;;up201905508;up201905508@edu.fe.up.pt;L.EIC
+201906788;Pedro Santos Pinheiro;;up201906788;up201906788@edu.fe.up.pt;L.EIC
+202108768;Pedro Sim�o Janu�rio Vieira;;up202108768;up202108768@edu.fe.up.pt;L.EIC
+202108754;Pedro Vidal Marcelino;;up202108754;up202108754@edu.fe.up.pt;L.EIC
+202108684;Rafael Alexandre Lemos Selores;;up202108684;up202108684@edu.fe.up.pt;L.EIC
+202108893;Rafael Ant�nio Fernandes Aldeias;;up202108893;up202108893@edu.fe.up.pt;L.EIC
+202004476;Rafael Azevedo Alves;;up202004476;up202004476@edu.fc.up.pt;L.EIC
+201910200;Rafael de Conceicao Cerqueira;;up201910200;up201910200@edu.fc.up.pt;L.EIC
+201907729;Rafael Fernando Ribeiro Camelo;;up201907729;up201907729@edu.fe.up.pt;L.EIC
+202104805;Rafael Ferreira da Costa Silva Valquaresma;;up202104805;up202104805@edu.fe.up.pt;L.EIC
+202108831;Rafael Neves Teixeira;;up202108831;up202108831@edu.fe.up.pt;L.EIC
+201506449;Rafael Nuno Grilo Morgado;;up201506449;up201506449@edu.fc.up.pt;L.EIC
+202000166;Rafael Schmidt;;up202000166;up202000166@edu.fe.up.pt;L.EIC
+202006757;Rafaela Duarte;;up202006757;up202006757@edu.fe.up.pt;L.EIC
+202001391;Raphael Martins Coutinho;;up202001391;up202001391@edu.fc.up.pt;L.EIC
+202103338;Raphael Moragas Dias Taveira Gon�alves;;up202103338;up202103338@edu.fe.up.pt;L.EIC
+201402765;Raquel Cardoso e Fulg�ncio;;up201402765;up201402765@edu.fc.up.pt;L.EIC
+201806664;Raquel Filipa Sepulveda Figueiredo;;up201806664;up201806664@edu.fe.up.pt;L.EIC
+202005330;Raquel Marques Carneiro;;up202005330;up202005330@edu.fc.up.pt;L.EIC
+201908633;Renato Dangel Fortes Leite;;up201908633;up201908633@edu.fc.up.pt;L.EIC
+202000382;Renato Elysson de Morais Belo;;up202000382;up202000382@edu.fc.up.pt;L.EIC
+202005103;Ricardo Almeida Cavalheiro;;up202005103;up202005103@edu.fe.up.pt;L.EIC
+202007962;Ricardo Andr� Ara�jo de Matos;;up202007962;up202007962@edu.fe.up.pt;L.EIC
+202008789;Ricardo Ant�nio Pinto da Cruz;;up202008789;up202008789@edu.fc.up.pt;L.EIC
+201204944;Ricardo Esteves Couto;;up201204944;up201204944@edu.fe.up.pt;L.EIC
+202108708;Ricardo Fego Carneiro Ara�jo de Sousa;;up202108708;up202108708@edu.fe.up.pt;L.EIC
+201907835;Ricardo Filipe da Costa Cabral Ferreira;;up201907835;up201907835@edu.fe.up.pt;L.EIC
+201806791;Ricardo Filipe da Silva N�ri Marques Carvalho;;up201806791;up201806791@edu.fe.up.pt;L.EIC
+201806849;Ricardo Gon�alves Pinto;;up201806849;up201806849@edu.fe.up.pt;L.EIC
+201308099;Ricardo Jorge da Silva Vieira;;up201308099;up201308099@edu.fc.up.pt;L.EIC
+202004990;Ricardo Jorge Pereira da Silva;;up202004990;up202004990@edu.fc.up.pt;L.EIC
+200505271;Ricardo Jorge S� Ferreira;;up200505271;up200505271@edu.fe.up.pt;L.EIC
+200300809;Ricardo Manuel Ferreira Monteiro F�lix de Morais;;up200300809;up200300809@edu.fe.up.pt;L.EIC
+202108786;Ricardo Miguel Pereira do Couto Cardoso;;up202108786;up202108786@edu.fe.up.pt;L.EIC
+202108850;Ricardo Nuno Pena Leite;;up202108850;up202108850@edu.fe.up.pt;L.EIC
+202005091;Ricardo Ribeiro Vieira;;up202005091;up202005091@edu.fe.up.pt;L.EIC
+202108746;Rita Gon�alves Pereira;;up202108746;up202108746@edu.fe.up.pt;L.EIC
+202105309;Rita Isabel Guedes Correia Leite;;up202105309;up202105309@edu.fe.up.pt;L.EIC
+201907877;Rita Miguel Matos Mendes;;up201907877;up201907877@edu.fe.up.pt;L.EIC
+201703964;Rita Nunes da Mota;;up201703964;up201703964@edu.fe.up.pt;L.EIC
+201806527;Rita Sofia Ara�jo S� Lopes da Silva;;up201806527;up201806527@edu.fe.up.pt;L.EIC
+202108890;Rodrigo Andr� Carvalho P�voa;;up202108890;up202108890@edu.fe.up.pt;L.EIC
+202108847;Rodrigo Campos Rodrigues;;up202108847;up202108847@edu.fe.up.pt;L.EIC
+202108749;Rodrigo dos Santos Arteiro Rodrigues;;up202108749;up202108749@edu.fe.up.pt;L.EIC
+202005454;Rodrigo Duarte Pires Monteiro;;up202005454;up202005454@edu.fc.up.pt;L.EIC
+202108870;Rodrigo Gon�alves Figueiredo;;up202108870;up202108870@edu.fe.up.pt;L.EIC
+202008868;Rodrigo Jos� de Amorim Martins;;up202008868;up202008868@edu.fe.up.pt;L.EIC
+202108855;Rodrigo Jos� Ramos Moucho;;up202108855;up202108855@edu.fe.up.pt;L.EIC
+202108750;Rodrigo Lopes Pedro Sim�o Resende;;up202108750;up202108750@edu.fe.up.pt;L.EIC
+202005216;Rodrigo Manuel Gra�a Figueiredo;;up202005216;up202005216@edu.fc.up.pt;L.EIC
+201506561;Rodrigo Melo Abrantes;;up201506561;up201506561@edu.fe.up.pt;L.EIC
+202108679;Rodrigo Mois�s Baptista Ribeiro;;up202108679;up202108679@edu.fe.up.pt;L.EIC
+201904967;Rodrigo Tuna de Andrade;;up201904967;up201904967@edu.fe.up.pt;L.EIC
+201805123;Rog�rio Filipe dos Santos Rocha;;up201805123;up201805123@edu.fc.up.pt;L.EIC
+202109257;Rosa No� Chilengue;;up202109257;up202109257@edu.fe.up.pt;L.EIC
+202006195;R�ben Correia Pereira;;up202006195;up202006195@edu.fc.up.pt;L.EIC
+202005108;Ruben Costa Viana;;up202005108;up202005108@edu.fe.up.pt;L.EIC
+202108830;R�ben Filipe Vaz Fonseca;;up202108830;up202108830@edu.fe.up.pt;L.EIC
+201507143;Ruben Francisco da Costa Ant�nio;;up201507143;up201507143@edu.fc.up.pt;L.EIC
+202006478;R�ben Lourinha Monteiro;;up202006478;up202006478@edu.fe.up.pt;L.EIC
+202006479;R�ben Silv�rio Fernandes Esteves;;up202006479;up202006479@edu.fe.up.pt;L.EIC
+200706695;Rui Alexandre Pereira de Almeida Felizes;;up200706695;up200706695@edu.fe.up.pt;L.EIC
+202007539;Rui Brogueira Andrade;;up202007539;up202007539@edu.fe.up.pt;L.EIC
+202008252;Rui Filipe Cunha Pires;;up202008252;up202008252@edu.fe.up.pt;L.EIC
+201203894;Rui Filipe da Silva Moreira;;up201203894;up201203894@edu.fe.up.pt;L.EIC
+201905853;Rui Filipe Teixeira Alves;;up201905853;up201905853@edu.fe.up.pt;L.EIC
+201805317;Rui Manuel Rodrigues dos Santos;;up201805317;up201805317@edu.fc.up.pt;L.EIC
+202108716;Rui Miguel Ferreira Pando;;up202108716;up202108716@edu.fe.up.pt;L.EIC
+201805046;Rui Miguel Pinto Cardoso;;up201805046;up201805046@edu.fc.up.pt;L.EIC
+202108878;Rui Pedro Almeida da Silveira;;up202108878;up202108878@edu.fe.up.pt;L.EIC
+202005661;Rui Pedro Borges da Silva;;up202005661;up202005661@edu.fc.up.pt;L.EIC
+202108807;Rui Pedro Braga Carvalho;;up202108807;up202108807@edu.fe.up.pt;L.EIC
+201707001;Rui Pedro Fernandes Teixeira;;up201707001;up201707001@edu.fe.up.pt;L.EIC
+201906355;Rui Pedro Mendes Moreira;;up201906355;up201906355@edu.fe.up.pt;L.EIC
+202103345;Rui Pedro Monteiro Reis Magalh�es Teixeira;;up202103345;up202103345@edu.fe.up.pt;L.EIC
+202103631;Rui Pedro Rosas Soares;;up202103631;up202103631@edu.fe.up.pt;L.EIC
+200903112;Salvador do Vale Ferreira Moreira;;up200903112;up200903112@edu.fe.up.pt;L.EIC
+202108751;Samuel Alexandre Cruz Moreira de Oliveira;;up202108751;up202108751@edu.fe.up.pt;L.EIC
+202108697;Samuel Mendon�a Maciel;;up202108697;up202108697@edu.fe.up.pt;L.EIC
+202007675;Sandra Patricia Linhares Miranda;;up202007675;up202007675@edu.fc.up.pt;L.EIC
+202006902;Sara da Silva Azevedo;;up202006902;up202006902@edu.fc.up.pt;L.EIC
+202108675;Sara Filipa Oliveira Santos;;up202108675;up202108675@edu.fe.up.pt;L.EIC
+201906805;Sara Gabriela Almeida Marinha;;up201906805;up201906805@edu.fe.up.pt;L.EIC
+202007248;Sara Isabel Borges da Silva;;up202007248;up202007248@edu.fc.up.pt;L.EIC
+202005388;Sara Moreira Reis;;up202005388;up202005388@edu.fe.up.pt;L.EIC
+201804838;Sara Raquel Gon�alves de S�;;up201804838;up201804838@edu.fc.up.pt;L.EIC
+202108681;S�rgio Andr� Correia Peixoto;;up202108681;up202108681@edu.fe.up.pt;L.EIC
+201405064;S�rgio Filipe Dinis Castro;;up201405064;up201405064@edu.fc.up.pt;L.EIC
+202007544;S�rgio Manuel de Sousa Carvalho e Boura Carvalhais;;up202007544;up202007544@edu.fe.up.pt;L.EIC
+201905680;S�rgio Miguel Rosa Estev�o;;up201905680;up201905680@edu.fe.up.pt;L.EIC
+201407729;S�rgio Paulo de Sousa Moreira Neto;;up201407729;up201407729@edu.fc.up.pt;L.EIC
+201906690;S�rgio Rodrigues da Gama;;up201906690;up201906690@edu.fe.up.pt;L.EIC
+202109258;Sheila Maria Louren�o Albino;;up202109258;up202109258@edu.fe.up.pt;L.EIC
+201808614;Shirley Fermino Rodrigues Fortes;;up201808614;up201808614@edu.fc.up.pt;L.EIC
+202005700;Sim�o Queir�s Rodrigues;;up202005700;up202005700@edu.fe.up.pt;L.EIC
+202008864;Simi�o Jorge Mavie;;up202008864;up202008864@edu.fe.up.pt;L.EIC
+202005932;Sofia Alexandra Mesquita Carvalho de Sousa;;up202005932;up202005932@edu.fc.up.pt;L.EIC
+201905450;Sofia Alves Reis;;up201905450;up201905450@edu.fc.up.pt;L.EIC
+201907461;Sofia Ariana Moutinho Coimbra Germer;;up201907461;up201907461@edu.fe.up.pt;L.EIC
+202005845;Sofia Morais Gon�alves;;up202005845;up202005845@edu.fc.up.pt;L.EIC
+202108676;Sofia Resende Ferreira de S�;;up202108676;up202108676@edu.fe.up.pt;L.EIC
+201907131;Sofia Santos Gomes;;up201907131;up201907131@edu.fc.up.pt;L.EIC
+201907201;Sofia Sousa Moura;;up201907201;up201907201@edu.fe.up.pt;L.EIC
+202108682;Sofia Vieira Pinto;;up202108682;up202108682@edu.fe.up.pt;L.EIC
+201806821;Telmo Costa Botelho;;up201806821;up201806821@edu.fe.up.pt;L.EIC
+201607371;Teresa Cristina da Rocha Moreira;;up201607371;up201607371@edu.fe.up.pt;L.EIC
+201806479;Teresa Isabel da Silva Corado;;up201806479;up201806479@edu.fe.up.pt;L.EIC
+202004852;Teresa Isabel Teixeira Ferreira;;up202004852;up202004852@edu.fe.up.pt;L.EIC
+202007448;Tiago Alexandre Neiva Oliveira;;up202007448;up202007448@edu.fe.up.pt;L.EIC
+201805327;Tiago Alexandre Santos Antunes;;up201805327;up201805327@edu.fc.up.pt;L.EIC
+201906807;Tiago Andre Batista Rodrigues;;up201906807;up201906807@edu.fe.up.pt;L.EIC
+201606796;Tiago Andr� Carneiro Bessa;;up201606796;up201606796@edu.fc.up.pt;L.EIC
+202007589;Tiago Andr� Monteiro Ribeiro;;up202007589;up202007589@edu.fe.up.pt;L.EIC
+201906045;Tiago Caldas da Silva;;up201906045;up201906045@edu.fe.up.pt;L.EIC
+202004374;Tiago Campos Louren�o;;up202004374;up202004374@edu.fc.up.pt;L.EIC
+202108840;Tiago da Silva Azevedo;;up202108840;up202108840@edu.fe.up.pt;L.EIC
+202108783;Tiago da Silva Gouveia;;up202108783;up202108783@edu.fe.up.pt;L.EIC
+200706716;Tiago Emanuel Fernandes Loureiro;;up200706716;up200706716@edu.fe.up.pt;L.EIC
+201807126;Tiago Filipe Castro Viana;;up201807126;up201807126@edu.fe.up.pt;L.EIC
+202103339;Tiago Filipe da Costa Carvalho;;up202103339;up202103339@edu.fe.up.pt;L.EIC
+201406679;Tiago Filipe Lima Rocha;;up201406679;up201406679@edu.fe.up.pt;L.EIC
+202004926;Tiago Filipe Magalh�es Barbosa;;up202004926;up202004926@edu.fe.up.pt;L.EIC
+201905179;Tiago Jorge Moutinho Gon�alves;;up201905179;up201905179@edu.fc.up.pt;L.EIC
+201704733;Tiago Miguel Barbosa Marques;;up201704733;up201704733@edu.fe.up.pt;L.EIC
+202004996;Tiago Miguel dos Santos Aleixo;;up202004996;up202004996@edu.fc.up.pt;L.EIC
+202108699;Tiago Miguel Seixas de Azevedo;;up202108699;up202108699@edu.fe.up.pt;L.EIC
+202005567;Tiago Nunes Moreira Branquinho;;up202005567;up202005567@edu.fe.up.pt;L.EIC
+201907021;Tiago Peixoto Barreto Rodrigues;;up201907021;up201907021@edu.fe.up.pt;L.EIC
+202108810;Tiago Ribeiro de S� Cruz;;up202108810;up202108810@edu.fe.up.pt;L.EIC
+202008790;Tiago Rocha Silveira Pires;;up202008790;up202008790@edu.fc.up.pt;L.EIC
+202007837;Tiago Rui Correia de Castro Moreira;;up202007837;up202007837@edu.fc.up.pt;L.EIC
+202108857;Tiago Tavares Sim�es;;up202108857;up202108857@edu.fe.up.pt;L.EIC
+202108717;Tom�s Alexandre Soeiro Vicente;;up202108717;up202108717@edu.fe.up.pt;L.EIC
+202108845;Tom�s Alexandre Torres Pereira;;up202108845;up202108845@edu.fe.up.pt;L.EIC
+202108858;Tomas Alves Moreira;;up202108858;up202108858@edu.fe.up.pt;L.EIC
+202108812;Tom�s Ballester Carvalho Sousa Pereira;;up202108812;up202108812@edu.fe.up.pt;L.EIC
+201800700;Tom�s Cabral Torres;;up201800700;up201800700@edu.fe.up.pt;L.EIC
+202108828;Tom�s Carvalho Gaspar;;up202108828;up202108828@edu.fe.up.pt;L.EIC
+202005846;Tom�s Cruz e Silva;;up202005846;up202005846@edu.fe.up.pt;L.EIC
+202108701;Tom�s de Campos Sucena de Sequeiros Lopes;;up202108701;up202108701@edu.fe.up.pt;L.EIC
+202108776;Tom�s Eiras Silva Martins;;up202108776;up202108776@edu.fe.up.pt;L.EIC
+202108880;Tom�s Figueiredo Marques Palma;;up202108880;up202108880@edu.fe.up.pt;L.EIC
+202108759;Tom�s Filipe Fernandes Xavier;;up202108759;up202108759@edu.fe.up.pt;L.EIC
+201806763;Tom�s Freitas Gon�alves;;up201806763;up201806763@edu.fe.up.pt;L.EIC
+201906743;Tom�s Gon�alves dos Santos Fidalgo;;up201906743;up201906743@edu.fe.up.pt;L.EIC
+202002749;Tom�s Gon�alves Ribeiro Ferreira;;up202002749;up202002749@edu.fc.up.pt;L.EIC
+202108861;Tom�s Henrique Ribeiro Coelho;;up202108861;up202108861@edu.fe.up.pt;L.EIC
+202007700;Tom�s Jer�nimo Cavaleiro Saraiva;;up202007700;up202007700@edu.fe.up.pt;L.EIC
+202008551;Tom�s Lopes Pinto de Macedo;;up202008551;up202008551@edu.fe.up.pt;L.EIC
+202007590;Tom�s Malveiro do Carmo;;up202007590;up202007590@edu.fc.up.pt;L.EIC
+201704976;Tom�s Manuel de Moura Duarte Agante Martins;;up201704976;up201704976@edu.fe.up.pt;L.EIC
+202108665;Tom�s Miguel Vieira da C�mara;;up202108665;up202108665@edu.fe.up.pt;L.EIC
+202108778;Tom�s Miranda de Figueiredo Sarmento;;up202108778;up202108778@edu.fe.up.pt;L.EIC
+201904609;Tom�s Morgado Vicente;;up201904609;up201904609@edu.fe.up.pt;L.EIC
+202008319;Tom�s Pacheco Pires;;up202008319;up202008319@edu.fe.up.pt;L.EIC
+202108687;Tom�s Paiva Ramos;;up202108687;up202108687@edu.fe.up.pt;L.EIC
+202006845;Tom�s Pereira Maciel;;up202006845;up202006845@edu.fe.up.pt;L.EIC
+202004393;Tom�s Pereira Matos Gomes;;up202004393;up202004393@edu.fe.up.pt;L.EIC
+202108811;Tom�s Pinto Macedo;;up202108811;up202108811@edu.fe.up.pt;L.EIC
+202108698;Tom�s Rebelo da Silva;;up202108698;up202108698@edu.fe.up.pt;L.EIC
+202008487;Tom�s Rodrigues Coelho Gir�o;;up202008487;up202008487@edu.fe.up.pt;L.EIC
+201904710;Tom� Leite da Cunha;;up201904710;up201904710@edu.fc.up.pt;L.EIC
+202008865;Treasure Vanilson Gomes Albasine Langa;;up202008865;up202008865@edu.fe.up.pt;L.EIC
+201907483;Valentina Wu;;up201907483;up201907483@edu.fc.up.pt;L.EIC
+201706546;V�lter Och�a de Sp�nola Catanho Castro;;up201706546;up201706546@edu.fe.up.pt;L.EIC
+201906617;Vasco David Antunes Pereira Gomes;;up201906617;up201906617@edu.fe.up.pt;L.EIC
+201808031;Vasco Marinho Rodrigues Gomes Alves;;up201808031;up201808031@edu.fe.up.pt;L.EIC
+201802112;Vasco Marques Lopes Teixeira;;up201802112;up201802112@edu.fe.up.pt;L.EIC
+202108881;Vasco Moutinho de Oliveira;;up202108881;up202108881@edu.fe.up.pt;L.EIC
+202004395;Vasco Rafael Maia Ribeiro Guedes;;up202004395;up202004395@edu.fe.up.pt;L.EIC
+201805255;Vasco Soares Nogueira Garcia;;up201805255;up201805255@edu.fc.up.pt;L.EIC
+201505519;Vasco Trindade Enes;;up201505519;up201505519@edu.fe.up.pt;L.EIC
+202102358;Victor Duarte Frauzino Lima de Matos;;up202102358;up202102358@edu.fe.up.pt;L.EIC
+201700135;Victor Laureano Macieira Ferreira;;up201700135;up201700135@edu.fe.up.pt;L.EIC
+201907226;Victor Saldanha Nunes;;up201907226;up201907226@edu.fe.up.pt;L.EIC
+202001417;Vin�cius Macedo Corr�a;;up202001417;up202001417@edu.fe.up.pt;L.EIC
+202109259;Virg�nia Carla Francisco Mulungo;;up202109259;up202109259@edu.fe.up.pt;L.EIC
+201900198;Vitor Alves Moreira;;up201900198;up201900198@edu.fe.up.pt;L.EIC
+202007888;Vitor de S� Carneiro Bizarro;;up202007888;up202007888@edu.fc.up.pt;L.EIC
+202004724;V�tor Manuel da Silva Cavaleiro;;up202004724;up202004724@edu.fe.up.pt;L.EIC
+202109260;Wallen Marcos Ribeiro;;up202109260;up202109260@edu.fe.up.pt;L.EIC
+202108894;Xavier Maria Pimenta Santos;;up202108894;up202108894@edu.fe.up.pt;L.EIC
+202108895;Xavier Ribeiro Outeiro;;up202108895;up202108895@edu.fe.up.pt;L.EIC
+202109261;Yunass Lewis Abdul Cadre;;up202109261;up202109261@edu.fe.up.pt;L.EIC

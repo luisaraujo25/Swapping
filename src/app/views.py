@@ -149,6 +149,7 @@ def confirmRequest1(request, ridb64, token):
 
     if r != None and token == r.token1:
 
+        #do timeout if here
         r.confirmed1 = True
         st2 = r.st2ID
         token2 = tokenGenerator(st2.up)

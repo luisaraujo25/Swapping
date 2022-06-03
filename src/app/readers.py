@@ -10,6 +10,15 @@ def removeDups(list):
 
     return aux
 
+def cleanFiles():
+    #delete unwanted content
+    #remove dups
+    return
+
+
+def sortCriteria(elem):
+    return elem['up']
+
 def readClasses(file):
 
     f = open(file,'r')
@@ -72,6 +81,7 @@ def readStudents(file):
         }
         students.append(elem)
 
+    students.sort(key=sortCriteria, reverse=True)
     return removeDups(students)
 
 def readStudentUC(file):
@@ -81,9 +91,9 @@ def readStudentUC(file):
     list = []
     for row in reader:
         elem = {
-            "up": row['ESTUDANTE'],
-            "uc": row['UC'],
-            "class": row['TURMA']
+            "up": row['ESTUD_NUM_UNICO_INST'],
+            "uc": row['CODIGO'],
+            "class": row['SIGLA']
         }
         list.append(elem)
 

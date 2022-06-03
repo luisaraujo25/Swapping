@@ -10,7 +10,7 @@ from .models import *
 from .readers import *
 
 def validateEmail(mail):
-    return True
+    #return True
     valid = re.search("^up[0-9]{9}@.+\.up\.pt$", mail)
     if valid == None:
         return False
@@ -211,6 +211,7 @@ def saveImports(obj):
 
 def generateFile():
     
+    #check which requests are concluded
     f = open('app/files/output.csv', 'w')
     list = StudentUC.objects.all()
     
