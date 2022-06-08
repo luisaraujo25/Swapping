@@ -1,3 +1,4 @@
+from gettext import find
 import re
 import datetime
 from django.http import HttpResponse
@@ -10,7 +11,7 @@ from .models import *
 from .readers import *
 
 def validateEmail(mail):
-    #return True
+    return True
     valid = re.search("^up[0-9]{9}@.+\.up\.pt$", mail)
     if valid == None:
         return False
@@ -222,3 +223,5 @@ def generateFile():
         data = [i.student.up, i.uc.code, i.cl.code]
         writer.writerow(data)
     f.close()
+
+

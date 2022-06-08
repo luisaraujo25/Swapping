@@ -68,7 +68,7 @@ class Request(models.Model):
     st2ID = models.ForeignKey("Student", on_delete=models.CASCADE, related_name = "request2", default = 0)
     confirmed1 = models.BooleanField(default = False)
     confirmed2 = models.BooleanField(default = False)
-    date = models.DateField(auto_now_add=True)
+    date = models.CharField(max_length=50)
     uc = models.ForeignKey("UC", on_delete=models.CASCADE)
     token1 = models.CharField(max_length=30, null=True)
     token2 = models.CharField(max_length=30, null=True)

@@ -5,8 +5,8 @@ from .models import *
 from .forms import *
 from .utils import *
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
-import mimetypes
 import os
+import time
 
 # Create your views here.
 
@@ -16,9 +16,11 @@ import os
 def home(request):
     return render(request, 'home.html')
 
+
 def request(request):
 
     if request.method == 'POST':
+
         # create a form instance and populate it with data from the request:
         form = RequestForm(request.POST)
         # check whether it's valid:
@@ -43,8 +45,8 @@ def request(request):
 
                 obj.st1ID = Student.objects.get(pk=up1)
                 obj.st2ID = Student.objects.get(pk=up2)
-                # obj.date = datetime.now()
                 obj.uc = uc
+                obj.date = time.time()
                 obj.token1 = token1
                 obj.class1 = class1
                 obj.class2 = class2
@@ -150,13 +152,19 @@ def confirmRequest1(request, ridb64, token):
     if r != None and token == r.token1:
 
         #do timeout if here
-        r.confirmed1 = True
-        st2 = r.st2ID
-        token2 = tokenGenerator(st2.up)
-        r.token2 = token2
-        r.save()
-        sendEmail(request, st2, r, token2, st2.email, False)
-        return HttpResponse("confirmed")
+        timeNow = time.time()
+        twoDaysSeconds = 172800
+        if timeNow - r.date > twoDaysSeconds:
+            return HttpResponse("Timeout, two days have passed since this request was made, your response is no longer valid")
+        else:
+            r.confirmed1 = True
+            st2 = r.st2ID
+            token2 = tokenGenerator(st2.up)
+            r.token2 = token2
+            r.save()
+            sendEmail(request, st2, r, token2, st2.email, False)
+            return HttpResponse("confirmed")
+        
     else:
         return HttpResponse("error")
         
@@ -168,23 +176,30 @@ def confirmRequest2(request, ridb64, token):
     r = Request.objects.get(pk = idRequest)
     
     if r != None and token == r.token2:
-        #CHANGE DATA
-        r.confirmed2 = True
-        r.save()
-        cl1 = r.class1
-        cl2 = r.class2
-        st1 = r.st1ID
-        st2 = r.st2ID
-        uc = r.uc
-        stClassUc1 = StudentUC.objects.get(cl = cl1, student = st1, uc = uc)
-        stClassUc2 = StudentUC.objects.get(cl = cl2, student = st2, uc = uc)
 
-        stClassUc1.cl = cl2
-        stClassUc2.cl = cl1
+        #do timeout if here
+        timeNow = time.time()
+        twoDaysSeconds = 172800
+        if timeNow - r.date > twoDaysSeconds:
+            return HttpResponse("Timeout, two days have passed since this request was made, your response is no longer valid")
+        else:
+            #CHANGE DATA
+            r.confirmed2 = True
+            r.save()
+            cl1 = r.class1
+            cl2 = r.class2
+            st1 = r.st1ID
+            st2 = r.st2ID
+            uc = r.uc
+            stClassUc1 = StudentUC.objects.get(cl = cl1, student = st1, uc = uc)
+            stClassUc2 = StudentUC.objects.get(cl = cl2, student = st2, uc = uc)
 
-        stClassUc1.save()
-        stClassUc2.save()
-        return HttpResponse("Classes swapped!")
+            stClassUc1.cl = cl2
+            stClassUc2.cl = cl1
+
+            stClassUc1.save()
+            stClassUc2.save()
+            return HttpResponse("Classes swapped!")
     else:
         return HttpResponse("Unable to conclude your request")
 
