@@ -1,5 +1,6 @@
 from gettext import find
 import re
+import json
 import datetime
 from django.http import HttpResponse
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
@@ -224,5 +225,27 @@ def generateFile():
         data = [i.student.up, i.uc.code, i.cl.code]
         writer.writerow(data)
     f.close()
+
+def writeTimeout(timeout):
+    
+    defaultTimeout = 48
+    
+    dic = {
+        "defaultTimeout": defaultTimeout,
+        "updatedTimeout": int(timeout)
+    }
+
+    jsonObj = json.dumps(dic, indent = 2)
+    jsonFile = open("app/files/adminSettings.json", "w+")
+    jsonFile.write(jsonObj)
+
+def getTimeout():
+
+    jsonFile = open("app/files/adminSettings.json", "r")
+    jsonObj = json.load(jsonFile)
+
+    timeout = jsonObj['updatedTimeout']
+
+    return timeout
 
 

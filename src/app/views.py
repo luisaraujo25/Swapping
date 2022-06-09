@@ -235,6 +235,7 @@ def adminOverview(request):
     else:
         return HttpResponse("You don't have the right access to this page.")
 
+
 def adminTimeout(request):
     
     if request.user.is_authenticated:
@@ -242,6 +243,8 @@ def adminTimeout(request):
         if request.method == 'POST':
             form = ConfigureTimeout(request.POST)
             if form.is_valid():
+                timeout = form.cleaned_data['timeout']
+                writeTimeout(timeout)
                 return render(request, 'admin/confTimeout.html')
         else:
             form = ConfigureTimeout()

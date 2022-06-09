@@ -78,4 +78,3 @@ class Request(models.Model):
     # class Meta:
     #     unique_together = (('st1ID','st2ID'))
 
-#class AdminSettings(models.Model):
