@@ -13,9 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@1,700&display=swap" rel="stylesheet">
     
-    <title>Default layout</title>
+    <title>{% block title %} Default layout {% endblock %}</title>
 </head>
-<body>
+<body class="pageContainer">
 
     <header>
         <div class="header-row">
@@ -30,7 +30,12 @@
             </div>
         </div>
     </header>
-    
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
     <footer>
         <a href="{% url 'About us' %}">About</a>
         <a href="{% url 'FAQs' %}">FAQs</a>
