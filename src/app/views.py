@@ -67,7 +67,7 @@ def viewrequests(request):
 
     requests = Request.objects.all()
     if request.user.is_authenticated:
-        return render(request, 'viewrequests.html', {'requests': requests})
+        return render(request, 'admin/viewrequests.html', {'requests': requests})
     else:
         return HttpResponse("You don't have the right access to this page.")
 
@@ -135,7 +135,7 @@ def importData(request):
         else:
             form = ImportData()
         
-        return render(request, 'import.html', {'form': form})
+        return render(request, 'admin/import.html', {'form': form})
     
     else:
         return HttpResponse("You don't have the right access to this page.")
@@ -144,7 +144,7 @@ def exportData(request):
 
     if request.user.is_authenticated:
         file = generateFile()
-        return render(request, 'export.html')
+        return render(request, 'admin/export.html')
     else:
         return HttpResponse("You don't have the right access to this page.")
 
@@ -228,3 +228,9 @@ def about(request):
 
 def contacts(request):
     return render(request, 'contacts.html')
+
+def adminOverview(request):
+    return render(request, 'admin/overview.html')
+
+def adminTimeout(request):
+    return render(request, 'admin/confTimeout.html')

@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-h7)_spc!$u9fbma86)jw^or#zjjoi-og@nx+j6vt4&xyc50f6c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost"]
 
 
 # Application definition
@@ -148,5 +148,5 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-LOGIN_REDIRECT_URL = "/import/"
+LOGIN_REDIRECT_URL = "/staff/overview/"
 LOGOUT_REDIRECT_URL = "/" 
