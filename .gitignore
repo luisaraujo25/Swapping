@@ -1,2 +1,3 @@
 Pipfile
 src/app/files/PERSONALDATA.json
+src/app/files/import/
