@@ -113,11 +113,15 @@ a:hover{
   width: 100px;
   background-color: rgb(110, 65, 135);
   display: inline-block;
+  position: relative;
 }
 
 .steps .circle .circle-text{
-  display: block;
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 60px;
 }
