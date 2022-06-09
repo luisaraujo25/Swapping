@@ -17,6 +17,18 @@ class ImportData(forms.Form):
     Students = forms.FileField(required=False)
     UCs = forms.FileField(required=False)
 
-class Login(forms.Form):
-    email = forms.EmailField(required = True)
-    password = forms.PasswordInput
+
+class ConfigureTimeout(forms.Form):
+
+    hours = (
+        ("1", "1h"),
+        ("2", "2h"),
+        ("4", "4h"),
+        ("8", "8h"),
+        ("12", "12h"),
+        ("24", "24h"),
+        ("48", "48h"),
+        ("72", "72h")
+    )
+
+    timeout = forms.ChoiceField(choices = hours)

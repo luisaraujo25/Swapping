@@ -230,7 +230,24 @@ def contacts(request):
     return render(request, 'contacts.html')
 
 def adminOverview(request):
-    return render(request, 'admin/overview.html')
+    if request.user.is_authenticated:
+        return render(request, 'admin/overview.html')
+    else:
+        return HttpResponse("You don't have the right access to this page.")
 
 def adminTimeout(request):
-    return render(request, 'admin/confTimeout.html')
+    
+    if request.user.is_authenticated:
+
+        if request.method == 'POST':
+            form = ConfigureTimeout(request.POST)
+            if form.is_valid():
+                return render(request, 'admin/confTimeout.html')
+        else:
+            form = ConfigureTimeout()
+        
+        return render(request, 'admin/confTimeout.html', {'form': form})
+    
+    else:
+        return HttpResponse("You don't have the right access to this page.")
+
