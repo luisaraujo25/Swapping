@@ -66,83 +66,100 @@ def request(request):
 def viewrequests(request):
 
     requests = Request.objects.all()
-
-    return render(request, 'viewrequests.html', {'requests': requests})
+    if request.user.is_authenticated:
+        return render(request, 'viewrequests.html', {'requests': requests})
+    else:
+        return HttpResponse("You don't have the right access to this page.")
 
 def viewrequest(request, idReq):
 
-    try:
-        req = Request.objects.get(id = idReq)
-        date = req.date
-    except Request.DoesNotExist:
-        raise Http404("Request does not exist")
+    if request.user.is_authenticated:
+        try:
+            req = Request.objects.get(id = idReq)
+            date = req.date
+            return render(request, 'viewrequest.html', {'id': idReq, 'date': date})
+        except Request.DoesNotExist:
+            raise Http404("Request does not exist")
+    
+    else:
+        return HttpResponse("You don't have the right access to this page.")
 
-    return render(request, 'viewrequest.html', {'id': idReq, 'date': date})
 
 
 def importData(request):
     
-    countFiles = 0
-    if request.method == 'POST':
-        form = ImportData(request.POST, request.FILES)
-        if form.is_valid():
+    if request.user.is_authenticated:
 
-            try:
-                fileHandler(request.FILES['UCs'], "UC")
-                countFiles += 1
-            except:
-                print("No UC")
+        countFiles = 0
+        if request.method == 'POST':
+            form = ImportData(request.POST, request.FILES)
+            if form.is_valid():
 
-            try:
-                fileHandler(request.FILES['Class'], "Class")
-                countFiles += 1
-            except:
-                print("No Class")
-                
-            try:
-                fileHandler(request.FILES['ClassUC'], "ClassUC")
-                countFiles += 1
-            except:
-                print("No ClassUC")
+                try:
+                    fileHandler(request.FILES['UCs'], "UC")
+                    countFiles += 1
+                except:
+                    print("No UC")
 
-            try:
-                fileHandler(request.FILES['StudentUC'], "StudentUC")
-                countFiles += 1
-            except:
-                print("No StudentUC")
+                try:
+                    fileHandler(request.FILES['Class'], "Class")
+                    countFiles += 1
+                except:
+                    print("No Class")
+                    
+                try:
+                    fileHandler(request.FILES['ClassUC'], "ClassUC")
+                    countFiles += 1
+                except:
+                    print("No ClassUC")
 
-            try:
-                fileHandler(request.FILES['ScheduleSlot'], "ScheduleSlot")
-                countFiles += 1
-            except:
-                print("No ScheduleSlot")
+                try:
+                    fileHandler(request.FILES['StudentUC'], "StudentUC")
+                    countFiles += 1
+                except:
+                    print("No StudentUC")
 
-            try:
-                fileHandler(request.FILES['Students'], "Student")
-                countFiles += 1
-            except:
-                print("No Student")
+                try:
+                    fileHandler(request.FILES['ScheduleSlot'], "ScheduleSlot")
+                    countFiles += 1
+                except:
+                    print("No ScheduleSlot")
 
-            return HttpResponse("uploaded " + str(countFiles) + " files!")
-    else:
-        form = ImportData()
+                try:
+                    fileHandler(request.FILES['Students'], "Student")
+                    countFiles += 1
+                except:
+                    print("No Student")
+
+                return HttpResponse("uploaded " + str(countFiles) + " files!")
+        else:
+            form = ImportData()
+        
+        return render(request, 'import.html', {'form': form})
     
-    return render(request, 'import.html', {'form': form})
+    else:
+        return HttpResponse("You don't have the right access to this page.")
 
 def exportData(request):
 
-    file = generateFile()
-    return render(request, 'export.html')
+    if request.user.is_authenticated:
+        file = generateFile()
+        return render(request, 'export.html')
+    else:
+        return HttpResponse("You don't have the right access to this page.")
 
 def downloadFile(request):
 
-    fileName = 'output.csv'
-    dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    path = dir + "/app/files/" + fileName
-    f = open(path, 'r')
-    response = HttpResponse(f.read(), content_type="text/csv")
-    response['Content-Disposition'] = "attachment; fileName=" + fileName
-    return response
+    if request.user.is_authenticated:
+        fileName = 'output.csv'
+        dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        path = dir + "/app/files/" + fileName
+        f = open(path, 'r')
+        response = HttpResponse(f.read(), content_type="text/csv")
+        response['Content-Disposition'] = "attachment; fileName=" + fileName
+        return response
+    else:
+        return HttpResponse("You don't have the right access to this page.")
 
 def confirmRequest1(request, ridb64, token):
     
