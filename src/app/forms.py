@@ -8,10 +8,6 @@ class RequestForm(forms.Form):
     uc = forms.ModelChoiceField(queryset = UC.objects.all(), required=True)
     class1 = forms.ModelChoiceField(queryset = Class.objects.all(), required=True)
     class2 = forms.ModelChoiceField(queryset = Class.objects.all(), required=True)
-    
-    #def __init__(self, *args, **kwargs):
-    #    self.
-
 
 class ImportData(forms.Form):
     Class = forms.FileField(required=False)
