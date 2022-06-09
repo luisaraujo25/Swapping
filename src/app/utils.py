@@ -217,13 +217,21 @@ def generateFile():
     #check which requests are concluded
     f = open('app/files/output.csv', 'w')
     list = StudentUC.objects.all()
-    
+    changes = Request.objects.filter(confirmed1 = True, confirmed2 = True)
+
+    #up, codigocadeira, codigoturma
     writer = csv.writer(f, delimiter=';')
-    header = ['ESTUDANTE', 'UC', 'TURMA']
+    header = ['ESTUD_NUM_UNICO_INST', 'CODIGO', 'SIGLA']
     writer.writerow(header)
-    for i in list:
-        data = [i.student.up, i.uc.code, i.cl.code]
+    #for i in list:
+    #    data = [i.student.up, i.uc.code, i.cl.code]
+    #    writer.writerow(data)
+    for elem in changes:
+        data = [elem.st1ID.up, elem.uc.code, elem.class2.code]
+        data2 = [elem.st2ID.up, elem.uc.code, elem.class1.code]
         writer.writerow(data)
+        writer.writerow(data2)
+
     f.close()
 
 def writeTimeout(timeout):
@@ -255,7 +263,7 @@ def getEmailUser():
     return jsonObj['email']
 
 def getEmailPassword():
-    
+
     jsonFile = open("app/files/PERSONALDATA.json", "r")
     jsonObj = json.load(jsonFile)
     return jsonObj['password']
