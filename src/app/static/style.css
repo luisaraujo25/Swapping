@@ -17,7 +17,7 @@ body > :not(header):not(footer){
   color: white;
   width: 40px;
   /* height: 10px; */
-  background-color: rgb(15, 15, 102);
+  background-color: rgb(213, 200, 255);
   padding: 10px;
   text-decoration: none;
   border-radius: 8%;
@@ -25,39 +25,41 @@ body > :not(header):not(footer){
   margin-bottom: 2%;
 }
 
+.title{
+  font-family: 'Philosopher', sans-serif;
+  font-size: 200%;
+}
+
 header{
   margin-top: 0px;
   top: 0;
   right: 0;
   left: 0;
-  background-color: rgb(30, 10, 102);
-  height: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  background-color: rgb(216, 203, 255);
+  min-height: 80px;
   padding: 5px;
 }
 
-header > a{
-  margin-right: 3%;
-  margin-left: 2%;
-  margin-top: auto;
-  margin-bottom: auto;
+header .header-row{
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header .log{
+  padding: 1%;
 }
 
 a{
   text-decoration: none;
 }
 
-.title{
-  font-family: 'Philosopher', sans-serif;
-  font-size: 200%;
-}
-
 footer{
-  position: fixed;
-  height: 60px;
-  background-color: rgb(30, 10, 102);
+  min-height: 60px;
+  background-color: rgb(171, 171, 171);
   bottom: 0px;
   left: 0px;
   right: 0px;

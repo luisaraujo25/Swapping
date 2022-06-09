@@ -37,3 +37,6 @@ class ConfigureTimeout(forms.Form):
         super(ConfigureTimeout, self).__init__(*args, **kwargs)
         self.fields['timeout'].choices = hours
         self.fields['timeout'].initial = getTimeout()
+
+class ExportData(forms.Form):
+    justChanges = forms.BooleanField(required = False)

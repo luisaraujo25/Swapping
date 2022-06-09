@@ -144,8 +144,16 @@ def importData(request):
 def exportData(request):
 
     if request.user.is_authenticated:
-        file = generateFile()
-        return render(request, 'admin/export.html')
+        if request.method == 'POST':
+            form = ExportData(request.POST)
+            if form.is_valid():
+                justChanges = form.cleaned_data['justChanges']
+                generateFile(justChanges)
+                return HttpResponseRedirect('/staff/export/download')
+        else:
+            form = ExportData()
+
+        return render(request, 'admin/export.html', {'form': form})
     else:
         return HttpResponse("You don't have the right access to this page.")
 

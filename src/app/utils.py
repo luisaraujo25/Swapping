@@ -212,25 +212,27 @@ def saveImports(obj):
             UC(code = i['code'], initials = i['initials'], name = i['name']).save()
 
 
-def generateFile():
+def generateFile(justChanges):
     
     #check which requests are concluded
     f = open('app/files/output.csv', 'w')
-    list = StudentUC.objects.all()
-    changes = Request.objects.filter(confirmed1 = True, confirmed2 = True)
 
-    #up, codigocadeira, codigoturma
     writer = csv.writer(f, delimiter=';')
     header = ['ESTUD_NUM_UNICO_INST', 'CODIGO', 'SIGLA']
     writer.writerow(header)
-    #for i in list:
-    #    data = [i.student.up, i.uc.code, i.cl.code]
-    #    writer.writerow(data)
-    for elem in changes:
-        data = [elem.st1ID.up, elem.uc.code, elem.class2.code]
-        data2 = [elem.st2ID.up, elem.uc.code, elem.class1.code]
-        writer.writerow(data)
-        writer.writerow(data2)
+
+    if justChanges:
+        changes = Request.objects.filter(confirmed1 = True, confirmed2 = True)
+        for elem in changes:
+            data = [elem.st1ID.up, elem.uc.code, elem.class2.code]
+            data2 = [elem.st2ID.up, elem.uc.code, elem.class1.code]
+            writer.writerow(data)
+            writer.writerow(data2)
+    else:
+        list = StudentUC.objects.all()
+        for i in list:
+            data = [i.student.up, i.uc.code, i.cl.code]
+            writer.writerow(data)
 
     f.close()
 

@@ -15,7 +15,17 @@
 
     {% include "default.html" %}
     
-    <a class="button" href="{% url 'download' %}">Aquisdgsdh</a>
+    <form method="post">
 
+        <div class = "form">
+            {% csrf_token %}
+            {{ form }}
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+    
 </body>
 </html>
