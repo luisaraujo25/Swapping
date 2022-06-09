@@ -172,7 +172,7 @@ def confirmRequest1(request, ridb64, token):
         #do timeout if here
         timeNow = time.time()
         timeoutSeconds = getTimeout() * 60 * 60
-        if timeNow - r.date > timeoutSeconds:
+        if timeNow - float(r.date) > timeoutSeconds:
             return HttpResponse("Timeout, two days have passed since this request was made, your response is no longer valid")
         else:
             r.confirmed1 = True
@@ -198,7 +198,7 @@ def confirmRequest2(request, ridb64, token):
         #do timeout if here
         timeNow = time.time()
         timeoutSeconds = getTimeout() * 60*60
-        if timeNow - r.date > timeoutSeconds:
+        if timeNow - float(r.date) > timeoutSeconds:
             return HttpResponse("Timeout, two days have passed since this request was made, your response is no longer valid")
         else:
             #CHANGE DATA

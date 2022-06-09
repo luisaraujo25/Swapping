@@ -248,4 +248,13 @@ def getTimeout():
 
     return timeout
 
+def getEmailUser():
 
+    jsonFile = open("app/files/PERSONALDATA.json", "r")
+    jsonObj = json.load(jsonFile)
+    return jsonObj['email']
+
+def getEmailPassword():
+    jsonFile = open("app/files/PERSONALDATA.json", "r")
+    jsonObj = json.load(jsonFile)
+    return jsonObj['password']

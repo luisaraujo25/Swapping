@@ -109,9 +109,9 @@ AUTH_PASSWORD_VALIDATORS = [
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.office365.com'
-EMAIL_HOST_USER = 'swappingfeup@outlook.com'
-EMAIL_HOST_PASSWORD = 'swapclasses123'
+EMAIL_HOST = 'smtp.fe.up.pt'
+EMAIL_HOST_USER = 'up201904996@fe.up.pt'
+EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 587
 
 
