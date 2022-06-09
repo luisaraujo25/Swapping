@@ -116,6 +116,8 @@ a:hover{
 }
 
 .steps .circle .circle-text{
+  display: block;
   text-align: center;
-  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
 }
