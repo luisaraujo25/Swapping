@@ -56,6 +56,7 @@ def sendEmail(r, user, request, token, email, first):
     connection.open()
     email.send()
     connection.close()
+    
 
 def checkClassUC(cl, uc):
 

@@ -105,13 +105,14 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'swappingfeup@gmail.com'
-EMAIL_HOST_PASSWORD = 'swapclasses'
-EMAIL_PORT = 25
+MAIL_HOST = 'smtp.office365.com'
+EMAIL_HOST_USER = 'swappingfeup@outlook.com'
+EMAIL_HOST_PASSWORD = 'swapclasses123'
+EMAIL_PORT = 587
 
 
 # Internationalization
@@ -147,4 +148,5 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
+LOGIN_REDIRECT_URL = "/import/"
+LOGOUT_REDIRECT_URL = "/" 

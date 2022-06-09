@@ -16,3 +16,7 @@ class ImportData(forms.Form):
     ScheduleSlot = forms.FileField(required=False)
     Students = forms.FileField(required=False)
     UCs = forms.FileField(required=False)
+
+class Login(forms.Form):
+    email = forms.EmailField(required = True)
+    password = forms.PasswordInput
