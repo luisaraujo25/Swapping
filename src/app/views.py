@@ -1,6 +1,7 @@
 from ast import Import
 from django.shortcuts import render
 from django.http import *
+from django.urls import reverse
 from .models import *
 from .forms import *
 from .utils import *
@@ -170,8 +171,8 @@ def confirmRequest1(request, ridb64, token):
 
         #do timeout if here
         timeNow = time.time()
-        twoDaysSeconds = 172800
-        if timeNow - r.date > twoDaysSeconds:
+        timeoutSeconds = getTimeout() * 60 * 60
+        if timeNow - r.date > timeoutSeconds:
             return HttpResponse("Timeout, two days have passed since this request was made, your response is no longer valid")
         else:
             r.confirmed1 = True
@@ -196,8 +197,8 @@ def confirmRequest2(request, ridb64, token):
 
         #do timeout if here
         timeNow = time.time()
-        twoDaysSeconds = 172800
-        if timeNow - r.date > twoDaysSeconds:
+        timeoutSeconds = getTimeout() * 60*60
+        if timeNow - r.date > timeoutSeconds:
             return HttpResponse("Timeout, two days have passed since this request was made, your response is no longer valid")
         else:
             #CHANGE DATA
@@ -245,7 +246,7 @@ def adminTimeout(request):
             if form.is_valid():
                 timeout = form.cleaned_data['timeout']
                 writeTimeout(timeout)
-                return render(request, 'admin/confTimeout.html')
+                return HttpResponseRedirect('/staff/configure/timeout')
         else:
             form = ConfigureTimeout()
         

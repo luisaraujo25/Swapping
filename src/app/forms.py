@@ -9,6 +9,10 @@ class RequestForm(forms.Form):
     class1 = forms.ModelChoiceField(queryset = Class.objects.all(), required=True)
     class2 = forms.ModelChoiceField(queryset = Class.objects.all(), required=True)
     
+    #def __init__(self, *args, **kwargs):
+    #    self.
+
+
 class ImportData(forms.Form):
     Class = forms.FileField(required=False)
     ClassUC = forms.FileField(required=False)
@@ -20,15 +24,20 @@ class ImportData(forms.Form):
 
 class ConfigureTimeout(forms.Form):
 
-    hours = (
-        ("1", "1h"),
-        ("2", "2h"),
-        ("4", "4h"),
-        ("8", "8h"),
-        ("12", "12h"),
-        ("24", "24h"),
-        ("48", "48h"),
-        ("72", "72h")
-    )
+    timeout = forms.ChoiceField()
 
-    timeout = forms.ChoiceField(choices = hours)
+    def __init__(self, *args, **kwargs):
+
+        hours = (
+            (1, "1h"),
+            (2, "2h"),
+            (4, "4h"),
+            (8, "8h"),
+            (12, "12h"),
+            (24, "24h"),
+            (48, "48h"),
+            (72, "72h")
+        )
+        super(ConfigureTimeout, self).__init__(*args, **kwargs)
+        self.fields['timeout'].choices = hours
+        self.fields['timeout'].initial = getTimeout()
