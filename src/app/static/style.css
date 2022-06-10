@@ -123,12 +123,13 @@ a:hover{
   border-radius: 50%;
   height: 100px;
   width: 100px;
-  background-color: rgb(110, 65, 135);
+  background-color: rgb(155, 120, 174);
   display: inline-block;
   position: relative;
 }
 
 .steps .circle .circle-text{
+  color: black;
   margin: 0;
   position: absolute;
   top: 50%;

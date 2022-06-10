@@ -1,24 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-    <link rel="icon" type="image/x-icon" href="../../static/img/favicon.ico">
+{% extends "default.html" %}
 
-    <title>Admin</title>
-</head>
-<body>
+{% block title %}Home{% endblock %}
 
-    {% include "default.html" %}
-    
-    <h1>Operations Overview:</h1>
-    <a class="button" href="{% url 'view requests' %}">View Requests</a>
-    <a class="button" href="{% url 'import data' %}">Import data</a>
-    <a class="button" href="{% url 'export data' %}">Export data</a>
-    <a class="button" href="{% url 'configure timeout' %}">Configure Timeout</a>
-</body>
-</html>
+{% block content %}
+
+<h1>Operations Overview:</h1>
+<a class="button" href="{% url 'view requests' %}">View Requests</a>
+<a class="button" href="{% url 'import data' %}">Import data</a>
+<a class="button" href="{% url 'export data' %}">Export data</a>
+<a class="button" href="{% url 'configure timeout' %}">Configure Timeout</a>
+
+{% endblock %}

@@ -1,58 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-    <link rel="icon" type="image/x-icon" href="../../static/img/favicon.ico">
+{% extends "default.html" %}
 
-    <title>Requests</title>
-</head>
-<body>
+{% block title %}Home{% endblock %}
 
-    {% include "default.html" %}
+{% block content %}
+<table class="requestsTable">
+    <tr>
+        <th>ID</th>
+        <th>Student 1</th>
+        <th>Class Student 1</th>
+        <th>Confirmed</th>
+        <th>Student 2</th>
+        <th>Class Student 2</th>
+        <th>Confirmed</th>
+        <th>UC</th>
+        <th>Status</th>
+    </tr>
+    {% for req in requests %}
+    <tr>
+        <td>{{ req.id }}</td>
+        <td>{{ req.st1ID.name }}</td>
+        <td>{{ req.class1.number }}</td>
+        {% if req.confirmed1 %}
+        <td><img src="{% static 'img/check.png' %}" alt="confirmed" width=20 height=20></td>
+        {% else %}
+        <td><img src="{% static 'img/uncheck.png' %}" alt="confirmed" width=20 height=20></td>
+        {% endif %}
+        <td>{{ req.st2ID.name }}</td>
+        <td>{{ req.class2.number }}</td>
+        {% if req.confirmed2 %}
+        <td><img src="{% static 'img/check.png' %}" alt="confirmed" width=20 height=20></td>
+        {% else %}
+        <td><img src="{% static 'img/uncheck.png' %}" alt="confirmed" width=20 height=20></td>
+        {% endif %}
+        <td>{{ req.uc.name }}</td>
+        {% if req.confirmed1 and req.confirmed2 %}
+        <td>Concluded</td>
+        {% else %}
+        <td>In Progress</td>
+        {% endif %}
+    </tr>
+    {% endfor %}
+</table>
 
-    <table class="requestsTable">
-        <tr>
-            <th>ID</th>
-            <th>Student 1</th>
-            <th>Class Student 1</th>
-            <th>Confirmed</th>
-            <th>Student 2</th>
-            <th>Class Student 2</th>
-            <th>Confirmed</th>
-            <th>UC</th>
-            <th>Status</th>
-        </tr>
-        {% for req in requests %}
-            <tr>
-                <td>{{ req.id }}</td>
-                <td>{{ req.st1ID.name }}</td>
-                <td>{{ req.class1.number }}</td>
-                {% if req.confirmed1 %}
-                    <td><img src="{% static 'img/check.png' %}" alt="confirmed" width=20 height=20></td>
-                {% else %}
-                    <td><img src="{% static 'img/uncheck.png' %}" alt="confirmed" width=20 height=20></td>
-                {% endif %}
-                <td>{{ req.st2ID.name }}</td>
-                <td>{{ req.class2.number }}</td>
-                {% if req.confirmed2 %}
-                    <td><img src="{% static 'img/check.png' %}" alt="confirmed" width=20 height=20></td>
-                {% else %}
-                    <td><img src="{% static 'img/uncheck.png' %}" alt="confirmed" width=20 height=20></td>
-                {% endif %}
-                <td>{{ req.uc.name }}</td>
-                {% if req.confirmed1 and req.confirmed2 %}
-                    <td>Concluded</td>
-                {% else %}
-                    <td>In Progress</td>
-                {% endif %}
-            </tr>
-        {% endfor %}
-    </table>
-    
-</body>
-</html>
+{% endblock %}
