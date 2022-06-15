@@ -20,49 +20,56 @@ def home(request):
 
 def request(request):
 
-    if request.method == 'POST':
+    enabled = getAllowance()
+    form = ""
 
-        # create a form instance and populate it with data from the request:
-        form = RequestForm(request.POST)
-        # check whether it's valid:
-        if form.is_valid():
+    #If requests are enables
+    if enabled == True:
 
-            email1 = form.cleaned_data['email1']
-            email2 = form.cleaned_data['email2']
-            uc = form.cleaned_data['uc']
-            class1 = form.cleaned_data['class1']
-            class2 = form.cleaned_data['class2']
-            up1 = getUp(email1) 
-            up2 = getUp(email2)
-            #return HttpResponse(up2)
-            if validateRequest(email1, email2, class1, class2, uc, up1, up2) == -1:
-                return HttpResponse("Invalid Request")
+        #form
+        if request.method == 'POST':
 
-            else:
-                obj = Request()
+            # create a form instance and populate it with data from the request:
+            form = RequestForm(request.POST)
+            # check whether it's valid:
+            if form.is_valid():
 
-                #generate tokens
-                token1 = tokenGenerator(up1)
+                email1 = form.cleaned_data['email1']
+                email2 = form.cleaned_data['email2']
+                uc = form.cleaned_data['uc']
+                class1 = form.cleaned_data['class1']
+                class2 = form.cleaned_data['class2']
+                up1 = getUp(email1) 
+                up2 = getUp(email2)
+                #return HttpResponse(up2)
+                if validateRequest(email1, email2, class1, class2, uc, up1, up2) == -1:
+                    return HttpResponse("Invalid Request")
 
-                obj.st1ID = Student.objects.get(pk=up1)
-                obj.st2ID = Student.objects.get(pk=up2)
-                obj.uc = uc
-                obj.date = time.time()
-                obj.token1 = token1
-                obj.class1 = class1
-                obj.class2 = class2
+                else:
+                    obj = Request()
 
-                #save obj in the db
-                obj.save()
+                    #generate tokens
+                    token1 = tokenGenerator(up1)
 
-                sendEmail(request, Student.objects.get(pk=up1), obj, token1, email1, True)
+                    obj.st1ID = Student.objects.get(pk=up1)
+                    obj.st2ID = Student.objects.get(pk=up2)
+                    obj.uc = uc
+                    obj.date = time.time()
+                    obj.token1 = token1
+                    obj.class1 = class1
+                    obj.class2 = class2
 
-                return HttpResponseRedirect('/')
-    # if a GET (or any other method) we'll create a blank form
-    else:
-        form = RequestForm()
+                    #save obj in the db
+                    obj.save()
 
-    return render(request, 'request.html', {'form': form})
+                    sendEmail(request, Student.objects.get(pk=up1), obj, token1, email1, True)
+
+                    return HttpResponseRedirect('/')
+        # if a GET (or any other method) we'll create a blank form
+        else:
+            form = RequestForm()
+
+    return render(request, 'request.html', {'form': form, 'enabled': enabled})
 
 def viewrequests(request):
 
@@ -253,7 +260,7 @@ def adminTimeout(request):
             form = ConfigureTimeout(request.POST)
             if form.is_valid():
                 timeout = form.cleaned_data['timeout']
-                writeTimeout(timeout)
+                setTimeout(timeout)
                 return HttpResponseRedirect('/staff/configure/timeout')
         else:
             form = ConfigureTimeout()
@@ -263,3 +270,36 @@ def adminTimeout(request):
     else:
         return HttpResponse("You don't have the right access to this page.")
 
+
+def requestAllowance(request):
+
+    if request.user.is_authenticated:
+
+        op = ""
+        if getAllowance() == True:
+            op = "DISABLE"
+        else:
+            op = "ENABLE"
+        
+        return render(request, 'admin/requestAllowance.html', {'op': op})
+    
+    else:
+        return HttpResponse("You don't have the right access to this page.")
+
+
+def enableRequests(request):
+
+    if request.user.is_authenticated:
+        setAllowance(True)
+        return HttpResponseRedirect('/staff/configure/request/allowance')
+    else:
+        return HttpResponse("You don't have the right access to this page.")
+
+def disableRequests(request):
+
+    if request.user.is_authenticated:
+        setAllowance(False)
+        return HttpResponseRedirect('/staff/configure/request/allowance')
+    else:
+        return HttpResponse("You don't have the right access to this page.")
+        

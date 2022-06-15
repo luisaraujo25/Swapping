@@ -4,6 +4,8 @@
 
 {% block content %}
 
+{% if enabled %}
+
 <form method="post">
 
     <div class="form">
@@ -15,6 +17,13 @@
         <input type="reset" value="Reset">
     </div>
 
+    <div class="filler-med"></div>
 </form>
+
+{% else %}
+
+<h2>Requests aren't currently open.</h2>
+
+{% endif %}
 
 {% endblock %}

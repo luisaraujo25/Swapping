@@ -1,15 +1,34 @@
 {% extends "default.html" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}About{% endblock %}
 
 {% block content %}
 
-<p>
-    1) Cant have more than one request for the same uc at the same timeout
-    2) If you dont confirm your request in (timeout) then it will be longer valid and if you still want to change shifts then you should file for a new one. 
-    3) You are able to check your request status through a link. This link is sent after you first confirm your request.
-    Possible status: Not concluded, Request concluded, Accepted request  
+<h1>
+    After making a request, what now?
+</h1>
 
-</p>
+<span class="many-lines">
+    <br>
+    <ol class="many-lines" >
+        <li>
+            You must confirm your request in (timeout).
+            If you don't, then it will be longer valid and if you still want to change shifts you'll have to file for a new one. 
+        </li>
+        <br>
+        <li>
+            You are able to check your request status through a link. This link is sent shortly after you first confirm your request.
+        </li>
+        <br>
+        <li>
+            You can't have more than one request for the same uc at the same timeout. 
+        </li>
+        <br>
+    </ol>
+
+    Possible status: Not concluded, Request concluded, Accepted request  
+</span>
+
+<div class="filler-med"></div>
 
 {% endblock %}

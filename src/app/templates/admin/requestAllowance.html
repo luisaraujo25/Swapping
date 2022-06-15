@@ -1,0 +1,17 @@
+{% extends "default.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+{% if op == "ENABLE" %}
+
+<a href="{% url 'enable requests' %}" class="button">Enable</a>
+
+{% else %}
+
+<a href="{% url 'disable requests' %}" class="button">Disable</a>
+
+{% endif %}
+
+{% endblock %}

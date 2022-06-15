@@ -12,7 +12,7 @@ body > :not(header):not(footer){
 }
 
 body .content{
-  padding-bottom: 100px ;  
+  padding-bottom: 20px ;  
 }
 
 body .pageContainer{
@@ -39,7 +39,7 @@ a:hover{
   background-color: rgb(107, 83, 170);
   padding: 10px;
   text-decoration: none;
-  border-radius: 8%;
+  border-radius: 10px;
   font-size: 20px;
   margin-bottom: 2%;
 }
@@ -182,4 +182,31 @@ form > div{
   margin-bottom: auto;
   font-size: 20px;
   padding: 20px;
+}
+
+.center{
+  margin: 3%;
+  text-align: center;
+  justify-content: center;
+}
+
+.special{
+  font-size: 30px;
+}
+
+.small-text{
+  margin-top: 15px;
+  font-size: smaller;
+}
+
+.many-lines{
+  font-size: 20px;
+}
+
+.filler-med{
+  margin-top: 270px;
+}
+
+.filler-big{
+  margin-top: 500px;
 }
