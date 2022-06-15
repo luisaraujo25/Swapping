@@ -21,5 +21,6 @@ urlpatterns = [
     path('staff/configure/request/allowance/disable', views.disableRequests, name = 'disable requests'),
     path(r'^confirm/first/(?P<ridb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]*{1,20})/$', views.confirmRequest1, name = 'confirmRequest1'),
     path(r'^confirm/second/(?P<ridb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]*{1,20})/$', views.confirmRequest2, name = 'confirmRequest2'),
+    path('request/status/Arfghkrlkl$W%/lk396w0jas<int:id>jndhys8g782/', views.checkStatus, name = 'check status'),
     path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('img/favicon.ico')))
 ]

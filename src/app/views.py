@@ -303,3 +303,11 @@ def disableRequests(request):
     else:
         return HttpResponse("You don't have the right access to this page.")
         
+def checkStatus(request, id):
+
+    try:
+        req = Request.objects.get(pk=id)
+        return render(request, 'status.html', {'req': req})
+
+    except:
+        return HttpResponse("Invalid link/this request doesn't exist")

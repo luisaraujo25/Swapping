@@ -1,5 +1,5 @@
 {
   "defaultTimeout": 48,
   "updatedTimeout": 24,
-  "requestsEnabled": true
+  "requestsEnabled": false
 }

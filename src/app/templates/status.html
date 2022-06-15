@@ -1,0 +1,34 @@
+{% extends "default.html" %}
+
+{% block title %}FAQs{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<ol>
+    <li>Request ID: {{ req.id }}</li>
+    <li>Student 1 name: {{ req.st1ID.name }}</li>
+    <li>Student 1 class: {{ req.class1.number }}</li>
+    {% if req.confirmed1 %}
+    <li><img src="{% static 'img/check.png' %}" alt="confirmed" width=20 height=20></li>
+    {% else %}
+    <li><img src="{% static 'img/uncheck.png' %}" alt="confirmed" width=20 height=20></li>
+    {% endif %}
+    <li>Student 2 name: {{ req.st2ID.name }}</li>
+    <li>Student 2 class:{{ req.class2.number }}</li>
+    {% if req.confirmed2 %}
+    <li><img src="{% static 'img/check.png' %}" alt="confirmed" width=20 height=20></li>
+    {% else %}
+    <li><img src="{% static 'img/uncheck.png' %}" alt="confirmed" width=20 height=20></li>
+    {% endif %}
+    <li>UC: {{ req.uc.name }}</li>
+    {% if req.confirmed1 and req.confirmed2 %}
+    <li>Concluded</li>
+    {% else %}
+    <li>In Progress</li>
+    {% endif %}
+</ol>
+
+<div class="filler-big"></div>
+
+{% endblock %}
