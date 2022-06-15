@@ -20,10 +20,22 @@ body .pageContainer{
   min-height: 100%;
 }
 
+a{
+  text-decoration: none;
+}
+
+a:link, a:visited >{
+  color:rgb(0, 0, 0);
+}
+
+a:hover{
+  color: rgb(216,216,216);
+}
+
 .button{
   color: white;
   width: 40px;
-  /* height: 10px; */
+  line-height: 50px;
   background-color: rgb(107, 83, 170);
   padding: 10px;
   text-decoration: none;
@@ -47,6 +59,18 @@ header{
   padding: 5px;
 }
 
+header a:link{
+  color:rgb(255, 255, 255);
+}
+
+header a:visited{
+  color: rgb(255, 255, 255);
+}
+
+header a:hover{
+  color:rgb(216,216,216);
+}
+
 header .header-row{
   margin-top: 1%;
   margin-left: 1%;
@@ -60,9 +84,6 @@ header .log{
   padding: 1%;
 }
 
-a{
-  text-decoration: none;
-}
 
 footer{
   min-height: 100px;
@@ -77,17 +98,26 @@ footer{
   box-shadow: 0 50vh 0 50vh rgb(171, 171, 171);
 }
 
-footer > a{
+footer a{
   margin-left: 2%;
   margin-right: 2%;
   margin-bottom: auto;
   margin-top: auto;
 }
 
-footer a:link, a:visited{
+footer a:link{
   color:rgb(255, 255, 255);
 }
 
+footer a:visited{
+  color: rgb(255, 255, 255);
+}
+
+footer a:hover{
+  color:rgb(216,216,216);
+}
+
+/*.button a:active*/
 
 form > div{
   padding: 10px;
@@ -98,10 +128,6 @@ form > div{
   flex-direction: column;
 }
 
-a:hover{
-  color:rgb(216,216,216);
-}
-/*.button a:active*/
 
 .requestsTable{
   margin: 2%;

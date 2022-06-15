@@ -78,3 +78,7 @@ class Request(models.Model):
     # class Meta:
     #     unique_together = (('st1ID','st2ID'))
 
+class SingleRequest(models.Model):
+    st1ID = models.ForeignKey("Student", on_delete=models.CASCADE, related_name = "student")
+    uc = models.ForeignKey("UC", on_delete=models.CASCADE)
+    desiredClass = models.ForeignKey("Class", on_delete=models.CASCADE, related_name = "desiredClass")

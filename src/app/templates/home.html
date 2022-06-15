@@ -6,20 +6,15 @@
 
 <div>
     <h1>Welcome!</h1>
-    
-    How it works?
-    1) Cant have more than one request for the same uc at the same timeout
-    2) If you dont confirm your request in (timeout) then it will be longer valid and if you still want to change shifts then you should file for a new one. 
-    3) You are able to check your request status through a link. This link is sent after you first confirm your request.
-    Possible status: Not concluded, Request concluded, Accepted request  
 
-    <p>Do you want to change classes with a friend?
-        File a request!
+    <p>
+        Do you want to change classes with a friend?
+        File for a request!
     </p>
-    <a class="button" href="{% url 'make request' %}">Make a Request</a>
 
-    <br>
-    <br>
+    
+    <h2>How it works?</h2>
+    
     <div class="steps">
         <div class="step-number">
             <div class="circle">
@@ -30,7 +25,7 @@
             <div class="rectangle">
                 <div class="rectangle-text">
                     Find someone through your student group chats that wants to change classes with you!
-                
+                    
                 </div>
             </div>
         </div>
@@ -83,7 +78,12 @@
             </div>
         </div>
     </div>
-
+    
+    <a class="button" href="{% url 'make request' %}">Make a Request</a>
+    
+    <p>
+        Check the <a href="{% url 'About' %}">about</a> section for more details.
+    </p>
 </div>
 
 
