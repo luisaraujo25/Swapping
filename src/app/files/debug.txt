@@ -19,5 +19,10 @@ IM SLOT: PFL
 4
 FSI
 IM SLOT: PFL
+4
+LBAW
+IM SLOT: PFL
 here again
-not valid
+aqui4
+RC
+IM SLOT: PFL
