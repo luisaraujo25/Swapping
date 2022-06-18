@@ -1,16 +1,10 @@
-from gettext import find
-import re
-import json
 import datetime
-from unicodedata import name
-from django.http import HttpResponse
-from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
+from django.utils.http import urlsafe_base64_encode
 from django.core import mail
 from django.template.loader import render_to_string
 from django.contrib.sites.shortcuts import get_current_site
 from django.utils.encoding import force_bytes
-from .models import *
-from .readers import *
+from .models import Composed, ComposedClasses
 
 def getUp(mail):
 
@@ -83,5 +77,5 @@ def getNumber(classCode):
 def getClassesFromComp(compName):
 
     comp = Composed.objects.get(name = compName)
-    listClasses = Composed.objects.filter(composed = comp)
+    listClasses = ComposedClasses.objects.filter(composed = comp)
     return listClasses

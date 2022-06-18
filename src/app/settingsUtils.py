@@ -1,3 +1,5 @@
+import json
+
 def setTimeout(timeout):
     
     currentDict = getCurrentSettings()

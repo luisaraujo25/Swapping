@@ -81,10 +81,11 @@ class Request(models.Model):
 
 
 class Composed(models.Model):
-    name = CharField(max_length=15)
+    name = models.CharField(max_length=15)
+    
     class Meta:
         constraints = [
-            models.UniqueConstraint(fields = ['name'], name="composedNameUnique")
+            models.UniqueConstraint(fields = ['name'], name = "composedUnique")
         ]
 
 class ComposedClasses(models.Model):

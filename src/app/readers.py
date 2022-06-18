@@ -2,6 +2,7 @@ import csv
 from os import remove
 
 from app.models import Class, Composed, ComposedClasses
+from app.utils import getClassesFromComp
 
 #remove dups (some files arent clean)
 def removeDups(list):
@@ -122,10 +123,41 @@ def readSchedules(file):
 
     list = []
     for row in reader:
-        elem = {
-            "comp": row['SIGLA'],
-            "class": row['SIGLA_1']
-        }
+
+        type = row['TIPO_AULA']
+        start = int(row['HORA_INICIO'])
+        end = start + int(row['DURACAO'])
+        cl = row['SIGLA']
+        uc = row['CODIGO']
+        weekDay = row['DECODE']
+        
+        #ignoring theoretical classes
+        if type == 'T':
+            continue
+
+        elem = {}
+        
+        if "COMP" in cl:
+            compClasses = getClassesFromComp(cl)
+            for c in compClasses:
+                elem = {
+                    "class": c,
+                    "uc": uc,
+                    "weekDay": weekDay,
+                    "start": start,
+                    "end": end,
+                    "type": type
+                }
+        else:
+            elem = {
+                "class": cl,
+                "uc": uc,
+                "weekDay": weekDay,
+                "start": start,
+                "end": end,
+                "type": type
+            }
+
         list.append(elem)
 
     return removeDups(list)

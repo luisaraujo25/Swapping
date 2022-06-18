@@ -5,6 +5,9 @@ from django.urls import reverse
 from .models import *
 from .forms import *
 from .utils import *
+from .ioFiles import *
+from .settingsUtils import *
+from .validators import *
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 import os
 import time
@@ -126,6 +129,12 @@ def importData(request):
                     countFiles += 1
                 except:
                     print("No StudentUC")
+
+                #try:
+                fileHandler(request.FILES['Composed'], "Composed")
+                countFiles += 1
+                #except:
+                #    print("No Composed")
 
                 try:
                     fileHandler(request.FILES['ScheduleSlot'], "ScheduleSlot")

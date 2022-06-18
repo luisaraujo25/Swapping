@@ -1,3 +1,8 @@
+from .models import *
+from .readers import *
+from django.http import HttpResponse
+from .utils import *
+
 def fileHandler(file, obj):
     f = open('app/files/data.csv', 'wb+')
     for info in file.chunks():
@@ -48,15 +53,18 @@ def saveImports(obj):
 
     elif obj == "Composed":
         Composed.objects.all().delete()
+        ComposedClasses.objects.all().delete()
         composed = readComposed(path)
         
         for i in composed:
-            compObj = Composed(name = i['compName'])
-            compObj.save()
+            try:
+                compObj = Composed.objects.get(name = i['compName'])
+            except:
+                compObj = Composed(name = i['compName'])
+                compObj.save()
             classObj = Class.objects.get(code = i['class'])
-            ComposedClasses(composed = compObj, cl = classObj)
+            ComposedClasses(composed = compObj, cl = classObj).save()
             
-
     elif obj == "Student":
         Student.objects.all().delete()
         students = readStudents(path)
