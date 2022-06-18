@@ -14,3 +14,4 @@ def getUp(mail):
     print(up)
 
 getUp("up201904996@fe.up.pt")
+#
