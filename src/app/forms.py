@@ -9,9 +9,9 @@ class RequestForm(forms.Form):
     email2 = forms.EmailField(required=True)
     uc = forms.ModelChoiceField(queryset=UC.objects.all(), required=True)
     class1 = forms.ModelChoiceField(
-        queryset=Class.objects.all(), required=True)
+        queryset=Class.objects.all(), required=False, widget = forms.HiddenInput())
     class2 = forms.ModelChoiceField(
-        queryset=Class.objects.all(), required=True)
+        queryset=Class.objects.all(), required=False, widget = forms.HiddenInput())
 
 
 class ImportData(forms.Form):

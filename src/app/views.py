@@ -1,4 +1,5 @@
 from ast import Import
+from django.forms import HiddenInput
 from django.shortcuts import render
 from django.http import *
 from django.urls import reverse
@@ -40,11 +41,15 @@ def request(request):
 
                 email1 = form.cleaned_data['email1']
                 email2 = form.cleaned_data['email2']
-                uc = form.cleaned_data['uc']
-                class1 = form.cleaned_data['class1']
-                class2 = form.cleaned_data['class2']
                 up1 = getUp(email1)
                 up2 = getUp(email2)
+                uc = form.cleaned_data['uc']
+                """ class1 = form.cleaned_data['class1']
+                class2 = form.cleaned_data['class2'] """
+                st1 = Student.objects.get(pk=up1)
+                st2 = Student.objects.get(pk=up2)
+                class1 = StudentUC.objects.get(uc = uc, student = st1).cl
+                class2 = StudentUC.objects.get(uc = uc, student = st2).cl
                 #return HttpResponse(up2)
                 if validateRequest(email1, email2, class1, class2, uc, up1, up2) == -1:
                     return HttpResponse("Invalid Request")
@@ -55,8 +60,8 @@ def request(request):
                     #generate tokens
                     token1 = tokenGenerator(up1)
 
-                    obj.st1ID = Student.objects.get(pk=up1)
-                    obj.st2ID = Student.objects.get(pk=up2)
+                    obj.st1ID = st1
+                    obj.st2ID = st2
                     obj.uc = uc
                     obj.date = time.time()
                     obj.token1 = token1
@@ -72,6 +77,7 @@ def request(request):
                     return HttpResponseRedirect('/')
         # if a GET (or any other method) we'll create a blank form
         else:
+
             form = RequestForm()
 
     return render(request, 'request.html', {'form': form, 'enabled': enabled})
