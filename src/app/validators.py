@@ -58,13 +58,13 @@ def checkStudentClassUC(st, cl, uc):
         return False
 
 
-""" def checkSchedule(cl1, cl2):
+def checkSchedule(cl1, cl2):
     try:
         slot1 = ScheduleSlot()
     except:
         return False
 
- """
+
 
 
 def validateRequest(email1, email2, cl1, cl2, uc, st1, st2):

@@ -58,11 +58,11 @@ class ClassUC(models.Model):
 
 
 class ScheduleSlot(models.Model):
+    classUC = models.ForeignKey("classUC", on_delete=models.CASCADE)
     weekDay = models.CharField(max_length=50)
     startTime = models.IntegerField()
     duration = models.IntegerField()
-    typeClass = models.CharField(max_length=50) #Prática, Teórica, Lab
-    classUC = models.ForeignKey("classUC", on_delete=models.CASCADE)
+    typeClass = models.CharField(max_length=5) #Prática, Teórica, Lab
 
 class Request(models.Model):
     st1ID = models.ForeignKey("Student", on_delete=models.CASCADE, related_name = "request1", default = 0)

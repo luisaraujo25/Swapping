@@ -17,6 +17,7 @@ import time
 #Unlike other frameworks, a view function in Django takes a request and returns a response (action) - request handlers
 #What the user sees is a template
 
+
 def home(request):
     return render(request, 'home.html')
 
@@ -42,7 +43,7 @@ def request(request):
                 uc = form.cleaned_data['uc']
                 class1 = form.cleaned_data['class1']
                 class2 = form.cleaned_data['class2']
-                up1 = getUp(email1) 
+                up1 = getUp(email1)
                 up2 = getUp(email2)
                 #return HttpResponse(up2)
                 if validateRequest(email1, email2, class1, class2, uc, up1, up2) == -1:
@@ -65,7 +66,8 @@ def request(request):
                     #save obj in the db
                     obj.save()
 
-                    sendEmail(request, Student.objects.get(pk=up1), obj, token1, email1, True)
+                    sendEmail(request, Student.objects.get(
+                        pk=up1), obj, token1, email1, True)
 
                     return HttpResponseRedirect('/')
         # if a GET (or any other method) we'll create a blank form
@@ -73,6 +75,7 @@ def request(request):
             form = RequestForm()
 
     return render(request, 'request.html', {'form': form, 'enabled': enabled})
+
 
 def viewrequests(request):
 
@@ -82,23 +85,23 @@ def viewrequests(request):
     else:
         return HttpResponse("You don't have the right access to this page.")
 
+
 def viewrequest(request, idReq):
 
     if request.user.is_authenticated:
         try:
-            req = Request.objects.get(id = idReq)
+            req = Request.objects.get(id=idReq)
             date = req.date
             return render(request, 'viewrequest.html', {'id': idReq, 'date': date})
         except Request.DoesNotExist:
             raise Http404("Request does not exist")
-    
+
     else:
         return HttpResponse("You don't have the right access to this page.")
 
 
-
 def importData(request):
-    
+
     if request.user.is_authenticated:
 
         countFiles = 0
@@ -117,7 +120,7 @@ def importData(request):
                     countFiles += 1
                 except:
                     print("No Class")
-                    
+
                 try:
                     fileHandler(request.FILES['ClassUC'], "ClassUC")
                     countFiles += 1
@@ -130,17 +133,17 @@ def importData(request):
                 except:
                     print("No StudentUC")
 
-                #try:
-                fileHandler(request.FILES['Composed'], "Composed")
-                countFiles += 1
-                #except:
-                #    print("No Composed")
-
                 try:
-                    fileHandler(request.FILES['ScheduleSlot'], "ScheduleSlot")
+                    fileHandler(request.FILES['Composed'], "Composed")
                     countFiles += 1
                 except:
-                    print("No ScheduleSlot")
+                    print("No Composed")
+
+                #try:
+                fileHandler(request.FILES['ScheduleSlot'], "ScheduleSlot")
+                countFiles += 1
+                #except:
+                #    print("No ScheduleSlot")
 
                 try:
                     fileHandler(request.FILES['Students'], "Student")
@@ -151,11 +154,12 @@ def importData(request):
                 return HttpResponse("uploaded " + str(countFiles) + " files!")
         else:
             form = ImportData()
-        
+
         return render(request, 'admin/import.html', {'form': form})
-    
+
     else:
         return HttpResponse("You don't have the right access to this page.")
+
 
 def exportData(request):
 
@@ -173,6 +177,7 @@ def exportData(request):
     else:
         return HttpResponse("You don't have the right access to this page.")
 
+
 def downloadFile(request):
 
     if request.user.is_authenticated:
@@ -186,10 +191,11 @@ def downloadFile(request):
     else:
         return HttpResponse("You don't have the right access to this page.")
 
+
 def confirmRequest1(request, ridb64, token):
-    
+
     idRequest = force_bytes(urlsafe_base64_decode(ridb64))
-    r = Request.objects.get(pk = idRequest)
+    r = Request.objects.get(pk=idRequest)
 
     if r != None and token == r.token1:
 
@@ -206,17 +212,16 @@ def confirmRequest1(request, ridb64, token):
             r.save()
             sendEmail(request, st2, r, token2, st2.email, False)
             return HttpResponse("confirmed")
-        
+
     else:
         return HttpResponse("error")
-        
 
 
 def confirmRequest2(request, ridb64, token):
-    
+
     idRequest = force_bytes(urlsafe_base64_decode(ridb64))
-    r = Request.objects.get(pk = idRequest)
-    
+    r = Request.objects.get(pk=idRequest)
+
     if r != None and token == r.token2:
 
         #do timeout if here
@@ -233,8 +238,8 @@ def confirmRequest2(request, ridb64, token):
             st1 = r.st1ID
             st2 = r.st2ID
             uc = r.uc
-            stClassUc1 = StudentUC.objects.get(cl = cl1, student = st1, uc = uc)
-            stClassUc2 = StudentUC.objects.get(cl = cl2, student = st2, uc = uc)
+            stClassUc1 = StudentUC.objects.get(cl=cl1, student=st1, uc=uc)
+            stClassUc2 = StudentUC.objects.get(cl=cl2, student=st2, uc=uc)
 
             stClassUc1.cl = cl2
             stClassUc2.cl = cl1
@@ -245,14 +250,18 @@ def confirmRequest2(request, ridb64, token):
     else:
         return HttpResponse("Unable to conclude your request")
 
+
 def faqs(request):
     return render(request, 'faqs.html')
+
 
 def about(request):
     return render(request, 'about.html')
 
+
 def contacts(request):
     return render(request, 'contacts.html')
+
 
 def adminOverview(request):
     if request.user.is_authenticated:
@@ -262,7 +271,7 @@ def adminOverview(request):
 
 
 def adminTimeout(request):
-    
+
     if request.user.is_authenticated:
 
         if request.method == 'POST':
@@ -273,9 +282,9 @@ def adminTimeout(request):
                 return HttpResponseRedirect('/staff/configure/timeout')
         else:
             form = ConfigureTimeout()
-        
+
         return render(request, 'admin/confTimeout.html', {'form': form})
-    
+
     else:
         return HttpResponse("You don't have the right access to this page.")
 
@@ -289,9 +298,9 @@ def requestAllowance(request):
             op = "DISABLE"
         else:
             op = "ENABLE"
-        
+
         return render(request, 'admin/requestAllowance.html', {'op': op})
-    
+
     else:
         return HttpResponse("You don't have the right access to this page.")
 
@@ -304,6 +313,7 @@ def enableRequests(request):
     else:
         return HttpResponse("You don't have the right access to this page.")
 
+
 def disableRequests(request):
 
     if request.user.is_authenticated:
@@ -311,7 +321,8 @@ def disableRequests(request):
         return HttpResponseRedirect('/staff/configure/request/allowance')
     else:
         return HttpResponse("You don't have the right access to this page.")
-        
+
+
 def checkStatus(request, id):
 
     try:

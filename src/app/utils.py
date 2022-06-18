@@ -77,5 +77,9 @@ def getNumber(classCode):
 def getClassesFromComp(compName):
 
     comp = Composed.objects.get(name = compName)
-    listClasses = ComposedClasses.objects.filter(composed = comp)
+    listComposedClasses = ComposedClasses.objects.filter(composed = comp)
+    listClasses = [x.cl.code for x in listComposedClasses] 
     return listClasses
+
+def toFloat(string):
+    return float(string.replace(',','.'))

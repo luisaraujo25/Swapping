@@ -1,8 +1,7 @@
 import csv
-from os import remove
-
 from app.models import Class, Composed, ComposedClasses
-from app.utils import getClassesFromComp
+from app.utils import getClassesFromComp, toFloat
+from django.http import HttpResponse
 
 #remove dups (some files arent clean)
 def removeDups(list):
@@ -125,11 +124,11 @@ def readSchedules(file):
     for row in reader:
 
         type = row['TIPO_AULA']
-        start = int(row['HORA_INICIO'])
-        end = start + int(row['DURACAO'])
+        start = toFloat(row['HORA_INICIO'])
+        dur = toFloat(row['DURACAO'])
         cl = row['SIGLA']
         uc = row['CODIGO']
-        weekDay = row['DECODE']
+        weekDay = row['DECODE(A.DIA_N,2,\'seg\',3,\'ter\',4,\'qua\',5,\'qui\',6,\'sex\')']
         
         #ignoring theoretical classes
         if type == 'T':
@@ -145,7 +144,7 @@ def readSchedules(file):
                     "uc": uc,
                     "weekDay": weekDay,
                     "start": start,
-                    "end": end,
+                    "dur": dur,
                     "type": type
                 }
         else:
@@ -154,11 +153,13 @@ def readSchedules(file):
                 "uc": uc,
                 "weekDay": weekDay,
                 "start": start,
-                "end": end,
+                "dur": dur,
                 "type": type
             }
 
         list.append(elem)
+    
+    debug = open('app/files/import/debug.txt', 'w+')
 
     return removeDups(list)
     

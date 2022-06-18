@@ -3,18 +3,18 @@ from .readers import *
 from django.http import HttpResponse
 from .utils import *
 
+
 def fileHandler(file, obj):
     f = open('app/files/data.csv', 'wb+')
     for info in file.chunks():
         f.write(info)
     f.close()
     saveImports(obj)
-    
-    
-def saveImports(obj):    
+
+
+def saveImports(obj):
 
     path = "app/files/data.csv"
-    #return HttpResponse(obj)
     if obj == "Class":
         Class.objects.all().delete()
         classes = readClasses(path)
@@ -23,63 +23,68 @@ def saveImports(obj):
             course = getCourse(cl)
             no = getNumber(cl)
             if cl not in aux:
-                Class(number = no, course = course, code = cl).save()
+                Class(number=no, course=course, code=cl).save()
                 aux.append(cl)
 
     elif obj == "ClassUC":
         ClassUC.objects.all().delete()
         classUC = readClassUC(path)
         for i in classUC:
-            try:
-                uc = UC.objects.get(code = i['uc'])
-                cl = Class.objects.get(code = i['cl'])
-                ClassUC(uc = uc, cl = cl).save()
-            except:
-                HttpResponse("there is not a class or uc associated")
+            uc = UC.objects.get(code=i['uc'])
+            cl = Class.objects.get(code=i['cl'])
+            ClassUC(uc=uc, cl=cl).save()
 
     elif obj == "StudentUC":
         StudentUC.objects.all().delete()
         list = readStudentUC(path)
         for i in list:
-            try:
-                uc = UC.objects.get(code = i['uc'])
-                cl = Class.objects.get(code = i['class'])
-                st = Student.objects.get(up = i['up'])
-                StudentUC(student = st, uc = uc, cl = cl).save()
-            except:
-                HttpResponse("student is not in the class X of uc Y")
+            uc = UC.objects.get(code=i['uc'])
+            cl = Class.objects.get(code=i['class'])
+            st = Student.objects.get(up=i['up'])
+            StudentUC(student=st, uc=uc, cl=cl).save()
 
-    #elif obj == "ScheduleSlot":
+    elif obj == "ScheduleSlot":
+        ScheduleSlot.objects.all().delete()
+        slots = readSchedules(path)
+        for i in slots:
+            cl = Class.objects.get(code = i['class'])
+            uc = UC.objects.get(code = i['uc'])
+            try:
+                clUc = ClassUC.objects.get(uc = uc, cl = cl)
+                ScheduleSlot(classUC = clUc, weekDay = i['weekDay'], startTime = i['start'], duration = i['dur'], typeClass = i['type']).save()
+            except:
+                print("Incoherent data")
 
     elif obj == "Composed":
         Composed.objects.all().delete()
         ComposedClasses.objects.all().delete()
         composed = readComposed(path)
-        
+
         for i in composed:
             try:
-                compObj = Composed.objects.get(name = i['compName'])
+                comp = Composed.objects.get(name=i['compName'])
             except:
-                compObj = Composed(name = i['compName'])
-                compObj.save()
-            classObj = Class.objects.get(code = i['class'])
-            ComposedClasses(composed = compObj, cl = classObj).save()
-            
+                comp = Composed(name=i['compName'])
+                comp.save()
+            cl = Class.objects.get(code=i['class'])
+            ComposedClasses(composed=comp, cl=cl).save()
+
     elif obj == "Student":
         Student.objects.all().delete()
         students = readStudents(path)
         for i in students:
-            Student(up = i['up'], name = i['name'], email = i['email'], course = i['course']).save()
+            Student(up=i['up'], name=i['name'],
+                    email=i['email'], course=i['course']).save()
 
     elif obj == "UC":
         UC.objects.all().delete()
         ucs = readUC(path)
         for i in ucs:
-            UC(code = i['code'], initials = i['initials'], name = i['name']).save()
+            UC(code=i['code'], initials=i['initials'], name=i['name']).save()
 
 
 def generateFile(justChanges):
-    
+
     #check which requests are concluded
     f = open('app/files/output.csv', 'w')
 
@@ -88,7 +93,7 @@ def generateFile(justChanges):
     writer.writerow(header)
 
     if justChanges:
-        changes = Request.objects.filter(confirmed1 = True, confirmed2 = True)
+        changes = Request.objects.filter(confirmed1=True, confirmed2=True)
         for elem in changes:
             data = [elem.st1ID.up, elem.uc.code, elem.class2.code]
             data2 = [elem.st2ID.up, elem.uc.code, elem.class1.code]
