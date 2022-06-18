@@ -1,0 +1,23 @@
+5LTW
+
+FSI
+
+LBAW
+
+PFL
+
+RC
+
+LTW
+FSI
+LBAW
+RC
+nothing
+4
+LTW
+IM SLOT: PFL
+4
+FSI
+IM SLOT: PFL
+here again
+not valid

@@ -46,12 +46,13 @@ def request(request):
                 uc = form.cleaned_data['uc']
                 """ class1 = form.cleaned_data['class1']
                 class2 = form.cleaned_data['class2'] """
+                #if checkStudent
                 st1 = Student.objects.get(pk=up1)
                 st2 = Student.objects.get(pk=up2)
                 class1 = StudentUC.objects.get(uc = uc, student = st1).cl
                 class2 = StudentUC.objects.get(uc = uc, student = st2).cl
                 #return HttpResponse(up2)
-                if validateRequest(email1, email2, class1, class2, uc, up1, up2) == -1:
+                if validateRequest(email1, email2, class1, class2, uc, st1, st2) == -1:
                     return HttpResponse("Invalid Request")
 
                 else:
@@ -71,8 +72,7 @@ def request(request):
                     #save obj in the db
                     obj.save()
 
-                    sendEmail(request, Student.objects.get(
-                        pk=up1), obj, token1, email1, True)
+                    #sendEmail(request, st1, obj, token1, email1, True)
 
                     return HttpResponseRedirect('/')
         # if a GET (or any other method) we'll create a blank form
@@ -144,12 +144,12 @@ def importData(request):
                     countFiles += 1
                 except:
                     print("No Composed")
-
-                #try:
-                fileHandler(request.FILES['ScheduleSlot'], "ScheduleSlot")
-                countFiles += 1
-                #except:
-                #    print("No ScheduleSlot")
+                
+                try:
+                    fileHandler(request.FILES['ScheduleSlot'], "ScheduleSlot")
+                    countFiles += 1
+                except:
+                    print("No ScheduleSlot")
 
                 try:
                     fileHandler(request.FILES['Students'], "Student")

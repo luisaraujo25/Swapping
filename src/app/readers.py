@@ -120,6 +120,7 @@ def readSchedules(file):
     f = open(file, 'r')
     reader = csv.DictReader(f, delimiter=';')
 
+    debug = open('app/files/import/debug.txt', 'w+')
     list = []
     for row in reader:
 
@@ -133,12 +134,11 @@ def readSchedules(file):
         #ignoring theoretical classes
         if type == 'T':
             continue
-
-        elem = {}
         
         if "COMP" in cl:
             compClasses = getClassesFromComp(cl)
             for c in compClasses:
+                debug.write("comp: " + cl + ", class: " + c + "\n")
                 elem = {
                     "class": c,
                     "uc": uc,
@@ -147,6 +147,7 @@ def readSchedules(file):
                     "dur": dur,
                     "type": type
                 }
+                list.append(elem)
         else:
             elem = {
                 "class": cl,
@@ -156,10 +157,12 @@ def readSchedules(file):
                 "dur": dur,
                 "type": type
             }
+            list.append(elem)
 
-        list.append(elem)
     
-    debug = open('app/files/import/debug.txt', 'w+')
+    import json
+    for i in removeDups(list):
+        debug.write(json.dumps(i) + "\n")
 
     return removeDups(list)
     

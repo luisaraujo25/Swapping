@@ -83,3 +83,6 @@ def getClassesFromComp(compName):
 
 def toFloat(string):
     return float(string.replace(',','.'))
+
+def flattenList(list):
+    return [x for xs in list for x in xs]

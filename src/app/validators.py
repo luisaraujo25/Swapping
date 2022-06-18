@@ -1,3 +1,4 @@
+from app.utils import flattenList
 from .models import *
 
 
@@ -58,47 +59,74 @@ def checkStudentClassUC(st, cl, uc):
         return False
 
 
-def checkSchedule(st, cl, uc):
+def checkSchedule(st, classToChange, uc):
     
-    try:
-        studentUcs = StudentUC.objects.filter(student = st)
+    #DEBUG
+        debug = open('app/files/debug.txt', 'w+')
+    #try:
+        studentUcs = list(StudentUC.objects.filter(student = st))
         schedule = []
+
+        debug.write(str(len(studentUcs)))
+        for i in studentUcs:
+            debug.write(i.uc.initials + "\n\n")
+
         #students whole practical schedule except the class to verify
         for stUc in studentUcs:
-            stCl = stUc.cl 
-            stUc = stUc.uc
-            if stUc.code == uc:
+
+            if stUc.uc == uc:
                 continue
-            clUc = ClassUC.objects.get(cl = stCl, uc = stUc)
-            slot = ScheduleSlot.objects.filter(classUC = clUc, typeClass = 'P')
+            clUc = ClassUC.objects.get(cl = stUc.cl, uc = stUc.uc)
+            slot = list(ScheduleSlot.objects.filter(classUC = clUc, typeClass = 'PL'))
+            for i in slot:
+                debug.write(i.classUC.uc.initials + "\n")
+            slot2 = list(ScheduleSlot.objects.filter(classUC = clUc, typeClass = 'TP'))
+            for i in slot2:
+                debug.write(i.classUC.uc.initials + "\n")
+            
             schedule.append(slot)
+            schedule.append(slot2)
 
         #make sure there aren't lists of lists
-        schedule = [x for xs in schedule for x in xs]
 
-        clUc = ClassUC.objects.get(uc = uc, cl = cl)
-        slot = ScheduleSlot.objects.filter(classUC = clUc, typeClass = 'P')
-        st = Student.objects.get(up = st)
+        clUc = ClassUC.objects.get(uc = uc, cl = classToChange)
+        slot = list(ScheduleSlot.objects.filter(classUC = clUc, typeClass = 'PL')) + list(ScheduleSlot.objects.filter(classUC = clUc, typeClass = 'TP'))
+
+        try:
+            schedule = flattenList(schedule)
+            slot = flattenList(slot + slot2)
+        except:
+            debug.write("nothing\n")
 
         valid = False
         for practical in schedule:
-            if practical.weekDay == slot.weekDay and (practical.start + practical.duration <= slot.start or practical.start >= slot.start + slot.duration):
-                #didn't have anything else to write lol, if i did the condition "backwards" it would be more extense
-                valid = True
-            else:
-                print("debug")
-                return False
+            debug.write(str(len(schedule)) + "\n")
+            debug.write(practical.classUC.uc.initials + "\n")
+            for sl in slot:
+                debug.write("IM SLOT: " + sl.classUC.uc.initials + "\n")
+                if practical.weekDay == sl.weekDay:
+                    debug.write("here again\n")
+                    if practical.startTime + practical.duration <= sl.startTime or practical.startTime >= sl.startTime + sl.duration:
+                        #didn't have anything else to write lol, if i did the condition "backwards" it would be more extense
+                        valid = True
+                        debug.write("aqui")
+                    else:
+                        #DEBUG
+                        debug.write("not valid")
+                        return False
+                else:
+                    continue    
         return True
-    except:
-        return False
+    #except:
+    #    return False
 
 
 def validateRequest(email1, email2, cl1, cl2, uc, st1, st2):
 
     if validateEmail(email1) == False or validateEmail(email2) == False:
         return -1
-    if checkStudent(st1) == False or checkStudent(st2) == False:
-        return -1
+    #if checkStudent(st1) == False or checkStudent(st2) == False:
+    #    return -1
     if checkClassUC(cl1, uc) == False or checkClassUC(cl2, uc) == False:
         return -1
     if checkStudents(st1, st2) == False:
@@ -107,9 +135,9 @@ def validateRequest(email1, email2, cl1, cl2, uc, st1, st2):
         return -1
     if checkClass(cl1, cl2) == False:
         return -1
-    if checkStudentClassUC(st1, cl2, uc) == False or checkStudentClassUC(st2, cl2, uc) == False:
+    if checkStudentClassUC(st1, cl1, uc) == False or checkStudentClassUC(st2, cl2, uc) == False:
             return -1
-    if checkSchedule(st2, cl1, uc) == False or checkSchedule(st2, cl2, uc) == False:
+    if checkSchedule(st1, cl2, uc) == False or checkSchedule(st2, cl1, uc) == False:
         return -1
     else:
         return 0

@@ -58,7 +58,7 @@ class ClassUC(models.Model):
 
 
 class ScheduleSlot(models.Model):
-    classUC = models.ForeignKey("classUC", on_delete=models.CASCADE)
+    classUC = models.ForeignKey("ClassUC", on_delete=models.CASCADE)
     weekDay = models.CharField(max_length=50)
     startTime = models.IntegerField()
     duration = models.IntegerField()

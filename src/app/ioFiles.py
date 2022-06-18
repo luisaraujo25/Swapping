@@ -36,24 +36,36 @@ def saveImports(obj):
 
     elif obj == "StudentUC":
         StudentUC.objects.all().delete()
-        list = readStudentUC(path)
+        list = readStudentUC(path)    
         for i in list:
-            uc = UC.objects.get(code=i['uc'])
-            cl = Class.objects.get(code=i['class'])
-            st = Student.objects.get(up=i['up'])
-            StudentUC(student=st, uc=uc, cl=cl).save()
+            try:
+                uc = UC.objects.get(code=i['uc'])
+                cl = Class.objects.get(code=i['class'])
+                st = Student.objects.get(up=i['up'])
+                StudentUC(student=st, uc=uc, cl=cl).save()
+            except:
+                print("student doesnt exist in the database")
 
     elif obj == "ScheduleSlot":
         ScheduleSlot.objects.all().delete()
         slots = readSchedules(path)
+        debug = open('app/files/debug2.txt','w+')
+        #debug.write("en")
         for i in slots:
+
             cl = Class.objects.get(code = i['class'])
             uc = UC.objects.get(code = i['uc'])
+            debug.write("class: " + cl.code + ", uc: " + uc.initials + "\n")
             try:
                 clUc = ClassUC.objects.get(uc = uc, cl = cl)
-                ScheduleSlot(classUC = clUc, weekDay = i['weekDay'], startTime = i['start'], duration = i['dur'], typeClass = i['type']).save()
+                ss = ScheduleSlot(classUC = clUc, weekDay = i['weekDay'], startTime = i['start'], duration = i['dur'], typeClass = i['type'])
+                ss.save()
+                debug.write("class from schedule: " + ss.classUC.cl.code + ", uc from schedule: " + ss.classUC.uc.initials + "\n")
+
             except:
-                print("Incoherent data")
+                continue
+            
+            #    print("Incoherent data")
 
     elif obj == "Composed":
         Composed.objects.all().delete()
