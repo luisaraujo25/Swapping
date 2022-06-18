@@ -1,4 +1,5 @@
 from django.db import models
+from django.forms import CharField
 from django.utils import timezone
 
 # Create your models here.
@@ -78,7 +79,20 @@ class Request(models.Model):
     # class Meta:
     #     unique_together = (('st1ID','st2ID'))
 
+
+class Composed(models.Model):
+    name = CharField(max_length=15)
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields = ['name'], name="composedNameUnique")
+        ]
+
+class ComposedClasses(models.Model):
+    composed = models.ForeignKey("Composed", on_delete=models.CASCADE)
+    cl = models.ForeignKey("Class", on_delete=models.CASCADE)
+
 class SingleRequest(models.Model):
     st1ID = models.ForeignKey("Student", on_delete=models.CASCADE, related_name = "student")
     uc = models.ForeignKey("UC", on_delete=models.CASCADE)
     desiredClass = models.ForeignKey("Class", on_delete=models.CASCADE, related_name = "desiredClass")
+

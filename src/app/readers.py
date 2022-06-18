@@ -1,6 +1,8 @@
 import csv
 from os import remove
 
+from app.models import Class, Composed, ComposedClasses
+
 #remove dups (some files arent clean)
 def removeDups(list):
     aux = []
@@ -10,32 +12,29 @@ def removeDups(list):
 
     return aux
 
-def cleanFiles():
-    #delete unwanted content
-    #remove dups
-    return
-
 
 def sortCriteria(elem):
     return elem['up']
 
+
 def readClasses(file):
 
-    f = open(file,'r')
-    
+    f = open(file, 'r')
+
     reader = csv.DictReader(f, delimiter=';')
-    
+
     classes = []
     for row in reader:
         classes.append(row['SIGLA'])
-        
+
     f.close()
 
     return removeDups(classes)
 
+
 def readUC(file):
 
-    f = open(file, 'r', encoding = "ISO-8859-1")
+    f = open(file, 'r', encoding="ISO-8859-1")
     reader = csv.DictReader(f, delimiter=';')
 
     ucs = []
@@ -51,9 +50,9 @@ def readUC(file):
     return removeDups(ucs)
 
 
-def readClassUC(fileClasses):
+def readClassUC(file):
 
-    f = open(fileClasses, 'r')
+    f = open(file, 'r')
     reader = csv.DictReader(f, delimiter=';')
 
     classUC = []
@@ -66,11 +65,12 @@ def readClassUC(fileClasses):
 
     return removeDups(classUC)
 
+
 def readStudents(file):
 
     f = open(file, 'r')
     reader = csv.DictReader(f, delimiter=';')
-    
+
     students = []
     for row in reader:
         elem = {
@@ -83,6 +83,7 @@ def readStudents(file):
 
     students.sort(key=sortCriteria, reverse=True)
     return removeDups(students)
+
 
 def readStudentUC(file):
     f = open(file, 'r')
@@ -99,7 +100,37 @@ def readStudentUC(file):
 
     return removeDups(list)
 
-#MISSING STUDENT UC CLASS, schedule slot
+
+def readComposed(file):
+    f = open(file, 'r')
+    reader = csv.DictReader(f, delimiter=';')
+
+    list = []
+    for row in reader:
+        elem = {
+            "compName": row['SIGLA'],
+            "class": row['SIGLA_1']
+        }
+        list.append(elem)
+
+    return removeDups(list)
+
+
+def readSchedules(file):
+    f = open(file, 'r')
+    reader = csv.DictReader(f, delimiter=';')
+
+    list = []
+    for row in reader:
+        elem = {
+            "comp": row['SIGLA'],
+            "class": row['SIGLA_1']
+        }
+        list.append(elem)
+
+    return removeDups(list)
+    
+# schedule slot
 
 #print(readStudents('../../exp/EstudantesL.EIC.csv'))
 
