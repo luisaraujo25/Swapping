@@ -58,13 +58,39 @@ def checkStudentClassUC(st, cl, uc):
         return False
 
 
-def checkSchedule(cl1, cl2):
+def checkSchedule(st, cl, uc):
+    
     try:
-        slot1 = ScheduleSlot()
+        studentUcs = StudentUC.objects.filter(student = st)
+        schedule = []
+        #students whole practical schedule except the class to verify
+        for stUc in studentUcs:
+            stCl = stUc.cl 
+            stUc = stUc.uc
+            if stUc.code == uc:
+                continue
+            clUc = ClassUC.objects.get(cl = stCl, uc = stUc)
+            slot = ScheduleSlot.objects.filter(classUC = clUc, typeClass = 'P')
+            schedule.append(slot)
+
+        #make sure there aren't lists of lists
+        schedule = [x for xs in schedule for x in xs]
+
+        clUc = ClassUC.objects.get(uc = uc, cl = cl)
+        slot = ScheduleSlot.objects.filter(classUC = clUc, typeClass = 'P')
+        st = Student.objects.get(up = st)
+
+        valid = False
+        for practical in schedule:
+            if practical.weekDay == slot.weekDay and (practical.start + practical.duration <= slot.start or practical.start >= slot.start + slot.duration):
+                #didn't have anything else to write lol, if i did the condition "backwards" it would be more extense
+                valid = True
+            else:
+                print("debug")
+                return False
+        return True
     except:
         return False
-
-
 
 
 def validateRequest(email1, email2, cl1, cl2, uc, st1, st2):
@@ -81,7 +107,9 @@ def validateRequest(email1, email2, cl1, cl2, uc, st1, st2):
         return -1
     if checkClass(cl1, cl2) == False:
         return -1
-    if checkStudentClassUC(st1, cl1, uc) == False or checkStudentClassUC(st2, cl2, uc) == False:
+    if checkStudentClassUC(st1, cl2, uc) == False or checkStudentClassUC(st2, cl2, uc) == False:
             return -1
+    if checkSchedule(st2, cl1, uc) == False or checkSchedule(st2, cl2, uc) == False:
+        return -1
     else:
         return 0
