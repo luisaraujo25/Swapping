@@ -1,7 +1,7 @@
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get update
-#sudo apt-get install postgresql
+sudo apt-get install postgresql
 sudo apt-get install postgresql-12
 
 #https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-20-04
@@ -41,3 +41,20 @@ python manage.py sqlmigrate app 0001
 DROP TABLE {app_name}_{model_name} CASCADE;
 python manage.py migrate app zero
 python manage.py migrate --fake-initial
+
+
+-- Connecting to the current user localhost's postgres instance
+psql
+
+-- Making sure the database exists
+SELECT * from pg_database where datname = 'my_database_name'
+
+-- Disallow new connections
+UPDATE pg_database SET datallowconn = 'false' WHERE datname = 'my_database_name';
+ALTER DATABASE my_database_name CONNECTION LIMIT 1;
+
+-- Terminate existing connections
+SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE datname = 'my_database_name';
+
+-- Drop database
+DROP DATABASE my_database_name  

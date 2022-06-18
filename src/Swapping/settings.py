@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'Swapping.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
+        'NAME': 'swapping',
         'USER': 'postgres',
         'PASSWORD': '.',
         'HOST': '127.0.0.1',
