@@ -65,3 +65,9 @@ class RatingForm(forms.Form):
         super(RatingForm, self).__init__(*args, **kwargs)
         self.fields['number'].choices = numbers
         self.fields['number'].initial = 5
+
+
+class SingleRequestForm(forms.Form):
+    up = forms.IntegerField(label = "Your student number (up)")
+    uc = forms.ModelChoiceField(queryset=UC.objects.all(), label = "UC:")
+    cl = forms.ModelChoiceField(queryset=Class.objects.all(), label = "Desired class")

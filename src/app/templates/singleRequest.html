@@ -1,0 +1,29 @@
+{% extends "default.html" %}
+
+{% block title %}FAQs{% endblock %}
+
+{% block content %}
+
+
+<form method="post">
+
+    {% if message != None %}
+    <p>
+        <span class="error">REQUEST NOT COMPLETED:</span>
+        {{ message }}
+    </p>
+    {% endif %}
+
+
+    <div class="form">
+        {% csrf_token %}
+        {{ form }}
+    </div>
+    <div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </div>
+</form>
+
+
+{% endblock %}

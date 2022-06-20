@@ -1,10 +1,11 @@
 import datetime
+from urllib import request
 from django.utils.http import urlsafe_base64_encode
 from django.core import mail
 from django.template.loader import render_to_string
 from django.contrib.sites.shortcuts import get_current_site
 from django.utils.encoding import force_bytes
-from .models import Composed, ComposedClasses
+from .models import Composed, ComposedClasses, SingleRequest, StudentUC
 
 def getUp(mail):
 
@@ -91,3 +92,27 @@ def hadPermission(request):
     if request.user.is_authenticated:
         return True
     return False
+
+def makeMatches():
+
+    requests = list(SingleRequest.objects.all())
+
+    #brute force for now
+    matches = []
+    for i in range(len(requests)):
+        request1 = requests[i]
+        curClass1 =StudentUC.objects.get(student = request1.st, uc = request1.uc)
+        for j in range(len(requests)):
+            if i == j:
+                continue
+            request2 = requests[j]
+            curClass2 = StudentUC.objects.get(student = request2.st, uc = request2.uc).cl
+
+            if curClass1 == request2 and curClass2 == request1:
+                
+                for t in matches: 
+                    if request1 not in t and request2 not in t:
+                        tuple = [request1, request2]
+                        matches.append(tuple)
+
+    return matches

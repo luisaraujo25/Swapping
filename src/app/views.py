@@ -167,7 +167,7 @@ def importData(request):
                 except:
                     print("No ScheduleSlot")
 
-                request.method = 'GET'
+                #request.method = 'GET'
                 message = "uploaded " + str(countFiles) + " files!"
                 return render(request, 'admin/import.html', {'form': form, 'message': message})
                 #return HttpResponseRedirect('/staff/overview/')
@@ -398,3 +398,65 @@ def rating(request):
         form = RatingForm()
 
     return render(request, 'rate.html', {'form': form, 'message': None})
+
+
+def singleRequest(request):
+
+    enabled = getAllowance()
+
+    if enabled == True:
+
+        if request.method == 'POST':
+            form = SingleRequestForm(request.POST)
+
+            if form.is_valid():
+                up = form.cleaned_data['up']
+                uc = form.cleaned_data['uc']
+                cl = form.cleaned_data['cl']
+
+                st = None
+
+                valid = checkStudent(up)
+                if valid:
+                    st = Student.objects.get(pk=up)
+                else:
+                    message = "Invalid Student"
+                    return render(request, 'singleRequest.html', {'form': form, 'enabled': enabled, 'message': message})
+
+                valid = checkStudentUC(st, uc)
+                if valid:
+                    curCl = StudentUC.objects.get(uc=uc, student=st).cl
+                else:
+                    message = "You are not enrolled in this UC"
+                    return render(request, 'singleRequest.html', {'form': form, 'enabled': enabled, 'message': message})
+
+                valid = checkClassUC(cl, uc)
+                if valid == False:
+                    message = "This class doesn't exist in this UC"
+                    return render(request, 'singleRequest.html', {'form': form, 'enabled': enabled, 'message': message})
+
+                #desired class MUST be different than current class
+                valid = checkStudentClassUC(st, cl, uc)
+                if valid:
+                    message = "Your desired class MUST be different than your current class"
+                    return render(request, 'singleRequest.html', {'form': form, 'enabled': enabled, 'message': message})
+
+                valid = checkSchedule(st, cl, uc)
+                if valid == False:
+                    message = "You can't go to this class since it overlaps your schedule."
+                    return render(request, 'singleRequest.html', {'form': form, 'enabled': enabled, 'message': message})
+
+                SingleRequest(st=st, uc=uc, desiredClass=cl).save()
+
+                return HttpResponseRedirect('/')
+        else:
+            form = SingleRequestForm()
+
+    return render(request, 'singleRequest.html', {'form': form, 'enabled': enabled, 'message' : None})
+
+
+def match(request):
+
+    matches = makeMatches()
+
+    return HttpResponse(matches)
