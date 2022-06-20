@@ -86,3 +86,8 @@ def toFloat(string):
 
 def flattenList(list):
     return [x for xs in list for x in xs]
+
+def hadPermission(request):
+    if request.user.is_authenticated:
+        return True
+    return False

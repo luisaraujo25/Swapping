@@ -8,6 +8,7 @@ class RequestForm(forms.Form):
     email1 = forms.EmailField(required=True)
     email2 = forms.EmailField(required=True)
     uc = forms.ModelChoiceField(queryset=UC.objects.all(), required=True)
+    #widget=ReadOnlyText SEE THIS
     class1 = forms.ModelChoiceField(
         queryset=Class.objects.all(), required=False, widget = forms.HiddenInput())
     class2 = forms.ModelChoiceField(
@@ -15,13 +16,12 @@ class RequestForm(forms.Form):
 
 
 class ImportData(forms.Form):
-    Class = forms.FileField(required=False)
-    Students = forms.FileField(required=False)
-    UCs = forms.FileField(required=False)
-    ClassUC = forms.FileField(required=False)
-    StudentUC = forms.FileField(required=False)
-    Composed = forms.FileField(required=False)
-    ScheduleSlot = forms.FileField(required=False)
+    UCs = forms.FileField(required=False, label = "UCs (uc.csv)")
+    Class = forms.FileField(required=False, label = "Classes (turmas.csv)")
+    Students = forms.FileField(required=False, label = "Students ()")
+    StudentUC = forms.FileField(required=False, label = "What UCs are students enrolled (colocacoes.csv)")
+    Composed = forms.FileField(required=False, label = "Composed classes (compostos.csv)")
+    ScheduleSlot = forms.FileField(required=False, label = "Schedules (horarios.csv)")
 
 
 class ConfigureTimeout(forms.Form):

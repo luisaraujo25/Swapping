@@ -92,6 +92,7 @@ class ComposedClasses(models.Model):
     composed = models.ForeignKey("Composed", on_delete=models.CASCADE)
     cl = models.ForeignKey("Class", on_delete=models.CASCADE)
 
+
 class SingleRequest(models.Model):
     st1ID = models.ForeignKey("Student", on_delete=models.CASCADE, related_name = "student")
     uc = models.ForeignKey("UC", on_delete=models.CASCADE)

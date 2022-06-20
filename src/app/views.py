@@ -44,9 +44,6 @@ def request(request):
                 up1 = getUp(email1)
                 up2 = getUp(email2)
                 uc = form.cleaned_data['uc']
-                """ class1 = form.cleaned_data['class1']
-                class2 = form.cleaned_data['class2'] """
-                #if checkStudent
                 st1 = Student.objects.get(pk=up1)
                 st2 = Student.objects.get(pk=up2)
                 class1 = StudentUC.objects.get(uc = uc, student = st1).cl
@@ -72,7 +69,7 @@ def request(request):
                     #save obj in the db
                     obj.save()
 
-                    #sendEmail(request, st1, obj, token1, email1, True)
+                    sendEmail(request, st1, obj, token1, email1, True)
 
                     return HttpResponseRedirect('/')
         # if a GET (or any other method) we'll create a blank form
@@ -128,10 +125,10 @@ def importData(request):
                     print("No Class")
 
                 try:
-                    fileHandler(request.FILES['ClassUC'], "ClassUC")
+                    fileHandler(request.FILES['Students'], "Student")
                     countFiles += 1
                 except:
-                    print("No ClassUC")
+                    print("No Student")
 
                 try:
                     fileHandler(request.FILES['StudentUC'], "StudentUC")
@@ -151,11 +148,6 @@ def importData(request):
                 except:
                     print("No ScheduleSlot")
 
-                try:
-                    fileHandler(request.FILES['Students'], "Student")
-                    countFiles += 1
-                except:
-                    print("No Student")
 
                 return HttpResponse("uploaded " + str(countFiles) + " files!")
         else:
@@ -337,3 +329,22 @@ def checkStatus(request, id):
 
     except:
         return HttpResponse("Invalid link/this request doesn't exist")
+
+def cleanData(request):
+
+    if request.user.is_authenticated:
+        ComposedClasses.objects.all().delete()
+        StudentUC.objects.all().delete()
+        ClassUC.objects.all().delete()
+        Request.objects.all().delete()
+        ScheduleSlot.objects.all().delete()
+        Student.objects.all().delete()
+        UC.objects.all().delete()
+        Class.objects.all().delete()
+        Composed.objects.all().delete()
+        SingleRequest.objects.all().delete()
+        
+        return HttpResponseRedirect('/staff/overview/')
+
+    else:
+        return HttpResponse ("You don't have the right access to this page.")

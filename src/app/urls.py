@@ -19,6 +19,7 @@ urlpatterns = [
     path('staff/configure/request/allowance', views.requestAllowance, name = 'request allowance'),
     path('staff/configure/request/allowance/enable', views.enableRequests, name = 'enable requests'),
     path('staff/configure/request/allowance/disable', views.disableRequests, name = 'disable requests'),
+    path('staff/configure/clean/database', views.cleanData, name = 'clean data'),
     path(r'^confirm/first/(?P<ridb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]*{1,20})/$', views.confirmRequest1, name = 'confirmRequest1'),
     path(r'^confirm/second/(?P<ridb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]*{1,20})/$', views.confirmRequest2, name = 'confirmRequest2'),
     path('request/status/Arfghkrlkl$W%/lk396w0jas<int:id>jndhys8g782/', views.checkStatus, name = 'check status'),

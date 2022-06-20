@@ -17,26 +17,39 @@ def saveImports(obj):
     path = "app/files/data.csv"
     if obj == "Class":
         Class.objects.all().delete()
-        classes = readClasses(path)
-        aux = []
-        for cl in classes:
-            course = getCourse(cl)
-            no = getNumber(cl)
-            if cl not in aux:
-                Class(number=no, course=course, code=cl).save()
-                aux.append(cl)
-
-    elif obj == "ClassUC":
         ClassUC.objects.all().delete()
+        classes = readClasses(path)
         classUC = readClassUC(path)
+        aux = []
+        for i in classes:
+            course = getCourse(i)
+            no = getNumber(i)
+            if i not in aux:
+                Class(number=no, course=course, code=i).save()
+                aux.append(i)
+        
         for i in classUC:
             uc = UC.objects.get(code=i['uc'])
             cl = Class.objects.get(code=i['cl'])
             ClassUC(uc=uc, cl=cl).save()
+        
+    elif obj == "Student":
+        Student.objects.all().delete()
+        students = readStudents(path)
+        for i in students:
+            Student(up=i['up'], name=i['name'],
+                    email=i['email'], course=i['course']).save()
 
+    elif obj == "UC":
+        UC.objects.all().delete()
+        ucs = readUC(path)
+        for i in ucs:
+            UC(code=i['code'], initials=i['initials'], name=i['name']).save()
+    
     elif obj == "StudentUC":
         StudentUC.objects.all().delete()
-        list = readStudentUC(path)    
+        list = readStudentUC(path)
+        print(str(len(list)))
         for i in list:
             try:
                 uc = UC.objects.get(code=i['uc'])
@@ -81,18 +94,6 @@ def saveImports(obj):
             cl = Class.objects.get(code=i['class'])
             ComposedClasses(composed=comp, cl=cl).save()
 
-    elif obj == "Student":
-        Student.objects.all().delete()
-        students = readStudents(path)
-        for i in students:
-            Student(up=i['up'], name=i['name'],
-                    email=i['email'], course=i['course']).save()
-
-    elif obj == "UC":
-        UC.objects.all().delete()
-        ucs = readUC(path)
-        for i in ucs:
-            UC(code=i['code'], initials=i['initials'], name=i['name']).save()
 
 
 def generateFile(justChanges):

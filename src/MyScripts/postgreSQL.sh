@@ -17,6 +17,8 @@ sudo -i -u postgres
 psql
 #TO QUIT PROMPT:
 \q
+#connect to swapping
+\c swapping
 
 #INSTALLED VERSION: PostgreSQL 12.9
 

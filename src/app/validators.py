@@ -139,5 +139,17 @@ def validateRequest(email1, email2, cl1, cl2, uc, st1, st2):
             return -1
     if checkSchedule(st1, cl2, uc) == False or checkSchedule(st2, cl1, uc) == False:
         return -1
+    if onGoingRequests(st1, uc) == False or onGoingRequests(st2, uc) == False:
+        return -1
     else:
         return 0
+
+#check if student has already another request to this uc
+def onGoingRequests(st, uc):
+
+    requests = list(Request.objects.filter(st1ID = st, uc = uc) | Request.objects.filter(st2ID = st, uc = uc))
+
+    if(len(requests) > 0):
+        return False
+
+    return True
