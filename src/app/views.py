@@ -44,13 +44,31 @@ def request(request):
                 up1 = getUp(email1)
                 up2 = getUp(email2)
                 uc = form.cleaned_data['uc']
-                st1 = Student.objects.get(pk=up1)
-                st2 = Student.objects.get(pk=up2)
-                class1 = StudentUC.objects.get(uc = uc, student = st1).cl
-                class2 = StudentUC.objects.get(uc = uc, student = st2).cl
-                #return HttpResponse(up2)
-                if validateRequest(email1, email2, class1, class2, uc, st1, st2) == -1:
-                    return HttpResponse("Invalid Request")
+
+                st1 = None
+                st2 = None
+                class1 = None
+                class2 = None
+                
+                valid = checkStudent(up1) & checkStudent(up2)
+                if valid == True:
+                    st1 = Student.objects.get(pk=up1)
+                    st2 = Student.objects.get(pk=up2)
+                else:
+                    message = "One or more invalid students"
+                    return render(request, 'request.html', {'form': form, 'enabled': enabled, 'message' : message})
+
+                valid = checkStudentUC(st1, uc) & checkStudentUC(st2,uc)
+                if valid == True:
+                    class1 = StudentUC.objects.get(uc = uc, student = st1).cl
+                    class2 = StudentUC.objects.get(uc = uc, student = st2).cl
+                else:
+                    message = "One or more students aren't enrolled in this UC (neither a class)"
+                    return render(request, 'request.html', {'form': form, 'enabled': enabled, 'message' : message})
+
+                message = validateRequest(email1, email2, class1, class2, uc, st1, st2)
+                if message != "":
+                    return render(request, 'request.html', {'form': form, 'enabled': enabled, 'message' : message})
 
                 else:
                     obj = Request()
@@ -74,10 +92,9 @@ def request(request):
                     return HttpResponseRedirect('/')
         # if a GET (or any other method) we'll create a blank form
         else:
-
             form = RequestForm()
 
-    return render(request, 'request.html', {'form': form, 'enabled': enabled})
+    return render(request, 'request.html', {'form': form, 'enabled': enabled, 'message' : None})
 
 
 def viewrequests(request):

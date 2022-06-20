@@ -1,9 +1,9 @@
 from app.utils import flattenList
 from .models import *
+import re
 
 
 def validateEmail(mail):
-    return True
     valid = re.search("^up[0-9]{9}@.+\.up\.pt$", mail)
     if valid == None:
         return False
@@ -123,26 +123,21 @@ def checkSchedule(st, classToChange, uc):
 
 def validateRequest(email1, email2, cl1, cl2, uc, st1, st2):
 
+    message = ""
     if validateEmail(email1) == False or validateEmail(email2) == False:
-        return -1
-    #if checkStudent(st1) == False or checkStudent(st2) == False:
-    #    return -1
-    if checkClassUC(cl1, uc) == False or checkClassUC(cl2, uc) == False:
-        return -1
+        message += "Invalid Email\n"
     if checkStudents(st1, st2) == False:
-        return -1
+        message += "Student 1 can't be the same as Student 2\n"
     if checkStudentUC(st1, uc) == False or checkStudentUC(st2, uc) == False:
-        return -1
-    if checkClass(cl1, cl2) == False:
-        return -1
+        message += "One or more students aren't enrolled in this UC\n"
     if checkStudentClassUC(st1, cl1, uc) == False or checkStudentClassUC(st2, cl2, uc) == False:
-            return -1
+        message += "One or more students are not enrolled in any class in this UC\n"
     if checkSchedule(st1, cl2, uc) == False or checkSchedule(st2, cl1, uc) == False:
-        return -1
+        message += "You can't conclude this request since the changes are not compatible with the rest of your schedule\n"
     if onGoingRequests(st1, uc) == False or onGoingRequests(st2, uc) == False:
-        return -1
-    else:
-        return 0
+        message += "You can't make a request if you already have an on going request to the same UC\n"
+    
+    return message
 
 #check if student has already another request to this uc
 def onGoingRequests(st, uc):

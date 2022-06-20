@@ -8,6 +8,14 @@
 
 <form method="post">
 
+    {% if message != None %}
+    <p>
+        <span class="error">REQUEST NOT COMPLETED:</span>
+        {{ message }}
+    </p>
+    {% endif %}
+
+
     <div class="form">
         {% csrf_token %}
         {{ form }}
