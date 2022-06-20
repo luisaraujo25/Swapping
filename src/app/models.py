@@ -98,3 +98,6 @@ class SingleRequest(models.Model):
     uc = models.ForeignKey("UC", on_delete=models.CASCADE)
     desiredClass = models.ForeignKey("Class", on_delete=models.CASCADE, related_name = "desiredClass")
 
+class Rating(models.Model):
+    number = models.IntegerField()
+    opinion = models.TextField()

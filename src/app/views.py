@@ -54,7 +54,7 @@ def request(request):
                     st1 = Student.objects.get(pk=up1)
                     st2 = Student.objects.get(pk=up2)
                 else:
-                    request.method = 'GET'
+                    #request.method = 'GET'
                     message = "One or more invalid students"
                     return render(request, 'request.html', {'form': form, 'enabled': enabled, 'message' : message})
 
@@ -64,12 +64,12 @@ def request(request):
                     class2 = StudentUC.objects.get(uc = uc, student = st2).cl
                 else:
                     message = "One or more students aren't enrolled in this UC (neither a class)"
-                    request.method = 'GET'
+                    #request.method = 'GET'
                     return render(request, 'request.html', {'form': form, 'enabled': enabled, 'message' : message})
 
                 message = validateRequest(email1, email2, class1, class2, uc, st1, st2)
                 if message != "":
-                    request.method = 'GET'
+                    #request.method = 'GET'
                     return render(request, 'request.html', {'form': form, 'enabled': enabled, 'message' : message})
 
                 else:
@@ -281,6 +281,9 @@ def about(request):
 def contacts(request):
     return render(request, 'contacts.html')
 
+def rate(request):
+    return render(request, 'rate.html')
+
 
 def adminOverview(request):
     if request.user.is_authenticated:
@@ -376,3 +379,22 @@ def cleanConfirmation(request):
         return render(request, 'admin/cleanConfirm.html')
     else:
         return HttpResponse ("You don't have the right access to this page.")
+
+def rating(request):
+
+    if request.method == 'POST':
+        form = RatingForm(request.POST)
+        if form.is_valid():
+            number = form.cleaned_data['number']
+            try:
+                opinion = form.cleaned_data['opinion']
+            except:
+                opinion = ""
+            Rating(number = number, opinion = opinion).save()
+            
+            message = "Thank you for your contribution."
+            return render(request, 'rate.html', {'form': form, 'message': message})
+    else:
+        form = RatingForm()
+
+    return render(request, 'rate.html', {'form': form, 'message': None})

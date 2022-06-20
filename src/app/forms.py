@@ -47,3 +47,21 @@ class ConfigureTimeout(forms.Form):
 
 class ExportData(forms.Form):
     justChanges = forms.BooleanField(required=False)
+
+
+class RatingForm(forms.Form):
+    number = forms.ChoiceField(label = "Your Rating")
+    opinion = forms.CharField(widget=forms.Textarea, required = False, label = "Leave something to justify your rating (not required)")
+
+    def __init__(self, *args, **kwargs):
+
+        numbers = (
+            (1, "1"),
+            (2, "2"),
+            (3, "3"),
+            (4, "4"),
+            (5, "5")
+        )
+        super(RatingForm, self).__init__(*args, **kwargs)
+        self.fields['number'].choices = numbers
+        self.fields['number'].initial = 5

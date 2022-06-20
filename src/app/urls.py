@@ -13,6 +13,7 @@ urlpatterns = [
     path('faqs/', views.faqs, name = 'FAQs'),
     path('about/', views.about, name = 'About'),
     path('contacts/', views.contacts, name = 'Contacts'),
+    path('rate/', views.rating, name = 'Rate'),
     path('staff/export/download/', views.downloadFile, name='download'),
     path('staff/overview/', views.adminOverview, name ='admin overview'),
     path('staff/configure/request/timeout', views.adminTimeout, name = 'configure timeout'),

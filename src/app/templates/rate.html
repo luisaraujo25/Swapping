@@ -1,18 +1,11 @@
 {% extends "default.html" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Rate Website{% endblock %}
 
 {% block content %}
+{% load static %}
 
-{{ method }}
-
-{% if message != None %}
-<p>
-    {{ message }}
-</p>
-{% endif %}
-
-<form method="post" enctype="multipart/form-data">
+<form method="post">
 
     <div class="form">
         {% csrf_token %}
@@ -20,7 +13,6 @@
     </div>
     <div>
         <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
     </div>
 
 </form>
