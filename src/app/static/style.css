@@ -4,6 +4,9 @@ body{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   /*margin-bottom: 10%;*/
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 body > :not(header):not(footer){
@@ -86,16 +89,12 @@ header .log{
 
 
 footer{
-  min-height: 100px;
+  min-height: 80px;
   background-color: rgb(171, 171, 171);
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  margin-bottom: 0px;
+  margin-top: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  box-shadow: 0 50vh 0 50vh rgb(171, 171, 171);
 }
 
 footer a{
@@ -201,14 +200,6 @@ form > div{
 
 .many-lines{
   font-size: 20px;
-}
-
-.filler-med{
-  margin-top: 270px;
-}
-
-.filler-big{
-  margin-top: 500px;
 }
 
 .error{
