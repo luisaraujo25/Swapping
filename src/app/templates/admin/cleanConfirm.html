@@ -1,0 +1,10 @@
+{% extends "default.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<h3>Are you sure you want to erase everything store about students, ucs, classes, etc?</h3>
+<a href="{% url 'clean data' %}" class="button">Yes</a>
+
+{% endblock %}

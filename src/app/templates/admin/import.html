@@ -4,6 +4,12 @@
 
 {% block content %}
 
+{% if message != None %}
+<p>
+    {{ message }}
+</p>
+{% endif %}
+
 <form method="post" enctype="multipart/form-data">
 
     <div class="form">

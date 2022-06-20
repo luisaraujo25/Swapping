@@ -27,7 +27,6 @@ def request(request):
 
     enabled = getAllowance()
     form = ""
-
     #If requests are enables
     if enabled == True:
 
@@ -55,6 +54,7 @@ def request(request):
                     st1 = Student.objects.get(pk=up1)
                     st2 = Student.objects.get(pk=up2)
                 else:
+                    request.method = 'GET'
                     message = "One or more invalid students"
                     return render(request, 'request.html', {'form': form, 'enabled': enabled, 'message' : message})
 
@@ -64,10 +64,12 @@ def request(request):
                     class2 = StudentUC.objects.get(uc = uc, student = st2).cl
                 else:
                     message = "One or more students aren't enrolled in this UC (neither a class)"
+                    request.method = 'GET'
                     return render(request, 'request.html', {'form': form, 'enabled': enabled, 'message' : message})
 
                 message = validateRequest(email1, email2, class1, class2, uc, st1, st2)
                 if message != "":
+                    request.method = 'GET'
                     return render(request, 'request.html', {'form': form, 'enabled': enabled, 'message' : message})
 
                 else:
@@ -165,12 +167,14 @@ def importData(request):
                 except:
                     print("No ScheduleSlot")
 
-
-                return HttpResponse("uploaded " + str(countFiles) + " files!")
+                request.method = 'GET'
+                message = "uploaded " + str(countFiles) + " files!"
+                return render(request, 'admin/import.html', {'form': form, 'message': message})
+                #return HttpResponseRedirect('/staff/overview/')
         else:
             form = ImportData()
-
-        return render(request, 'admin/import.html', {'form': form})
+            
+        return render(request, 'admin/import.html', {'form': form, 'message': None})
 
     else:
         return HttpResponse("You don't have the right access to this page.")
@@ -363,5 +367,12 @@ def cleanData(request):
         
         return HttpResponseRedirect('/staff/overview/')
 
+    else:
+        return HttpResponse ("You don't have the right access to this page.")
+
+def cleanConfirmation(request):
+
+    if request.user.is_authenticated:
+        return render(request, 'admin/cleanConfirm.html')
     else:
         return HttpResponse ("You don't have the right access to this page.")
