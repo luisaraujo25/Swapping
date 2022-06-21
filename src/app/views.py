@@ -1,4 +1,5 @@
 from ast import Import
+from bdb import effective
 from django.forms import HiddenInput
 from django.shortcuts import render
 from django.http import *
@@ -457,6 +458,6 @@ def singleRequest(request):
 
 def match(request):
 
-    matches = makeMatches()
+    effectivateSingles()
 
-    return HttpResponse(matches)
+    return HttpResponse("changeD!")

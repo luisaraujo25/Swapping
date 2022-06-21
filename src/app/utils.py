@@ -95,24 +95,54 @@ def hadPermission(request):
 
 def makeMatches():
 
-    requests = list(SingleRequest.objects.all())
+    debug = open('app/files/debug/matching.txt', 'w+')
+
+    requests = list(SingleRequest.objects.filter(closed = False))
 
     #brute force for now
     matches = []
     for i in range(len(requests)):
         request1 = requests[i]
-        curClass1 =StudentUC.objects.get(student = request1.st, uc = request1.uc)
+        curClass1 = StudentUC.objects.get(student = request1.st, uc = request1.uc).cl
+        debug.write("i: " + request1.st.name + ", " + curClass1.code + "\n")
         for j in range(len(requests)):
             if i == j:
                 continue
             request2 = requests[j]
             curClass2 = StudentUC.objects.get(student = request2.st, uc = request2.uc).cl
 
-            if curClass1 == request2 and curClass2 == request1:
-                
-                for t in matches: 
-                    if request1 not in t and request2 not in t:
-                        tuple = [request1, request2]
-                        matches.append(tuple)
+            if curClass1 == request2.desiredClass and curClass2 == request1.desiredClass:
+                if [request1,request2] not in matches and [request2,request1] not in matches:
+                    debug.write(request1.st.name + " + " + request2.st.name + "\n")
+                    tuple = [request1, request2]
+                    matches.append(tuple)
 
     return matches
+
+def effectivateSingles():
+
+    debug = open('app/files/debug/effectivate.txt', 'w+')
+
+    matches = makeMatches()
+
+    for tuple in matches:
+
+        request1 = tuple[0]
+        request2 = tuple[1]
+
+        request1.closed = True
+        request2.closed = True
+
+        request1.save()
+        request2.save()
+
+        stUc1 = StudentUC.objects.get(student = request1.st, uc = request1.uc)
+        stUc2 =  StudentUC.objects.get(student = request2.st, uc = request2.uc)
+        
+        stUc1.cl = stUc2.cl
+        stUc1.save()
+
+        stUc2.cl = stUc1.cl
+        stUc1.save()
+        
+    return

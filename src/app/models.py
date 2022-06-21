@@ -97,6 +97,7 @@ class SingleRequest(models.Model):
     st = models.ForeignKey("Student", on_delete=models.CASCADE, related_name = "student")
     uc = models.ForeignKey("UC", on_delete=models.CASCADE)
     desiredClass = models.ForeignKey("Class", on_delete=models.CASCADE, related_name = "desiredClass")
+    closed = models.BooleanField(default = False)
 
 class Rating(models.Model):
     number = models.IntegerField()
