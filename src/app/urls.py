@@ -2,6 +2,31 @@ from django.urls import path, re_path
 from . import views
 from django.contrib.staticfiles.storage import staticfiles_storage
 from django.views.generic.base import RedirectView
+from time import time
+from random import seed, randint, choice
+from string import ascii_lowercase, ascii_uppercase, ascii_letters, digits, punctuation
+
+
+def generateString():
+
+    url = ""
+    seed(time())
+    max_length = 30
+    min_length = 20
+    length = randint(min_length, max_length)
+
+    for i in range(length):
+        
+        if i%2 or i%3:
+            url += choice(ascii_letters)
+        elif i%5:
+            url += choice(digits)
+        else:
+            url += choice(punctuation)
+            
+
+    return url
+
 
 urlpatterns = [
     path('', views.home, name = 'homepage'),
@@ -24,8 +49,8 @@ urlpatterns = [
     path('staff/configure/clean/database', views.cleanData, name = 'clean data'),
     path('staff/match/make', views.match, name = 'make matches'),
     path('request/single', views.singleRequest, name = 'single request'),
-    path(r'^confirm/first/(?P<ridb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]*{1,20})/$', views.confirmRequest1, name = 'confirmRequest1'),
-    path(r'^confirm/second/(?P<ridb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]*{1,20})/$', views.confirmRequest2, name = 'confirmRequest2'),
+    path(generateString() + '?P<ridb64>' + generateString() + '?P<token>' + generateString(), views.confirmRequest1, name = 'confirmRequest1'),
+    path(generateString() + '?P<ridb64>' + generateString() + '?P<token>' + generateString(), views.confirmRequest2, name = 'confirmRequest2'),
     path('request/status/Arfghkrlkl$W%/lk396w0jas<int:id>jndhys8g782/', views.checkStatus, name = 'check status'),
     path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('img/favicon.ico')))
 ]
