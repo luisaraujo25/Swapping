@@ -18,7 +18,7 @@
     </tr>
     {% for req in requests %}
     <tr>
-        <td>{{ req.id }}</td>
+        <td> <a href="{% url 'check status' id=req.id %}"> {{ req.id }} </a></td>
         <td>{{ req.st1ID.name }}</td>
         <td>{{ req.class1.number }}</td>
         {% if req.confirmed1 %}

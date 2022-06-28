@@ -107,21 +107,7 @@ def viewrequests(request):
         return render(request, 'admin/viewrequests.html', {'requests': requests})
     else:
         return HttpResponse("You don't have the right access to this page.")
-
-
-def viewrequest(request, idReq):
-
-    if request.user.is_authenticated:
-        try:
-            req = Request.objects.get(id=idReq)
-            date = req.date
-            return render(request, 'viewrequest.html', {'id': idReq, 'date': date})
-        except Request.DoesNotExist:
-            raise Http404("Request does not exist")
-
-    else:
-        return HttpResponse("You don't have the right access to this page.")
-
+        
 
 def importData(request):
 

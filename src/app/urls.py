@@ -31,7 +31,6 @@ def generateString():
 urlpatterns = [
     path('', views.home, name = 'homepage'),
     path('request/', views.request, name = 'make request'),
-    path('viewrequest/<int:idReq>/', views.viewrequest, name = 'view request'),
     path('viewrequests/', views.viewrequests, name = 'view requests'),
     path('import/', views.importData, name = 'import data'),
     path('export/', views.exportData, name = 'export data'),
@@ -51,6 +50,6 @@ urlpatterns = [
     path('request/single', views.singleRequest, name = 'single request'),
     path(generateString() + '?P<ridb64>' + generateString() + '?P<token>' + generateString(), views.confirmRequest1, name = 'confirmRequest1'),
     path(generateString() + '?P<ridb64>' + generateString() + '?P<token>' + generateString(), views.confirmRequest2, name = 'confirmRequest2'),
-    path('request/status/Arfghkrlkl$W%/lk396w0jas<int:id>jndhys8g782/', views.checkStatus, name = 'check status'),
+    path(generateString() + '<int:id>' + generateString(), views.checkStatus, name = 'check status'),
     path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('img/favicon.ico')))
 ]
