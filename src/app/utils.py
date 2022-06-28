@@ -119,11 +119,9 @@ def makeMatches():
 
     return matches
 
-def effectivateSingles():
+def effectivateSingles(matches):
 
     debug = open('app/files/debug/effectivate.txt', 'w+')
-
-    matches = makeMatches()
 
     for tuple in matches:
 
@@ -144,5 +142,3 @@ def effectivateSingles():
 
         stUc2.cl = stUc1.cl
         stUc1.save()
-        
-    return

@@ -1,0 +1,32 @@
+{% extends "default.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<table>
+    <tr class="center">
+        <th>Matches</th>
+    </tr>
+    <tr>
+        <th>
+            Student 1
+        </th>
+        <th>
+            Student2
+        </th>
+        <th>
+            Classes
+        </th>
+    </tr>
+
+    {% for match in matches %}
+    <tr>
+        {% for req in match %}
+        <td>{{ i.st.up }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

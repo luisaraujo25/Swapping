@@ -1,0 +1,28 @@
+5PFL
+
+LTW
+
+FSI
+
+LBAW
+
+RC
+
+LTW
+FSI
+LBAW
+RC
+nothing
+4
+LTW
+IM SLOT: PFL
+4
+FSI
+IM SLOT: PFL
+4
+LBAW
+IM SLOT: PFL
+here again
+aqui4
+RC
+IM SLOT: PFL

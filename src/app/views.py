@@ -458,6 +458,7 @@ def singleRequest(request):
 
 def match(request):
 
-    effectivateSingles()
+    matches = makeMatches()
+    effectivateSingles(matches)
 
-    return HttpResponse("changeD!")
+    return render(request, 'admin/matches.html', {'matches': matches})
