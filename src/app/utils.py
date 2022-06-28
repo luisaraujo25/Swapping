@@ -1,11 +1,14 @@
 import datetime
-from urllib import request
 from django.utils.http import urlsafe_base64_encode
 from django.core import mail
 from django.template.loader import render_to_string
 from django.contrib.sites.shortcuts import get_current_site
 from django.utils.encoding import force_bytes
 from .models import Composed, ComposedClasses, SingleRequest, StudentUC
+from time import time
+from random import seed, randint, choice
+from string import ascii_letters, digits, punctuation
+
 
 def getUp(mail):
 
@@ -142,3 +145,24 @@ def effectivateSingles(matches):
 
         stUc2.cl = stUc1.cl
         stUc1.save()
+
+
+def generateString():
+
+    url = ""
+    seed(time())
+    max_length = 30
+    min_length = 20
+    length = randint(min_length, max_length)
+
+    for i in range(length):
+        
+        if i%2 or i%3:
+            url += choice(ascii_letters)
+        elif i%5:
+            url += choice(digits)
+        else:
+            url += choice(punctuation)
+            
+
+    return url

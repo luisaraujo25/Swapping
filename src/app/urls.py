@@ -2,31 +2,7 @@ from django.urls import path, re_path
 from . import views
 from django.contrib.staticfiles.storage import staticfiles_storage
 from django.views.generic.base import RedirectView
-from time import time
-from random import seed, randint, choice
-from string import ascii_lowercase, ascii_uppercase, ascii_letters, digits, punctuation
-
-
-def generateString():
-
-    url = ""
-    seed(time())
-    max_length = 30
-    min_length = 20
-    length = randint(min_length, max_length)
-
-    for i in range(length):
-        
-        if i%2 or i%3:
-            url += choice(ascii_letters)
-        elif i%5:
-            url += choice(digits)
-        else:
-            url += choice(punctuation)
-            
-
-    return url
-
+from .utils import generateString
 
 urlpatterns = [
     path('', views.home, name = 'homepage'),
@@ -50,6 +26,6 @@ urlpatterns = [
     path('request/single', views.singleRequest, name = 'single request'),
     path(generateString() + '?P<ridb64>' + generateString() + '?P<token>' + generateString(), views.confirmRequest1, name = 'confirmRequest1'),
     path(generateString() + '?P<ridb64>' + generateString() + '?P<token>' + generateString(), views.confirmRequest2, name = 'confirmRequest2'),
-    path(generateString() + '<int:id>' + generateString(), views.checkStatus, name = 'check status'),
+    path(generateString() + '?P<id>' + generateString(), views.checkStatus, name = 'check status'),
     path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('img/favicon.ico')))
 ]

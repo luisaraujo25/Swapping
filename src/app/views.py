@@ -107,7 +107,7 @@ def viewrequests(request):
         return render(request, 'admin/viewrequests.html', {'requests': requests})
     else:
         return HttpResponse("You don't have the right access to this page.")
-        
+
 
 def importData(request):
 
@@ -448,3 +448,7 @@ def match(request):
     effectivateSingles(matches)
 
     return render(request, 'admin/matches.html', {'matches': matches})
+
+def notFound(request, exception):
+    
+    return render(request, 'notFound.html')

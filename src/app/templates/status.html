@@ -5,7 +5,7 @@
 {% block content %}
 {% load static %}
 
-<ol>
+<ul>
     <li>Request ID: {{ req.id }}</li>
     <li>Student 1 name: {{ req.st1ID.name }}</li>
     <li>Student 1 class: {{ req.class1.number }}</li>
@@ -27,6 +27,6 @@
     {% else %}
     <li>In Progress</li>
     {% endif %}
-</ol>
+</ul>
 
 {% endblock %}
