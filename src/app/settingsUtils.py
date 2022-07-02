@@ -20,23 +20,34 @@ def getTimeout():
     return timeout
 
 
-def setAllowance(enabled):
+def setAllowance(enabled, reqType):
     
     currentDict = getCurrentSettings()
 
-    currentDict['requestsEnabled'] = enabled
+    strType = ""
 
+    if reqType == "duo":
+        strType = "duoReqEnabled"
+    elif reqType == "single":
+        strType = "singleReqEnabled"
+
+    currentDict[strType] = enabled
     jsonObj = json.dumps(currentDict, indent = 2)
     jsonFile = open("app/files/adminSettings.json", "w+")
     jsonFile.write(jsonObj)
 
 
-def getAllowance():
+def getAllowance(reqType):
+
+    if reqType == "duo":
+        strType = "duoReqEnabled"
+    elif reqType == "single":
+        strType = "singleReqEnabled"
 
     jsonFile = open("app/files/adminSettings.json", "r")
     jsonObj = json.load(jsonFile)
-
-    enabled = jsonObj['requestsEnabled']
+    
+    enabled = jsonObj[strType]
 
     return enabled
 

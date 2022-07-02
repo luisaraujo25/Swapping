@@ -35,11 +35,20 @@ a:hover{
   color: rgb(216,216,216);
 }
 
+button{
+  color: white;
+  background-color: rgb(96, 73, 153);
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
+
 .button{
   color: white;
   width: 40px;
   line-height: 50px;
-  background-color: rgb(107, 83, 170);
+  background-color: rgb(96, 73, 153);
   padding: 10px;
   text-decoration: none;
   border-radius: 10px;
@@ -57,7 +66,7 @@ header{
   top: 0;
   right: 0;
   left: 0;
-  background-color: rgb(156, 133, 222);
+  background-color: rgb(110, 97, 148);
   min-height: 80px;
   padding: 5px;
 }
@@ -85,6 +94,9 @@ header .header-row{
 
 header .log{
   padding: 1%;
+  width: 12%; 
+  display: flex;
+  justify-content: space-around;
 }
 
 
@@ -122,9 +134,12 @@ form > div{
   padding: 10px;
 }
 
+
 .form{
   display: flex;
   flex-direction: column;
+  max-width: 500px;
+  justify-content: center;
 }
 
 
@@ -148,7 +163,7 @@ form > div{
   border-radius: 50%;
   height: 100px;
   width: 100px;
-  background-color: rgb(155, 120, 174);
+  background-color: rgb(145, 120, 174);
   display: inline-block;
   position: relative;
 }
@@ -189,6 +204,17 @@ form > div{
   justify-content: center;
 }
 
+.form-container{
+  max-width: 400px;
+  margin: 3%;
+  padding: 1%;
+  padding-bottom: 2%;
+  border-style: solid;
+  border-width: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .special{
   font-size: 30px;
 }
@@ -199,7 +225,7 @@ form > div{
 }
 
 .many-lines{
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .error{

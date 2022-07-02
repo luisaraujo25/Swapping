@@ -1,5 +1,6 @@
 {
   "defaultTimeout": 48,
   "updatedTimeout": 24,
-  "requestsEnabled": true
+  "duoReqEnabled": true,
+  "singleReqEnabled": true
 }

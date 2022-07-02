@@ -4,13 +4,23 @@
 
 {% block content %}
 
-{% if op == "ENABLE" %}
+{% if duoOp %}
 
-<a href="{% url 'enable requests' %}" class="button">Enable</a>
+<a href="{% url 'disable duo requests' %}" class="button">Disable (Duo)  Requests</a>
 
 {% else %}
 
-<a href="{% url 'disable requests' %}" class="button">Disable</a>
+<a href="{% url 'enable duo requests' %}" class="button">Enable (Duo) Requests</a>
+
+{% endif %}
+
+{% if singleOp %}
+
+<a href="{% url 'disable single requests' %}" class="button">Disable Single Requests</a>
+
+{% else %}
+
+<a href="{% url 'enable single requests' %}" class="button">Enable Single Requests</a>
 
 {% endif %}
 

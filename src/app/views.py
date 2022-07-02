@@ -26,7 +26,7 @@ def home(request):
 
 def request(request):
 
-    enabled = getAllowance()
+    enabled = getAllowance("duo")
     form = ""
     #If requests are enables
     if enabled == True:
@@ -302,13 +302,10 @@ def requestAllowance(request):
 
     if request.user.is_authenticated:
 
-        op = ""
-        if getAllowance() == True:
-            op = "DISABLE"
-        else:
-            op = "ENABLE"
-
-        return render(request, 'admin/requestAllowance.html', {'op': op})
+        duoOp = getAllowance("duo")
+        singleOp = getAllowance("single")
+        
+        return render(request, 'admin/requestAllowance.html', {'duoOp': duoOp, 'singleOp': singleOp})
 
     else:
         return HttpResponse("You don't have the right access to this page.")
@@ -317,7 +314,7 @@ def requestAllowance(request):
 def enableRequests(request):
 
     if request.user.is_authenticated:
-        setAllowance(True)
+        setAllowance(True, "duo")
         return HttpResponseRedirect('/staff/configure/request/allowance')
     else:
         return HttpResponse("You don't have the right access to this page.")
@@ -326,10 +323,28 @@ def enableRequests(request):
 def disableRequests(request):
 
     if request.user.is_authenticated:
-        setAllowance(False)
+        setAllowance(False, "duo")
         return HttpResponseRedirect('/staff/configure/request/allowance')
     else:
         return HttpResponse("You don't have the right access to this page.")
+
+def enableSingleRequests(request):
+
+    if request.user.is_authenticated:
+        setAllowance(True, "single")
+        return HttpResponseRedirect('/staff/configure/request/allowance')
+    else:
+        return HttpResponse("You don't have the right access to this page.")
+
+
+def disableSingleRequests(request):
+
+    if request.user.is_authenticated:
+        setAllowance(False, "single")
+        return HttpResponseRedirect('/staff/configure/request/allowance')
+    else:
+        return HttpResponse("You don't have the right access to this page.")
+
 
 
 def checkStatus(request, id):
@@ -389,8 +404,8 @@ def rating(request):
 
 def singleRequest(request):
 
-    enabled = getAllowance()
-
+    enabled = getAllowance("single")
+    form = ""
     if enabled == True:
 
         if request.method == 'POST':

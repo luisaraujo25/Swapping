@@ -4,7 +4,7 @@
 
 {% block content %}
 
-
+{% if enabled %}
 <form method="post">
 
     {% if message != None %}
@@ -25,5 +25,8 @@
     </div>
 </form>
 
+{% else %}
+<h2>This type of request isn't currently allowed</h2>
+{% endif %}
 
 {% endblock %}

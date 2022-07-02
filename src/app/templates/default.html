@@ -25,6 +25,7 @@
                 <a href="{% url 'admin overview' %}">Admin</a>
                 <a href="{% url 'logout' %}">Log Out</a>
                 {% else %}
+                <a href="{% url 'make request' %}">Make a Request</a>
                 <a href="{% url 'login' %}">Login</a>
                 {% endif %}
             </div>
