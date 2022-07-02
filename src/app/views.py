@@ -268,10 +268,6 @@ def about(request):
 def contacts(request):
     return render(request, 'contacts.html')
 
-def rate(request):
-    return render(request, 'rate.html')
-
-
 def adminOverview(request):
     if request.user.is_authenticated:
         return render(request, 'admin/overview.html')
@@ -304,7 +300,7 @@ def requestAllowance(request):
 
         duoOp = getAllowance("duo")
         singleOp = getAllowance("single")
-        
+
         return render(request, 'admin/requestAllowance.html', {'duoOp': duoOp, 'singleOp': singleOp})
 
     else:

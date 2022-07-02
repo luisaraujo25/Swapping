@@ -5,6 +5,9 @@
 {% block content %}
 {% load static %}
 
+{% if message != None %}
+{{message}}
+{% else %}
 <form method="post">
 
     <div class="form">
@@ -16,5 +19,6 @@
     </div>
 
 </form>
+{% endif %}
 
 {% endblock %}
