@@ -209,6 +209,7 @@ def confirmRequest1(request, ridb64, token):
         timeNow = time.time()
         timeoutSeconds = getTimeout() * 60 * 60
         if timeNow - float(r.date) > timeoutSeconds:
+            r.cancelled = True
             return HttpResponse("Timeout, two days have passed since this request was made, your response is no longer valid")
         else:
             r.confirmed1 = True
@@ -217,7 +218,7 @@ def confirmRequest1(request, ridb64, token):
             r.token2 = token2
             r.save()
             sendEmail(request, st2, r, token2, st2.email, False)
-            return HttpResponse("confirmed")
+            return HttpResponse("Confirmed! Now sending email to the second Student")
 
     else:
         return HttpResponse("error")
@@ -234,12 +235,13 @@ def confirmRequest2(request, ridb64, token):
         timeNow = time.time()
         timeoutSeconds = getTimeout() * 60*60
         if timeNow - float(r.date) > timeoutSeconds:
+            r.cancelled = True
             return HttpResponse("Timeout, two days have passed since this request was made, your response is no longer valid")
         else:
             #CHANGE DATA
             r.confirmed2 = True
             r.save()
-            cl1 = r.class1
+            cl1 = r.class1F
             cl2 = r.class2
             st1 = r.st1ID
             st2 = r.st2ID
@@ -284,7 +286,7 @@ def adminTimeout(request):
             if form.is_valid():
                 timeout = form.cleaned_data['timeout']
                 setTimeout(timeout)
-                return HttpResponseRedirect('/staff/configure/timeout')
+                return HttpResponseRedirect('/staff/configure/request/timeout')
         else:
             form = ConfigureTimeout()
 

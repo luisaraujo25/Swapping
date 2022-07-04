@@ -1,5 +1,4 @@
 import csv
-from app.models import Class, Composed, ComposedClasses
 from app.utils import getClassesFromComp, toFloat
 from django.http import HttpResponse
 
@@ -11,6 +10,11 @@ def removeDups(list):
             aux.append(i)
 
     return aux
+
+def cleanFiles(list):
+
+    pass
+    #return list
 
 
 def sortCriteria(elem):
@@ -34,7 +38,7 @@ def readClasses(file):
 
 def readUC(file):
 
-    f = open(file, 'r', encoding="ISO-8859-1")
+    f = open(file, 'r', encoding="utf8")
     reader = csv.DictReader(f, delimiter=';')
 
     ucs = []

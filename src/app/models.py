@@ -75,6 +75,7 @@ class Request(models.Model):
     token2 = models.CharField(max_length=30, null=True)
     class1 = models.ForeignKey("Class", on_delete=models.CASCADE, related_name = "class1", default = 0)
     class2 = models.ForeignKey("Class", on_delete=models.CASCADE, related_name = "class2", default = 0)
+    cancelled = models.BooleanField(default=False)
 
     # class Meta:
     #     unique_together = (('st1ID','st2ID'))

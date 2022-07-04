@@ -142,7 +142,7 @@ def validateRequest(email1, email2, cl1, cl2, uc, st1, st2):
 #check if student has already another request to this uc
 def onGoingRequests(st, uc):
 
-    requests = list(Request.objects.filter(st1ID = st, uc = uc) | Request.objects.filter(st2ID = st, uc = uc))
+    requests = list(Request.objects.filter(st1ID = st, uc = uc, cancelled = False) | Request.objects.filter(st2ID = st, uc = uc, cancelled = False))
 
     if(len(requests) > 0):
         return False
