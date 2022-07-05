@@ -99,7 +99,7 @@ def saveImports(obj):
 def generateFile(justChanges):
 
     #check which requests are concluded
-    f = open('app/files/output.csv', 'w')
+    f = open('app/files/output.csv', 'w+')
 
     writer = csv.writer(f, delimiter=';')
     header = ['ESTUD_NUM_UNICO_INST', 'CODIGO', 'SIGLA']

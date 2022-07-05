@@ -13,8 +13,17 @@ def removeDups(list):
 
 def cleanFiles(list):
 
-    pass
-    #return list
+    cleanedList = []
+    
+    for obj in list:
+    
+        try:
+            code = obj['CODIGO']
+            int(code)
+        except:
+            cleanedList.append(obj)
+    
+    return cleanedList
 
 
 def sortCriteria(elem):

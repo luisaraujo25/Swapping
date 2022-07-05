@@ -6,4 +6,6 @@
     {% else %}
     http://{{ domain }}{% url 'confirmRequest2' ridb64=rid token=tokenV %}
     {% endif %}
+
+    To check the request status click <a href="{% url 'check status' id=rid %}">here</a>.
 {% endautoescape %}
