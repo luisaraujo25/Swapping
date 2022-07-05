@@ -38,13 +38,15 @@ def readClasses(file):
 
     reader = csv.DictReader(f, delimiter=';')
 
+    reader = cleanFiles(reader)
+
     classes = []
     for row in reader:
         classes.append(row['SIGLA'])
 
     f.close()
 
-    return removeDups(classes)
+    return classes
 
 
 def readUC(file):
@@ -54,6 +56,8 @@ def readUC(file):
 
     ucs = []
 
+    reader = cleanFiles(reader)
+
     for row in reader:
         elem = {
             "code": row['CODIGO'],
@@ -62,7 +66,6 @@ def readUC(file):
         }
         ucs.append(elem)
 
-    ucs = cleanFiles(ucs)
 
     return ucs
 
@@ -72,6 +75,8 @@ def readClassUC(file):
     f = open(file, 'r')
     reader = csv.DictReader(f, delimiter=';')
 
+    reader = cleanFiles(reader)
+
     classUC = []
     for row in reader:
         elem = {
@@ -80,12 +85,12 @@ def readClassUC(file):
         }
         classUC.append(elem)
 
-    return removeDups(classUC)
+    return classUC
 
 
 def readStudents(file):
 
-    f = open(file, 'r')
+    f = open(file, 'r', encoding="ISO-8859-1")
     reader = csv.DictReader(f, delimiter=';')
 
     students = []
@@ -137,6 +142,8 @@ def readSchedules(file):
     f = open(file, 'r')
     reader = csv.DictReader(f, delimiter=';')
 
+    reader = cleanFiles(reader)
+
     debug = open('app/files/import/debug.txt', 'w+')
     list = []
     for row in reader:
@@ -181,7 +188,7 @@ def readSchedules(file):
     for i in removeDups(list):
         debug.write(json.dumps(i) + "\n")
 
-    return removeDups(list)
+    return list
     
 # schedule slot
 
