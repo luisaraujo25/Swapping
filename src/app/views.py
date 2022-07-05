@@ -118,11 +118,11 @@ def importData(request):
             form = ImportData(request.POST, request.FILES)
             if form.is_valid():
 
-                try:
-                    fileHandler(request.FILES['UCs'], "UC")
-                    countFiles += 1
-                except:
-                    print("No UC")
+                #try:
+                fileHandler(request.FILES['UCs'], "UC")
+                countFiles += 1
+                #except:
+                    #print("No UC")
 
                 try:
                     fileHandler(request.FILES['Class'], "Class")

@@ -14,7 +14,9 @@ def removeDups(list):
 def cleanFiles(list):
 
     cleanedList = []
-    
+
+    list = removeDups(list)
+
     for obj in list:
     
         try:
@@ -47,7 +49,7 @@ def readClasses(file):
 
 def readUC(file):
 
-    f = open(file, 'r', encoding="utf8")
+    f = open(file, 'r', encoding="ISO-8859-1")
     reader = csv.DictReader(f, delimiter=';')
 
     ucs = []
@@ -60,7 +62,9 @@ def readUC(file):
         }
         ucs.append(elem)
 
-    return removeDups(ucs)
+    ucs = cleanFiles(ucs)
+
+    return ucs
 
 
 def readClassUC(file):
