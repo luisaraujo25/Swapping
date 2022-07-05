@@ -91,7 +91,6 @@ def request(request):
                     obj.save()
 
                     sendEmail(request, st1, obj, token1, email1, True)
-
                     return HttpResponseRedirect('/')
         # if a GET (or any other method) we'll create a blank form
         else:
