@@ -139,13 +139,17 @@ def effectivateSingles(matches):
 
         stUc1 = StudentUC.objects.get(student = request1.st, uc = request1.uc)
         stUc2 =  StudentUC.objects.get(student = request2.st, uc = request2.uc)
-        
+
+        aux = stUc1.cl
         stUc1.cl = stUc2.cl
         stUc1.save()
 
-        stUc2.cl = stUc1.cl
-        stUc1.save()
+        stUc2.cl = aux
+        stUc2.save()
 
+        debug.write(stUc1.student.name + " - " + stUc1.cl.code + "\n")
+        debug.write(stUc2.student.name + " - " + stUc2.cl.code + "\n")
+        
 
 def generateString():
 
