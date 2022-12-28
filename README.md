@@ -2,7 +2,7 @@
 
 ## Short Description
 
-This project's main goal is to build a web platfrom that allows authenticated students to request a class swap.
+This project's main goal is to build a web platfrom that allows students to request a class swap.
 These requests can involve other students or not. When a students specifies all the others ones involved in the exchange, everyone needs to accept the request. When it doesn't involve other students, the application must combine the request with other compatible ones.
 
 <br>
@@ -24,36 +24,3 @@ O objetivo deste projeto é criar uma plataforma web que permita estudantes aute
 <img src="lib/img/example.jpg" alt="example_img">
 
 <br>
-
-## Notes
-
-Meetings - Friday 2pm
-
-SEMANA 4 ABRIL MEETING SEXTA 16H
-
-E-mail - joao.pascoal.faria@gmail.com
-
-Django Tutorial - https://www.youtube.com/watch?v=rHux0gMZ3Eg
-
-https://medium.com/codex/how-to-integrate-react-and-django-framework-in-a-simple-way-c8b90f3ce945
-
-MySQL - https://www.w3schools.com/python/python_mysql_insert.asp
-https://pypi.org/project/mysqlclient/
-
-
-React - https://www.youtube.com/watch?v=w7ejDZ8SWv8
-
-https://www.youtube.com/watch?v=VBqJ0-imSMU
-
-SQL - https://www.postgresqltutorial.com/connect-to-postgresql-database/
-https://dev.to/mungaigikure/how-to-set-up-postgres-in-your-django-project-575i
-
-
-## Dúvidas (temporary)
-
-- Check if uml is correct
-- 2 actors? User and admin?
-
-
-CONTENT-TYPES:
-https://stackoverflow.com/questions/23714383/what-are-all-the-possible-values-for-http-content-type-header
