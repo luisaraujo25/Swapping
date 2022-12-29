@@ -19,8 +19,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-h7)_spc!$u9fbma86)jw^or#zjjoi-og@nx+j6vt4&xyc50f6c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -110,8 +108,7 @@ EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.fe.up.pt'
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
+
 EMAIL_PORT = 587
 
 

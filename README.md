@@ -17,7 +17,7 @@ O objetivo deste projeto é criar uma plataforma web que permita estudantes cria
 - Django (Python)
 - PostgreSQL
 
-## Application Usage
+## Example
 
 <br>
 
